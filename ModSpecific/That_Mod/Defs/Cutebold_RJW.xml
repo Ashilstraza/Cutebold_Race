@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- RJW related patch notes placed here:
+2.3.0:
+- Switched the types on male genitals and the anuses after pondering about it one random morning.
+-->
+<Defs>
+	<rjw.RaceGroupDef>
+		<defName>CuteboldRJWGroup</defName>
+		<raceNames>
+			<li>Alien_Cutebold</li>
+		</raceNames>
+		<femaleBreasts>
+			<li>FeaturelessChest</li>
+		</femaleBreasts>
+		<femaleGenitals>
+			<li>CloacalVagina</li>
+		</femaleGenitals>
+		<maleBreasts>
+			<li>FeaturelessChest</li>
+		</maleBreasts>
+		<maleGenitals>
+			<li>CloacalPenis</li>
+			<!-- Switched from hemi to cloacal because I didn't think hard enough before-->
+		</maleGenitals>
+		<anuses>
+			<li>Anus</li>
+			<!-- Switched from cloacal to regular for reasons -->
+		</anuses>
+		<tags>
+			<li>Scales</li>
+		</tags>
+		<!-- TODO -->
+		<!--<oviPregnancy>true</oviPregnancy>-->
+	</rjw.RaceGroupDef>
+</Defs>

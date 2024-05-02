@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<!-- Bionic icons patching, fake cutebold tail refuses to be properly textured though -->
+	<BionicIconsIconDef MayRequire="automatic.bionicicons">
+		<defName>CuteboldTail</defName>
+		<bodyPart>CuteboldTail</bodyPart>
+		<texture>BionicIcons/BodyParts/Tail</texture>
+	</BionicIconsIconDef>
+</Defs>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- Abstract -->
+	<FactionDef Abstract="True" Name="CuteboldTribeAbstract">
+		<description>Your very own tribe of Cutebolds.</description>
+		<isPlayer>true</isPlayer>
+		<pawnSingular>cutebold</pawnSingular>
+		<pawnsPlural>cutebolds</pawnsPlural>
+		<settlementNameMaker>NamerSettlementTribal</settlementNameMaker>
+		<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
+		<factionNameMaker>NamerFactionTribal</factionNameMaker>
+		<techLevel>Neolithic</techLevel>
+		<colorSpectrum>
+			<li>(0, 0.737, 0.847)</li>
+		</colorSpectrum>
+		<pawnNameMaker>NamerPersonCutebold</pawnNameMaker>
+		<settlementTexturePath>World/CuteboldSettlement</settlementTexturePath>
+		<factionIconPath>World/CuteboldCamp</factionIconPath>
+		<geneticVariance>0.25</geneticVariance>
+		<forageabilityFactor>1.7</forageabilityFactor>
+		<startingResearchTags>
+			<li>TribalStart</li>
+		</startingResearchTags>
+		<startingTechprintsResearchTags>
+			<li>TribalStart</li>
+			<li>TribalStartTechprints</li>
+		</startingTechprintsResearchTags>
+		<hairTags>
+			<li>Tribal</li>
+		</hairTags>
+		<apparelStuffFilter>
+			<thingDefs>
+				<li>Cloth</li>
+			</thingDefs>
+		</apparelStuffFilter>
+		<recipePrerequisiteTags>
+			<li>Tribal</li>
+		</recipePrerequisiteTags>
+	</FactionDef>
+	<!-- Factions -->
+	<FactionDef ParentName="CuteboldTribeAbstract">
+		<defName>CuteboldTribePlayer</defName>
+		<label>Cutebold Tribe</label>
+		<basicMemberKind>Cutebold</basicMemberKind>
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>CuteboldBackstory</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</FactionDef>
+	<FactionDef ParentName="CuteboldTribeAbstract">
+		<defName>CuteboldRefugeePlayer</defName>
+		<label>Cutebold Refugee Tribe</label>
+		<basicMemberKind>Cutebold_Refugee</basicMemberKind>
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>CuteboldRefugee</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</FactionDef>
+</Defs>

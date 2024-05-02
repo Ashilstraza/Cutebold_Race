@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<BodyPartGroupDef>
+		<defName>TailAttackTool</defName>
+		<label>tail</label>
+		<labelShort>tail</labelShort>
+	</BodyPartGroupDef>
+	<BodyPartDef>
+		<defName>CuteboldTail</defName>
+		<label>tail</label>
+		<hitPoints>25</hitPoints>
+		<frostbiteVulnerability>3</frostbiteVulnerability>
+		<spawnThingOnRemoved>CuteboldTail</spawnThingOnRemoved>
+		<skinCovered>true</skinCovered>
+		<beautyRelated>true</beautyRelated>
+		<tags>
+			<li>MovingLimbCore</li>
+			<!-- Maybe too much detriment when lost? -->
+		</tags>
+	</BodyPartDef>
+	<ThingDef ParentName="BodyPartNaturalBase">
+		<defName>CuteboldTail</defName>
+		<label>cutebold tail</label>
+		<description>A cutebold's tail. There is a sad cutebold somewhere without this tail.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallCuteboldTail</RecipeDef>
+		</descriptionHyperlinks>
+		<statBases>
+			<MarketValue>200</MarketValue>
+			<Mass>0.75</Mass>
+		</statBases>
+	</ThingDef>
+</Defs>

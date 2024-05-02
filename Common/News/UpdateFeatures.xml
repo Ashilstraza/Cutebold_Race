@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<HugsLib.UpdateFeatureDef Abstract="true" Name="CuteboldNewsBase">
+		<modNameReadable>Cutebold Race</modNameReadable>
+	</HugsLib.UpdateFeatureDef>
+	
+	<!--<HugsLib.UpdateFeatureDef ParentName="CuteboldNewsBase">
+		<defName>CuteboldRace_2_3_16</defName>
+		<assemblyVersion>2.3.16</assemblyVersion>
+		<content>
+			Latest update brings the mining yield for cutebolds above and beyond what a simple human can do. Cutebolds now can exceed the mining yield cap of 125% and can reach upwards of 147%!|
+
+			Additionally the mod now allows for full translation support, with Japaneese 日本語 being the first translation.
+		</content>
+	</HugsLib.UpdateFeatureDef>-->
+	<!--<HugsLib.UpdateFeatureDef ParentName="CuteboldNewsBase">
+		<defName>CuteboldRace_2_3_14</defName>
+		<assemblyVersion>2.3.14</assemblyVersion>
+		<content>Small update for those of you who have issues with prosthetics and/or hediffs on the wrong bodypart after the last mod update.|
+
+			A button has been added under the Cutebold Race Settings that will move the various hediffs back to where they should be. This is only visible when dev mode is enabled.|
+
+			This should only be run on a save that has not been played after the last update; otherwise newly added hediffs will be moved to an incorrect bodypart.</content>
+	</HugsLib.UpdateFeatureDef>-->
+</Defs>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- These are referenced in the C# harmony patch -->
+<Defs>
+	<!-- Tribal -->
+	<RulePackDef>
+		<defName>NamerPersonCutebold</defName>
+    <include>
+      <li>CuteboldNameUtility</li>
+    </include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[CuteName]</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	<!-- Slaves -->
+	<RulePackDef>
+		<defName>NamerPersonCuteboldSlave</defName>
+		<rulePack>
+			<include>
+				<li>TribalWordUtility</li>
+        <li>CuteboldNameUtility</li>
+			</include>
+			<rulesStrings>
+				<li>r_name(p=1)->[WordTribal] '[CuteName]'</li>
+				<li>r_name(p=1)->[WordTribal] '[Nick]'</li>
+				<li>r_name(p=2)->[Animal]</li>
+				<li>r_name(p=1)->[Nick]</li>
+				<li>r_name(p=3)->[CuteName]</li>
+				<li>r_name(p=2)->[WordTribal]</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>Nick->Rimworld_Names/Nick_Male</li>
+				<li>Nick->Rimworld_Names/Nick_Female</li>
+				<li>Nick->Rimworld_Names/Nick_Unisex</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+	<!-- Other Factions -->
+	<RulePackDef>
+		<defName>NamerPersonCuteboldOther</defName>
+    <include>
+      <li>CuteboldNameUtility</li>
+    </include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[FirstMale] '[CuteName]' [Last]</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>FirstMale->Rimworld_Names/First_Male</li>
+				<li>Last->Rimworld_Names/Last</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+	<RulePackDef>
+		<defName>NamerPersonCuteboldOtherFemale</defName>
+    <include>
+      <li>CuteboldNameUtility</li>
+    </include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[FirstFemale] '[CuteName]' [Last]</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>FirstFemale->Rimworld_Names/First_Female</li>
+				<li>Last->Rimworld_Names/Last</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+	<!-- Outsiders -->
+	<RulePackDef>
+		<defName>NamerPersonCuteboldOutsider</defName>
+    <include>
+      <li>CuteboldNameUtility</li>
+    </include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name(p=3)->[FirstMale] '[CuteName]' [Last]</li>
+				<li>r_name(p=1)->[FirstMale] '[Nick]' [Last]</li>
+				<li>r_name(p=1)->[FirstMale] [Last]</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>FirstMale->Rimworld_Names/First_Male</li>
+				<li>Nick->Rimworld_Names/Nick_Male</li>
+				<li>Nick->Rimworld_Names/Nick_Unisex</li>
+				<li>Last->Rimworld_Names/Last</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+	<RulePackDef>
+		<defName>NamerPersonCuteboldOutsiderFemale</defName>
+    <include>
+      <li>CuteboldNameUtility</li>
+    </include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name(p=3)->[FirstFemale] '[CuteName]' [Last]</li>
+				<li>r_name(p=1)->[FirstFemale] '[Nick]' [Last]</li>
+				<li>r_name(p=1)->[FirstFemale] [Last]</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>FirstFemale->Rimworld_Names/First_Female</li>
+				<li>Nick->Rimworld_Names/Nick_Female</li>
+				<li>Nick->Rimworld_Names/Nick_Unisex</li>
+				<li>Last->Rimworld_Names/Last</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+  <!-- Utility -->
+  <RulePackDef>
+    <defName>CuteboldNameUtility</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>CuteName(p=6)->[Cutebold]</li>
+        <li>CuteName(p=2)->[Start][Middle][End]</li>
+        <li>CuteName(p=3)->[Start][End]</li>
+        <li>CuteName(p=1)->[Start]</li>
+        <!-- Complete Middle -->
+        <li>Middle(p=8)->[Mid]</li>
+        <li>Middle(p=6)->[Mid][Mid]</li>
+        <li>Middle(p=1)->[Mid][Mid][Mid]</li>
+      </rulesStrings>
+      <rulesFiles>
+        <li>Mid->Cutebold_Names/Cutebold_Middle</li>
+        <li>Cutebold->Cutebold_Names/Cutebold</li>
+        <li>Start->Cutebold_Names/Cutebold_Start</li>
+        <li>End->Cutebold_Names/Cutebold_End</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+
+</Defs>

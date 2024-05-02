@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<ThingDef ParentName="BodyPartArchotechBase">
+		<defName>ArchotechCuteboldTail</defName>
+		<label>archotech cutebold tail</label>
+		<description>A special tail built by an arki... archi... archoo-tetch! Looks and feels like real flesh, but allows for balancing on the most uneven rocks and helps with what you are working on! Even if harmed, the tail heals itself over time. Its insides are a mystery to all cuteboldkind.\n\n\nScribe's Note: These archotech tails are exceedingly rare and only found on cutebolds who are servants to individuals with unthinkable wealth, power, and connections. Prior to their death, the cutebold’s master would have these detached to prevent any ‘messy issues’. Once a cutebold servant required a new tail, the best glitterworld surgeons would attach this previously used tail.\n\nI would recommend wiping this tail down with sanitizer before you install it on your cutebold; you absolutely do not want to know where it has been.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallArchotechCuteboldTail</RecipeDef>
+		</descriptionHyperlinks>
+		<tradeTags>
+			<li>GlitterworldParts</li>
+		</tradeTags>
+		<statBases>
+			<MarketValue>36210</MarketValue>
+			<Mass>0.6</Mass>
+		</statBases>
+	</ThingDef>
+	<ThingDef ParentName="BodyPartBionicBase">
+		<defName>BionicCuteboldTail</defName>
+		<label>bionic cutebold tail</label>
+		<description>A fancy cutebold tail. Looks and feels like a real one but is somehow far better. This was made with hard blue rocks and sparkly magic.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallBionicCuteboldTail</RecipeDef>
+		</descriptionHyperlinks>
+		<tradeTags>
+			<li>BionicProstheses</li>
+		</tradeTags>
+		<costList>
+			<Plasteel>10</Plasteel>
+			<ComponentSpacer>4</ComponentSpacer>
+		</costList>
+		<statBases>
+			<Mass>0.75</Mass>
+		</statBases>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+	</ThingDef>
+	<ThingDef ParentName="BodyPartProstheticMakeableBase">
+		<defName>ProstheticCuteboldTail</defName>
+		<label>prosthetic cutebold tail</label>
+		<description>A handmade cutebold tail. The small bits and pieces inside make it act like a regular tail for moving. It isn't as good as a real one though.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallProstheticCuteboldTail</RecipeDef>
+		</descriptionHyperlinks>
+		<tradeTags>
+			<li>SimpleProstheses</li>
+		</tradeTags>
+		<costList>
+			<Steel>30</Steel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<Mass>1</Mass>
+		</statBases>
+	</ThingDef>
+	<ThingDef ParentName="BodyPartProstheticBase">
+		<defName>FakeCuteboldTail</defName>
+		<label>fake cutebold tail</label>
+		<description>Simple tail made to replace a missing tail. It is decorated with fresh wildflowers.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallFakeCuteboldTail</RecipeDef>
+		</descriptionHyperlinks>
+		<tradeTags>
+			<li>BasicProstheses</li>
+		</tradeTags>
+		<thingCategories>
+			<li>BodyPartsSimple</li>
+		</thingCategories>
+		<techLevel>Medieval</techLevel>
+		<recipeMaker>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Tailor</effectWorking>
+			<soundWorking>Recipe_Tailor</soundWorking>
+			<recipeUsers>
+				<li>ElectricTailoringBench</li>
+				<li>HandTailoringBench</li>
+				<li>CraftingSpot</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+			<unfinishedThingDef>UnfinishedHealthItemProsthetic</unfinishedThingDef>
+		</recipeMaker>
+		<statBases>
+			<Mass>0.4</Mass>
+			<WorkToMake>3000</WorkToMake>
+		</statBases>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<costStuffCount>20</costStuffCount>
+		<techHediffsTags>
+			<li>Simple</li>
+		</techHediffsTags>
+	</ThingDef>
+</Defs>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- These patches are for replacing various things that could not be done in the regular xml files. -->
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<!-- EPOE Forked -->
+		<mods>
+			<li>Expanded Prosthetics and Organ Engineering - Forked</li>
+			<li>Expanded Prosthetics, Implants and Augmentations</li>
+			<li>EPOE-Forked: Legacy mode</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<!-- Advanced Bionic Tail -->
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ThingDef[defName="AdvancedBionicCuteboldTail"]/recipeMaker/recipeUsers</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ThingDef[defName="AdvancedBionicCuteboldTail"]/statBases/MarketValue</xpath>
+				</li>
+				<li Class="PatchOperationAttributeSet">
+					<xpath>Defs/ThingDef[defName="AdvancedBionicCuteboldTail"]</xpath>
+					<attribute>ParentName</attribute>
+					<value>EPIA_UpgradeBodyPartAdvancedBionicBase</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="AdvancedBionicCuteboldTail"]/recipeMaker</xpath>
+					<value>
+						<researchPrerequisite>AdvancedBionics</researchPrerequisite>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="AdvancedBionicCuteboldTail"]/costList</xpath>
+					<value>
+						<costList>
+							<Plasteel>20</Plasteel>
+							<ComponentSpacer>6</ComponentSpacer>
+						</costList>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/HediffDef[defName="AdvancedBionicCuteboldTail"]/defaultLabelColor</xpath>
+					<value>
+						<defaultLabelColor>(18,215,57)</defaultLabelColor>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/HediffDef[defName="AdvancedBionicCuteboldTail"]/addedPartProps/partEfficiency</xpath>
+					<value>
+						<partEfficiency>1.35</partEfficiency>
+					</value>
+				</li>
+				<li Class="PatchOperationAttributeAdd">
+					<xpath>Defs/RecipeDef[defName="CreateAdvancedBionicCuteboldTail"]</xpath>
+					<attribute>ParentName</attribute>
+					<value>EPIA_RecipeUpgradeAdvanced</value>
+				</li>
+				<li Class="PatchOperationAttributeSet">
+					<xpath>Defs/RecipeDef[defName="InstallAdvancedBionicCuteboldTail"]</xpath>
+					<attribute>ParentName</attribute>
+					<value>EPIASurgeryAdvancedBionic</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

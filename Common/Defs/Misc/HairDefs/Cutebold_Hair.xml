@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<HairDef>
+		<defName>Cutebold_NoHair</defName>
+		<label>no hair</label>
+		<styleGender>Any</styleGender>
+		<texPath>Cutebold/Heads/Hair/Cutebold_NoHair</texPath>
+		<category>Minimal</category>
+		<styleTags>
+			<li>Cutebold_Hair</li>
+		</styleTags>
+	</HairDef>
+</Defs>

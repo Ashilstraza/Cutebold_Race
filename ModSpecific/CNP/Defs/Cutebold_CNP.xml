@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<BodyTypeDef>
+		<defName>Cutebold_Newborn</defName>
+		<headOffset>(0.0, 0.34)</headOffset>
+		<bodyNakedGraphicPath>Cutebold/Bodies/Naked_Cutebold_Newborn</bodyNakedGraphicPath>
+		<bodyDessicatedGraphicPath>Things/Pawn/Humanlike/Bodies/Dessicated/Dessicated_Thin</bodyDessicatedGraphicPath>
+	</BodyTypeDef>
+	<BodyTypeDef>
+		<defName>Cutebold_Toddler</defName>
+		<headOffset>(0.0, 0.34)</headOffset>
+		<bodyNakedGraphicPath>Cutebold/Bodies/Naked_Cutebold_Toddler</bodyNakedGraphicPath>
+		<bodyDessicatedGraphicPath>Things/Pawn/Humanlike/Bodies/Dessicated/Dessicated_Thin</bodyDessicatedGraphicPath>
+	</BodyTypeDef>
+	<BodyTypeDef>
+		<defName>Cutebold_Child</defName>
+		<headOffset>(0.0, 0.34)</headOffset>
+		<bodyNakedGraphicPath>Cutebold/Bodies/Naked_Cutebold_Child</bodyNakedGraphicPath>
+		<bodyDessicatedGraphicPath>Things/Pawn/Humanlike/Bodies/Dessicated/Dessicated_Thin</bodyDessicatedGraphicPath>
+	</BodyTypeDef>
+	<!-- Children and Pregnancy doesn't give a crap about custom life stage defs. You MUST use the 5 Humanlike life stages or it will give you the finger and not work. Additonally it seems both <headGraphicPath> and <BodyGraphicsPath> are buggy, they give a strange red tint to the graphics.-->
+	<RimWorldChildren.RacialLifestageDef>
+		<defName>Alien_Cutebold_Lifestages</defName>
+		<!-- C&P looks for defName + "_Lifestages" to decide if it should use the default or yours.-->
+		<raceDefName>Alien_Cutebold</raceDefName>
+		<impregnationChance>0.50</impregnationChance>
+		<gestationDays>15</gestationDays>
+		<lifeStages>
+			<li>
+				<!-- Done -->
+				<lifeStageDef>HumanlikeBaby</lifeStageDef>
+				<lifestageType>Baby</lifestageType>
+				<backstoryIdentifier>CustomBackstory_BNP_Cutebold_TheBaby</backstoryIdentifier>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<setMax>0</setMax>
+					</li>
+					<li>
+						<capacity>Talking</capacity>
+						<setMax>0</setMax>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<setMax>0.0</setMax>
+					</li>
+				</capMods>
+				<graphics>
+					<bodyType>Cutebold_Newborn</bodyType>
+					<renderHead>true</renderHead>
+					<headScale>(-0.4, -0.4)</headScale>
+					<headGraphicPath>Things/Pawn/Humanlike/null</headGraphicPath>
+					<hairScale>(-0.4, -0.4)</hairScale>
+					<hatOffsetNS>(0.0, 0.160)</hatOffsetNS>
+					<hatOffsetEW>(0.0, 0.160)</hatOffsetEW>
+					<bodyScale>(-0.4, -0.4)</bodyScale>
+					<clothesBodyType>Cutebold_Newborn</clothesBodyType>
+					<clothingOffsetNS>(0.0, 0.005)</clothingOffsetNS>
+					<clothingOffsetEW>(0.005, 0.015)</clothingOffsetEW>
+					<bodyAddons>
+						<li>
+							<bodyPart>left ear</bodyPart>
+							<renderPart>true</renderPart>
+							<referenceBody>Thin</referenceBody>
+							<north>
+								<offset>(-0.025, -0.215)</offset>
+								<scale>(-0.55, -0.55)</scale>
+							</north>
+							<south>
+								<offset>(0.0, -0.195)</offset>
+								<scale>(-0.55, -0.55)</scale>
+							</south>
+							<east>
+								<offset>(0.075, -0.16)</offset>
+								<scale>(-0.55, -0.55)</scale>
+							</east>
+							<west>
+								<offset>(0.075, -0.16)</offset>
+								<scale>(-0.55, -0.55)</scale>
+							</west>
+						</li>
+						<li>
+							<bodyPart>right ear</bodyPart>
+							<renderPart>true</renderPart>
+							<referenceBody>Thin</referenceBody>
+							<north>
+								<offset>(0.025, -0.215)</offset>
+								<scale>(-0.55, -0.55)</scale>
+							</north>
+							<south>
+								<offset>(0.0, -0.195)</offset>
+								<scale>(-0.55, -0.55)</scale>
+							</south>
+							<east>
+								<offset>(0.075, -0.16)</offset>
+								<scale>(-0.55, -0.55)</scale>
+							</east>
+							<west>
+								<offset>(0.075, -0.16)</offset>
+								<scale>(-0.55, -0.55)</scale>
+							</west>
+						</li>
+						<li>
+							<bodyPart>CuteboldTail</bodyPart>
+							<renderPart>true</renderPart>
+							<referenceBody>Thin</referenceBody>
+							<north>
+								<offset>(0.0, -0.015)</offset>
+								<scale>(-0.55, -0.55)</scale>
+							</north>
+							<south>
+								<offset>(0.0, -0.015)</offset>
+								<scale>(-0.55, -0.55)</scale>
+							</south>
+							<east>
+								<offset>(0.0, -0.025)</offset>
+								<scale>(-0.55, -0.55)</scale>
+							</east>
+							<west>
+								<offset>(0.0, -0.025)</offset>
+								<scale>(-0.55, -0.55)</scale>
+							</west>
+						</li>
+					</bodyAddons>
+				</graphics>
+				<shouldBeFed>true</shouldBeFed>
+				<idleDisabled>true</idleDisabled>
+				<wakeOnUnhappy>true</wakeOnUnhappy>
+				<usesCrib>true</usesCrib>
+				<cannotReceiveThoughts>
+					<li>AteWithoutTable</li>
+					<li>KnowPrisonerSold</li>
+					<li>KnowPrisonerDiedInnocent</li>
+					<li>Naked</li>
+					<li>SleepDisturbed</li>
+					<li>SleptOnGround</li>
+					<li>SleptInBarracks</li>
+					<li>NeedOutdoors</li>
+					<li>Expectations</li>
+				</cannotReceiveThoughts>
+				<maxWeaponMass>0</maxWeaponMass>
+			</li>
+			<li>
+				<lifeStageDef>HumanlikeToddler</lifeStageDef>
+				<lifestageType>Toddler</lifestageType>
+				<backstoryIdentifier>CustomBackstory_BNP_Cutebold_TheBaby</backstoryIdentifier>
+				<capMods>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>-1.0</offset>
+					</li>
+					<li>
+						<capacity>Talking</capacity>
+						<offset>-0.5</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.35</offset>
+					</li>
+				</capMods>
+				<maxWeaponMass>0.5</maxWeaponMass>
+				<!-- Knife (or beer bottle)-->
+				<graphics>
+					<bodyType>Cutebold_Toddler</bodyType>
+					<renderHead>true</renderHead>
+					<headScale>(-0.4, -0.4)</headScale>
+					<headGraphicPath>Things/Pawn/Humanlike/null</headGraphicPath>
+					<hairScale>(-0.4, -0.4)</hairScale>
+					<hatOffsetNS>(0.0, 0.160)</hatOffsetNS>
+					<hatOffsetEW>(0.0, 0.160)</hatOffsetEW>
+					<bodyScale>(-0.4, -0.4)</bodyScale>
+					<clothesBodyType>Cutebold_Toddler</clothesBodyType>
+					<bodyAddons>
+						<li>
+							<bodyPart>left ear</bodyPart>
+							<referenceBody>Thin</referenceBody>
+							<north>
+								<offset>(-0.030, -0.225)</offset>
+								<scale>(-0.35, -0.35)</scale>
+							</north>
+							<south>
+								<offset>(0.005, -0.207)</offset>
+								<scale>(-0.35, -0.35)</scale>
+							</south>
+							<east>
+								<offset>(0.035, -0.165)</offset>
+								<scale>(-0.35, -0.35)</scale>
+							</east>
+							<west>
+								<offset>(0.035, -0.165)</offset>
+								<scale>(-0.35, -0.35)</scale>
+							</west>
+						</li>
+						<li>
+							<bodyPart>right ear</bodyPart>
+							<referenceBody>Thin</referenceBody>
+							<north>
+								<offset>(0.03, -0.225)</offset>
+								<scale>(-0.35, -0.35)</scale>
+							</north>
+							<south>
+								<offset>(-0.005, -0.207)</offset>
+								<scale>(-0.35, -0.35)</scale>
+							</south>
+							<east>
+								<offset>(0.035, -0.165)</offset>
+								<scale>(-0.35, -0.35)</scale>
+							</east>
+							<west>
+								<offset>(0.035, -0.165)</offset>
+								<scale>(-0.35, -0.35)</scale>
+							</west>
+						</li>
+						<li>
+							<bodyPart>CuteboldTail</bodyPart>
+							<referenceBody>Thin</referenceBody>
+							<north>
+								<offset>(-0.006, -0.04)</offset>
+								<scale>(-0.4, -0.4)</scale>
+							</north>
+							<south>
+								<offset>(-0.006, -0.04)</offset>
+								<scale>(-0.4, -0.4)</scale>
+							</south>
+							<east>
+								<offset>(0.01, -0.05)</offset>
+								<scale>(-0.4, -0.4)</scale>
+							</east>
+							<west>
+								<offset>(0.01, -0.05)</offset>
+								<scale>(-0.4, -0.4)</scale>
+							</west>
+						</li>
+					</bodyAddons>
+				</graphics>
+			</li>
+			<li>
+				<lifeStageDef>HumanlikeChild</lifeStageDef>
+				<lifestageType>Child</lifestageType>
+				<backstoryIdentifier>CustomBackstory_BNP_Cutebold_Child</backstoryIdentifier>
+				<maxWeaponMass>1.5</maxWeaponMass>
+				<graphics>
+					<bodyType>Cutebold_Child</bodyType>
+					<clothesBodyType>Thin</clothesBodyType>
+					<renderHead>true</renderHead>
+					<headScale>(-0.6, -0.6)</headScale>
+					<hairScale>(-0.6, -0.6)</hairScale>
+					<hatOffsetNS>(0.0, 0.0)</hatOffsetNS>
+					<hatOffsetEW>(0.075, 0.0)</hatOffsetEW>
+					<bodyScale>(-0.4, -0.4)</bodyScale>
+					<clothingOffsetNS>(0, -0.2)</clothingOffsetNS>
+					<clothingOffsetEW>(0.055, -0.2)</clothingOffsetEW>
+					<clothingScale>(1, 1.3)</clothingScale>
+					<bodyAddons>
+						<li>
+							<bodyPart>left ear</bodyPart>
+							<referenceBody>Thin</referenceBody>
+							<north>
+								<offset>(-0.015, 0.0)</offset>
+								<scale>(-0.2, -0.2)</scale>
+							</north>
+							<south>
+								<offset>(0.01, 0.0)</offset>
+								<scale>(-0.2, -0.2)</scale>
+							</south>
+							<east>
+								<offset>(0.1, 0.005)</offset>
+								<scale>(-0.2, -0.2)</scale>
+							</east>
+							<west>
+								<offset>(0.1, 0.005)</offset>
+								<scale>(-0.2, -0.2)</scale>
+							</west>
+						</li>
+						<li>
+							<bodyPart>right ear</bodyPart>
+							<referenceBody>Thin</referenceBody>
+							<north>
+								<offset>(0.015, 0.0)</offset>
+								<scale>(-0.2, -0.2)</scale>
+							</north>
+							<south>
+								<offset>(-0.01, 0.0)</offset>
+								<scale>(-0.2, -0.2)</scale>
+							</south>
+							<east>
+								<offset>(0.1, 0.005)</offset>
+								<scale>(-0.2, -0.2)</scale>
+							</east>
+							<west>
+								<offset>(0.1, 0.005)</offset>
+								<scale>(-0.2, -0.2)</scale>
+							</west>
+						</li>
+						<li>
+							<bodyPart>CuteboldTail</bodyPart>
+							<referenceBody>Thin</referenceBody>
+							<north>
+								<offset>(0.0, 0.1)</offset>
+								<scale>(-0.2, -0.2)</scale>
+							</north>
+							<south>
+								<offset>(0.0, 0.1)</offset>
+								<scale>(-0.2, -0.2)</scale>
+							</south>
+							<east>
+								<offset>(0.07, 0.075)</offset>
+								<scale>(-0.2, -0.2)</scale>
+							</east>
+							<west>
+								<offset>(0.07, 0.075)</offset>
+								<scale>(-0.2, -0.2)</scale>
+							</west>
+						</li>
+					</bodyAddons>
+				</graphics>
+			</li>
+			<li>
+				<lifeStageDef>HumanlikeTeenager</lifeStageDef>
+				<lifestageType>Adolescent</lifestageType>
+				<maturity>true</maturity>
+				<backstoryIdentifier>CustomBackstory_BNP_Cutebold_Adult</backstoryIdentifier>
+				<maxWeaponMass>4</maxWeaponMass>
+				<graphics>
+					<headScale>(-0.6, -0.6)</headScale>
+					<hairScale>(-0.6, -0.6)</hairScale>
+					<hatOffsetNS>(0.0, -0.01)</hatOffsetNS>
+					<hatOffsetEW>(0.05, 0.0)</hatOffsetEW>
+					<bodyScale>(-0.6, -0.6)</bodyScale>
+					<bodyAddons>
+						<li>
+							<bodyPart>left ear</bodyPart>
+							<referenceBody>Thin</referenceBody>
+							<north>
+								<offset>(-0.025, -0.820)</offset>
+								<scale>(-0.15, -0.15)</scale>
+							</north>
+							<south>
+								<offset>(0.425, -0.460)</offset>
+								<scale>(-0.15, -0.15)</scale>
+							</south>
+							<east>
+								<offset>(0.49, -0.425)</offset>
+								<scale>(-0.15, -0.15)</scale>
+							</east>
+							<west>
+								<offset>(0.49, -0.425)</offset>
+								<scale>(-0.15, -0.15)</scale>
+							</west>
+						</li>
+						<li>
+							<bodyPart>right ear</bodyPart>
+							<referenceBody>Thin</referenceBody>
+							<north>
+								<offset>(0.025, -0.820)</offset>
+								<scale>(-0.15, -0.15)</scale>
+							</north>
+							<south>
+								<offset>(0.425, -0.460)</offset>
+								<scale>(-0.15, -0.15)</scale>
+							</south>
+							<east>
+								<offset>(0.49, -0.425)</offset>
+								<scale>(-0.15, -0.15)</scale>
+							</east>
+							<west>
+								<offset>(0.49, -0.425)</offset>
+								<scale>(-0.15, -0.15)</scale>
+							</west>
+						</li>
+						<li>
+							<bodyPart>CuteboldTail</bodyPart>
+							<referenceBody>Thin</referenceBody>
+							<north>
+								<offset>(-0.009, -0.555)</offset>
+								<scale>(-0.15, -0.15)</scale>
+							</north>
+							<south>
+								<offset>(0.41, -0.225)</offset>
+								<scale>(-0.15, -0.15)</scale>
+							</south>
+							<east>
+								<offset>(0.425, -0.215)</offset>
+								<scale>(-0.15, -0.15)</scale>
+							</east>
+							<west>
+								<offset>(0.425, -0.215)</offset>
+								<scale>(-0.15, -0.15)</scale>
+							</west>
+						</li>
+					</bodyAddons>
+				</graphics>
+			</li>
+			<li>
+				<!-- Creates a point after which spawned cutebolds won't have the BNC backstory -->
+				<lifeStageDef>HumanlikeTeenager</lifeStageDef>
+				<lifestageType>Adolescent</lifestageType>
+				<minAge>8</minAge>
+				<maxWeaponMass>4</maxWeaponMass>
+				<graphics>
+					<headScale>(-0.6, -0.6)</headScale>
+					<hairScale>(-0.6, -0.6)</hairScale>
+					<hatOffsetNS>(0.0, -0.01)</hatOffsetNS>
+					<hatOffsetEW>(0.05, 0.0)</hatOffsetEW>
+					<bodyScale>(-0.6, -0.6)</bodyScale>
+					<bodyAddons>
+						<li>
+							<bodyPart>left ear</bodyPart>
+							<referenceBody>Thin</referenceBody>
+							<north>
+								<offset>(-0.025, -0.820)</offset>
+								<scale>(-0.15, -0.15)</scale>
+							</north>
+							<south>
+								<offset>(0.425, -0.460)</offset>
+								<scale>(-0.15, -0.15)</scale>
+							</south>
+							<east>
+								<offset>(0.49, -0.425)</offset>
+								<scale>(-0.15, -0.15)</scale>
+							</east>
+							<west>
+								<offset>(0.49, -0.425)</offset>
+								<scale>(-0.15, -0.15)</scale>
+							</west>
+						</li>
+						<li>
+							<bodyPart>right ear</bodyPart>
+							<referenceBody>Thin</referenceBody>
+							<north>
+								<offset>(0.025, -0.820)</offset>
+								<scale>(-0.15, -0.15)</scale>
+							</north>
+							<south>
+								<offset>(0.425, -0.460)</offset>
+								<scale>(-0.15, -0.15)</scale>
+							</south>
+							<east>
+								<offset>(0.49, -0.425)</offset>
+								<scale>(-0.15, -0.15)</scale>
+							</east>
+							<west>
+								<offset>(0.49, -0.425)</offset>
+								<scale>(-0.15, -0.15)</scale>
+							</west>
+						</li>
+						<li>
+							<bodyPart>CuteboldTail</bodyPart>
+							<referenceBody>Thin</referenceBody>
+							<north>
+								<offset>(-0.009, -0.555)</offset>
+								<scale>(-0.15, -0.15)</scale>
+							</north>
+							<south>
+								<offset>(0.41, -0.225)</offset>
+								<scale>(-0.15, -0.15)</scale>
+							</south>
+							<east>
+								<offset>(0.425, -0.215)</offset>
+								<scale>(-0.15, -0.15)</scale>
+							</east>
+							<west>
+								<offset>(0.425, -0.215)</offset>
+								<scale>(-0.15, -0.15)</scale>
+							</west>
+						</li>
+					</bodyAddons>
+				</graphics>
+			</li>
+			<li>
+				<!-- We have to use the scales on adults, it throws away the scaling in the race file.-->
+				<lifeStageDef>HumanlikeAdult</lifeStageDef>
+				<lifestageType>Adult</lifestageType>
+				<graphics>
+					<headScale>(-0.45, -0.45)</headScale>
+					<hairScale>(-0.45, -0.45)</hairScale>
+					<hatOffsetNS>(0.0, -0.01)</hatOffsetNS>
+					<hatOffsetEW>(0.05, 0.0)</hatOffsetEW>
+					<bodyScale>(-0.45, -0.45)</bodyScale>
+				</graphics>
+			</li>
+		</lifeStages>
+	</RimWorldChildren.RacialLifestageDef>
+</Defs>

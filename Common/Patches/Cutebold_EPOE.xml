@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- These patches are for replacing various things that could not be done in the regular xml files. -->
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Expanded Prosthetics and Organ Engineering</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<!-- Achutich Tail -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/HediffDef[defName="ArchotechCuteboldTail"]</xpath>
+					<value>
+						<defaultLabelColor>(225,237,114)</defaultLabelColor>
+					</value>
+				</li>
+				<!-- Advanced Bionic Tail -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="AdvancedBionicCuteboldTail"]</xpath>
+					<value>
+						<thingCategories Inherit="False">
+							<li>BodyPartsUltra</li>
+						</thingCategories>
+						<graphicData>
+							<texPath>Things/Item/BodyPart/AdvancedPart</texPath>
+						</graphicData>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="AdvancedBionicCuteboldTail"]/costList</xpath>
+					<value>
+						<costList>
+							<BionicCuteboldTail>1</BionicCuteboldTail>
+							<ComponentSpacer>5</ComponentSpacer>
+						</costList>
+					</value>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ThingDef[defName="AdvancedBionicCuteboldTail"]/statBases/MarketValue</xpath>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="AdvancedBionicCuteboldTail"]/statBases/WorkToMake</xpath>
+					<value>
+						<WorkToMake>10000</WorkToMake>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="AdvancedBionicCuteboldTail"]/statBases/DeteriorationRate</xpath>
+					<value>
+						<DeteriorationRate>0.0</DeteriorationRate>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="AdvancedBionicCuteboldTail"]/recipeMaker/recipeUsers</xpath>
+					<value>
+						<li>TableProsthetics</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="AdvancedBionicCuteboldTail"]/recipeMaker</xpath>
+					<value>
+						<researchPrerequisite>AdvancedBionics</researchPrerequisite>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/HediffDef[defName="AdvancedBionicCuteboldTail"]/defaultLabelColor</xpath>
+					<value>
+						<defaultLabelColor>(18,215,57)</defaultLabelColor>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/HediffDef[defName="AdvancedBionicCuteboldTail"]/addedPartProps/partEfficiency</xpath>
+					<value>
+						<partEfficiency>1.35</partEfficiency>
+					</value>
+				</li>
+				<!-- Bionic Tail -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="BionicCuteboldTail"]/costList</xpath>
+					<value>
+						<costList>
+							<ProstheticCuteboldTail>1</ProstheticCuteboldTail>
+							<Plasteel>45</Plasteel>
+							<ComponentIndustrial>5</ComponentIndustrial>
+						</costList>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="BionicCuteboldTail"]/statBases</xpath>
+					<value>
+						<WorkToMake>7500</WorkToMake>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="BionicCuteboldTail"]/statBases</xpath>
+					<value>
+						<DeteriorationRate>0.0</DeteriorationRate>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="BionicCuteboldTail"]</xpath>
+					<value>
+						<graphicData>
+							<texPath>Things/Item/BodyPart/BionicPart</texPath>
+						</graphicData>
+					</value>
+				</li>
+				<!-- Prosthetic Tail -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/HediffDef[defName="ProstheticCuteboldTail"]</xpath>
+					<value>
+						<defaultLabelColor>(102,178,255)</defaultLabelColor>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="ProstheticCuteboldTail"]/costList</xpath>
+					<value>
+						<costList>
+							<Steel>55</Steel>
+							<Plasteel>25</Plasteel>
+							<ComponentIndustrial>3</ComponentIndustrial>
+						</costList>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="ProstheticCuteboldTail"]/statBases</xpath>
+					<value>
+						<WorkToMake>5000</WorkToMake>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="ProstheticCuteboldTail"]/statBases</xpath>
+					<value>
+						<DeteriorationRate>0.0</DeteriorationRate>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="ProstheticCuteboldTail"]</xpath>
+					<value>
+						<graphicData>
+							<texPath>Things/Item/BodyPart/SimplePart</texPath>
+						</graphicData>
+					</value>
+				</li>
+				<!-- Fake Tail -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/HediffDef[defName="FakeCuteboldTail"]</xpath>
+					<value>
+						<defaultLabelColor>(148,117,14)</defaultLabelColor>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="FakeCuteboldTail"]/statBases</xpath>
+					<value>
+						<DeteriorationRate>0.0</DeteriorationRate>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="FakeCuteboldTail"]</xpath>
+					<value>
+						<graphicData>
+							<texPath>Things/Item/BodyPart/BasicProsthesis</texPath>
+						</graphicData>
+					</value>
+				</li>
+				<!-- Flesh Tail -->
+			</operations>
+		</match>
+	</Operation>
+</Patch>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<RecipeDef Name="SurgeryNaturalCuteboldTail" ParentName="SurgeryInstallBodyPartNaturalBase" Abstract="True">
+		<recipeUsers>
+			<li>Alien_Cutebold</li>
+		</recipeUsers>
+	</RecipeDef>
+	<RecipeDef Name="SurgeryArtificialCuteboldTail" ParentName="SurgeryInstallBodyPartArtificialBase" Abstract="True">
+		<recipeUsers>
+			<li>Alien_Cutebold</li>
+		</recipeUsers>
+	</RecipeDef>
+	<RecipeDef ParentName="SurgeryNaturalCuteboldTail">
+		<defName>InstallCuteboldTail</defName>
+		<label>install cutebold tail</label>
+		<description>Replace missing or damaged tail.</description>
+		<descriptionHyperlinks>
+			<ThingDef>CuteboldTail</ThingDef>
+		</descriptionHyperlinks>
+		<jobString>Installing tail.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>CuteboldTail</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>CuteboldTail</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>CuteboldTail</li>
+		</appliedOnFixedBodyParts>
+	</RecipeDef>
+	<RecipeDef ParentName="SurgeryArtificialCuteboldTail">
+		<defName>InstallFakeCuteboldTail</defName>
+		<label>install fake cutebold tail</label>
+		<description>Installs a fake cutebold tail.</description>
+		<descriptionHyperlinks>
+			<ThingDef>FakeCuteboldTail</ThingDef>
+		</descriptionHyperlinks>
+		<jobString>Installing fake tail.</jobString>
+		<workAmount>1200</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>FakeCuteboldTail</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>FakeCuteboldTail</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>CuteboldTail</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>FakeCuteboldTail</addsHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="SurgeryArtificialCuteboldTail">
+		<defName>InstallBionicCuteboldTail</defName>
+		<label>install bionic cutebold tail</label>
+		<description>Installs a bionic cutebold tail.</description>
+		<descriptionHyperlinks>
+			<ThingDef>BionicCuteboldTail</ThingDef>
+		</descriptionHyperlinks>
+		<jobString>Installing bionic tail.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BionicCuteboldTail</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BionicCuteboldTail</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>CuteboldTail</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>BionicCuteboldTail</addsHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="SurgeryArtificialCuteboldTail">
+		<defName>InstallProstheticCuteboldTail</defName>
+		<label>install prosthetic cutebold tail</label>
+		<description>Installs a prosthetic cutebold tail.</description>
+		<descriptionHyperlinks>
+			<ThingDef>ProstheticCuteboldTail</ThingDef>
+		</descriptionHyperlinks>
+		<jobString>Installing prosthetic tail.</jobString>
+		<skillRequirements>
+			<Medicine>4</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ProstheticCuteboldTail</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ProstheticCuteboldTail</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>CuteboldTail</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>ProstheticCuteboldTail</addsHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="SurgeryArtificialCuteboldTail">
+		<defName>InstallArchotechCuteboldTail</defName>
+		<label>install archotech cutebold tail</label>
+		<description>Installs an archotech cutebold tail.</description>
+		<descriptionHyperlinks>
+			<ThingDef>ArchotechCuteboldTail</ThingDef>
+		</descriptionHyperlinks>
+		<jobString>Installing archotech tail.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ArchotechCuteboldTail</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ArchotechCuteboldTail</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>CuteboldTail</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>ArchotechCuteboldTail</addsHediff>
+	</RecipeDef>
+</Defs>

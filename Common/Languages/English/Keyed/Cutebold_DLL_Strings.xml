@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+	<!-- Dark Adaptation -->
+	<Cutebold_Adaptation_String>Adaptation: </Cutebold_Adaptation_String>
+	<Cutebold_Adaptation_WearingGoggles>Goggles currently worn, no workspeed change.</Cutebold_Adaptation_WearingGoggles>
+	<Cutebold_DarkAdaptation_StatString>Dark Adaptation Calculation</Cutebold_DarkAdaptation_StatString>
+	<Cutebold_DarkAdaptation_StatPercentString>    Extra Percentage: +{0} ({1} (Raw Extra Percentage) x {2} (Adaptation, 100% max))</Cutebold_DarkAdaptation_StatPercentString>
+	
+	<!-- Settings -->
+	<Cutebold_RaceName>Cutebold Race</Cutebold_RaceName>
+	
+	<!-- General Settings -->
+	<Cutebold_Settings_GeneralLabel>General Settings</Cutebold_Settings_GeneralLabel>
+	
+	<Cutebold_Settings_ResourceCheckbox>Cutebolds are able to extract extra resources (requires restart):</Cutebold_Settings_ResourceCheckbox>
+	<Cutebold_Settings_ResourceCheckbox_SYR_HarvestYield> [SYR] Harvest Yield enabled, using that instead.</Cutebold_Settings_ResourceCheckbox_SYR_HarvestYield>
+	<Cutebold_Settings_ResourceCheckbox_ToolTip_Enabled>Human missed a spot!</Cutebold_Settings_ResourceCheckbox_ToolTip_Enabled>
+	<Cutebold_Settings_ResourceCheckbox_ToolTip_Disabled>Humans mis... didn't miss a spot?</Cutebold_Settings_ResourceCheckbox_ToolTip_Disabled>
+	
+	<Cutebold_Settings_AltYield>{0}Use alternative yield patching method (requires restart):</Cutebold_Settings_AltYield>
+	<Cutebold_Settings_AltYield_ToolTip>Eeeeeek!</Cutebold_Settings_AltYield_ToolTip>
+	
+	<Cutebold_Settings_DarkAdaptation>Cutebolds can adapt to see in the dark (requires restart):</Cutebold_Settings_DarkAdaptation>
+	<Cutebold_Settings_DarkAdaptation_ToolTip>Hot sun, it burns eyes!</Cutebold_Settings_DarkAdaptation_ToolTip>
+	
+	<Cutebold_Settings_DetachableParts>Cutebold ears and tail will be visually gone when the body part becomes lost:</Cutebold_Settings_DetachableParts>
+	<Cutebold_Settings_DetachableParts_ToolTip>No ears or tail make a sadbold.</Cutebold_Settings_DetachableParts_ToolTip>
+	
+	<!-- Dark Adaptation Settings -->
+	<Cutebold_Settings_DarkAdaptation_Label>Dark Adaptation Settings</Cutebold_Settings_DarkAdaptation_Label>
+	
+	<Cutebold_Settings_SunSickness>Cutebolds don't get sun sickness:</Cutebold_Settings_SunSickness>
+	<Cutebold_Settings_SunSickness_Tooltip>Cutebolds stronger than sun!</Cutebold_Settings_SunSickness_Tooltip>
+	
+	<Cutebold_Settings_EyeGlow>Cutebolds eyes glow when dark adapted:</Cutebold_Settings_EyeGlow>
+	<Cutebold_Settings_EyeGlow_ToolTip>Shiny eyes~</Cutebold_Settings_EyeGlow_ToolTip>
+	
+	<Cutebold_Settings_EyeGlowBlink>{0}Cutebolds blink in the darkness:</Cutebold_Settings_EyeGlowBlink>
+	<Cutebold_Settings_EyeGlowBlink_ToolTip>No dry eyes here!</Cutebold_Settings_EyeGlowBlink_ToolTip>
+	
+	<Cutebold_Settings_Ideology_Darkness>Cutebold adaptation when darkness ideology is used: (requires restart)</Cutebold_Settings_Ideology_Darkness>
+	<Cutebold_Settings_Ideology_Darkness_ToolTip>Worship darkness!</Cutebold_Settings_Ideology_Darkness_ToolTip>
+	<Cutebold_Settings_Ideology_Darkness_ToolTip_NoIdeology>Cutebold says:\nRequires Ideology DLC!</Cutebold_Settings_Ideology_Darkness_ToolTip_NoIdeology>
+	
+	<Cutebold_Settings_Ideology_Darkness_CuteboldMethod>Adaptation Method</Cutebold_Settings_Ideology_Darkness_CuteboldMethod>
+	<Cutebold_Settings_Ideology_Darkness_CuteboldMethod_ToolTip>Cutebolds become adapted to the darkness.</Cutebold_Settings_Ideology_Darkness_CuteboldMethod_ToolTip>
+	<Cutebold_Settings_Ideology_Darkness_IdeologyMethod>Ideology Method</Cutebold_Settings_Ideology_Darkness_IdeologyMethod>
+	<Cutebold_Settings_Ideology_Darkness_IdeologyMethod_ToolTip>Cutebolds use Darkness Ideology Meme</Cutebold_Settings_Ideology_Darkness_IdeologyMethod_ToolTip>
+	<Cutebold_Settings_Ideology_Darkness_HybridMethod>Hybrid Method</Cutebold_Settings_Ideology_Darkness_HybridMethod>
+	<Cutebold_Settings_Ideology_Darkness_HybridMethod_ToolTip>Cutebolds become adapted to the darkness, but don't go below 100% workspeed in bright light.</Cutebold_Settings_Ideology_Darkness_HybridMethod_ToolTip>
+	
+	<!-- Mod Specific Settings -->
+	<Cutebold_Settings_ModSpecific>Mod Specific Settings</Cutebold_Settings_ModSpecific>
+
+	<Cutebold_Settings_DBH_Patches>Enable Dub's Bad Hygene Patches</Cutebold_Settings_DBH_Patches>
+	<Cutebold_Settings_DBH_Patches_Tooltip>Cleanbolds!\n\n(Allows for baby cutebolds to be washed.)</Cutebold_Settings_DBH_Patches_Tooltip>
+	
+	<!-- Debug Settings -->
+	<Cutebold_Settings_DebugLabel>Debug Stuff</Cutebold_Settings_DebugLabel>
+	
+	<Cutebold_Settings_AssemblyVersion>Cutebold Assembly Version: </Cutebold_Settings_AssemblyVersion>
+	
+	<Cutebold_Settings_CheckPatches>Check for all patches to methods that this mod patches (used for debugging):</Cutebold_Settings_CheckPatches>
+	<Cutebold_Settings_CheckPatches_Button>Check</Cutebold_Settings_CheckPatches_Button>
+	<Cutebold_Settings_CheckPatches_ToolTip>Stick fingers in places...</Cutebold_Settings_CheckPatches_ToolTip>
+
+	<Cutebold_Settings_CheckAllPatches>Check for all the patches applied to RimWorld (used for debugging)</Cutebold_Settings_CheckAllPatches>
+	<Cutebold_Settings_CheckAllPatches_ToolTip>Stick fingers in ALL places...</Cutebold_Settings_CheckAllPatches_ToolTip>
+</LanguageData>

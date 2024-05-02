@@ -1,0 +1,1115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- These are referenced in the C# harmony patch by these spawnCategories:
+-CuteboldRegularChildBackstories
+-CuteboldSlaveChildBackstories
+-CuteboldRegularAdultBackstories
+-CuteboldSlaveAdultBackstories
+-CuteboldServantAdultBackstories
+
+CuteboldNaturalMeditate is used to enable using Anima trees via patch.
+-->
+<Defs>
+	<!-- ============================ Childhood ============================ -->
+	<!-- +4 Numbers are relative and random in base rimworld ¯\_(ツ)_/¯ -->
+	<AlienRace.AlienBackstoryDef>
+		<defName>CuteboldForestChild</defName>
+		<title>Cutebold forest child</title>
+		<titleShort>greenbold</titleShort>
+		<baseDesc>[PAWN_nameDef] enjoyed the world around [PAWN_possessive] tribe's land. [PAWN_pronoun] found happiness in the quiet forests away from the other [PAWN_alienRace]s. [PAWN_possessive] days were full of playing with wild animals and looking at beautiful flowers.</baseDesc>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<maleCommonality>75</maleCommonality>
+		<femaleCommonality>75</femaleCommonality>
+		<slot>Childhood</slot>
+		<forcedTraitsChance>
+			<li>
+				<options>
+					<li>
+						<defName>Tough</defName>
+					</li>
+					<li>
+						<defName>Nimble</defName>
+					</li>
+				</options>
+				<count>1</count>
+				<chance>50</chance>
+			</li>
+		</forcedTraitsChance>
+		<skillGains>
+			<Plants>2</Plants>
+			<Animals>2</Animals>
+		</skillGains>
+		<spawnCategories>
+			<li>CuteboldBackstory</li>
+			<li>CuteboldFighter</li>
+			<li>CuteboldTraderBackstory</li>
+			<li>CuteboldSlaveAdultBackstory</li>
+			<li>CuteboldNaturalMeditate</li>
+			<li>CuteboldRegularChildBackstories</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef>
+		<defName>CuteboldLonerChild</defName>
+		<title>Cutebold lone child</title>
+		<titleShort>crow</titleShort>
+		<baseDesc>[PAWN_nameDef] was not a well loved [PAWN_alienRace]. [PAWN_pronoun] was left alone by the other younglings, not invited to play games and have fun. [PAWN_possessive] time was spent with the tribe's animals, tending to them, or helping [PAWN_possessive]'s parents with making trinkets.</baseDesc>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<maleCommonality>40</maleCommonality>
+		<femaleCommonality>40</femaleCommonality>
+		<slot>Childhood</slot>
+		<forcedTraitsChance>
+			<li>
+				<defName>AnnoyingVoice</defName>
+				<chance>15</chance>
+			</li>
+		</forcedTraitsChance>
+		<skillGains>
+			<Animals>3</Animals>
+			<Crafting>3</Crafting>
+			<Social>-2</Social>
+		</skillGains>
+		<spawnCategories>
+			<li>CuteboldBackstory</li>
+			<li>CuteboldSlaveAdultBackstory</li>
+			<li>CuteboldNaturalMeditate</li>
+			<li>CuteboldRegularChildBackstories</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef>
+		<defName>CuteboldSocialChild</defName>
+		<title>Cutebold social child</title>
+		<titleShort>butterfly</titleShort>
+		<baseDesc>[PAWN_nameDef] was a well loved [PAWN_alienRace]. [PAWN_possessive]'s days were full of games, play fighting, and having fun.</baseDesc>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<maleCommonality>75</maleCommonality>
+		<femaleCommonality>75</femaleCommonality>
+		<slot>Childhood</slot>
+		<disallowedTraits>
+			<AnnoyingVoice />
+			<CreepyBreathing />
+			<Abrasive />
+		</disallowedTraits>
+		<skillGains>
+			<Social>2</Social>
+			<Melee>2</Melee>
+		</skillGains>
+		<spawnCategories>
+			<li>CuteboldBackstory</li>
+			<li>CuteboldRefugee</li>
+			<li>CuteboldFighter</li>
+			<li>CuteboldTraderBackstory</li>
+			<li>CuteboldNaturalMeditate</li>
+			<li>CuteboldRegularChildBackstories</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef>
+		<defName>CuteboldFarmChild</defName>
+		<title>Cutebold farm child</title>
+		<titleShort>flower</titleShort>
+		<baseDesc>[PAWN_nameDef] helped around [PAWN_possessive] tribe's fields, taking care of plants and animals. [PAWN_pronoun] enjoyed the outdoors and fresh air.</baseDesc>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<maleCommonality>100</maleCommonality>
+		<femaleCommonality>100</femaleCommonality>
+		<slot>Childhood</slot>
+		<forcedTraitsChance>
+			<li>
+				<options>
+					<li>
+						<defName>Tough</defName>
+					</li>
+					<li>
+						<defName>Gourmand</defName>
+					</li>
+					<li>
+						<defName>Ascetic</defName>
+					</li>
+				</options>
+				<count>1</count>
+				<chance>50</chance>
+			</li>
+		</forcedTraitsChance>
+		<skillGains>
+			<Plants>3</Plants>
+			<Animals>3</Animals>
+			<Mining>-2</Mining>
+		</skillGains>
+		<spawnCategories>
+			<li>CuteboldBackstory</li>
+			<li>CuteboldRefugee</li>
+			<li>CuteboldFighter</li>
+			<li>CuteboldTraderBackstory</li>
+			<li>CuteboldSlaveAdultBackstory</li>
+			<li>CuteboldNaturalMeditate</li>
+			<li>CuteboldRegularChildBackstories</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef>
+		<defName>CuteboldMineChild</defName>
+		<title>Cutebold mining child</title>
+		<titleShort>digger</titleShort>
+		<baseDesc>[PAWN_nameDef] liked to dig holes when [PAWN_pronoun] was a hatchling. [PAWN_possessive] love for making holes did not stop as [PAWN_pronoun] got older, helping to dig tunnels and decorate the walls.</baseDesc>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<maleCommonality>100</maleCommonality>
+		<femaleCommonality>100</femaleCommonality>
+		<slot>Childhood</slot>
+		<forcedTraitsChance>
+			<li>
+				<options>
+					<li>
+						<defName>Tough</defName>
+					</li>
+					<li>
+						<defName>NightOwl</defName>
+					</li>
+				</options>
+				<count>1</count>
+				<chance>30</chance>
+			</li>
+		</forcedTraitsChance>
+		<skillGains>
+			<Mining>2</Mining>
+			<Artistic>1</Artistic>
+			<Melee>1</Melee>
+		</skillGains>
+		<spawnCategories>
+			<li>CuteboldBackstory</li>
+			<li>CuteboldFighter</li>
+			<li>CuteboldNaturalMeditate</li>
+			<li>CuteboldRegularChildBackstories</li>
+			<li>CuteboldUndergroundChildBackstories</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef>
+		<defName>CuteboldBratChild</defName>
+		<title>Cutebold bratty child</title>
+		<titleShort>brat</titleShort>
+		<baseDesc>[PAWN_nameDef] was a brat growing up. [PAWN_pronoun] liked to pick on other younglings, throw rocks, and get into fights. [PAWN_pronoun] would sometimes find and make fun of lonely [PAWN_alienRace]s.</baseDesc>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<maleCommonality>40</maleCommonality>
+		<femaleCommonality>40</femaleCommonality>
+		<slot>Childhood</slot>
+		<forcedTraitsChance>
+			<li>
+				<options>
+					<li>
+						<defName>Tough</defName>
+					</li>
+					<li>
+						<defName>Abrasive</defName>
+					</li>
+					<li>
+						<defName>Psychopath</defName>
+					</li>
+					<li>
+						<defName>Brawler</defName>
+					</li>
+				</options>
+				<count>2</count>
+				<chance>30</chance>
+			</li>
+		</forcedTraitsChance>
+		<skillGains>
+			<Melee>3</Melee>
+			<Shooting>2</Shooting>
+			<Social>-1</Social>
+		</skillGains>
+		<spawnCategories>
+			<li>CuteboldBackstory</li>
+			<li>CuteboldFighter</li>
+			<li>CuteboldTraderBackstory</li>
+			<li>CuteboldSlaveAdultBackstory</li>
+			<li>CuteboldNaturalMeditate</li>
+			<li>CuteboldRegularChildBackstories</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef>
+		<defName>CuteboldArtisticChild</defName>
+		<title>Cutebold artistic child</title>
+		<titleShort>messy</titleShort>
+		<baseDesc>[PAWN_nameDef] was often found making a mess of things. [PAWN_pronoun] was always covered from head to tail in mud from making [PAWN_possessive] artistic mounds of dirt wherever water was found. [PAWN_pronoun] enjoyed showing off [PAWN_possessive] latest creations to anyone that passed by.</baseDesc>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<maleCommonality>40</maleCommonality>
+		<femaleCommonality>40</femaleCommonality>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Artistic>2</Artistic>
+			<Crafting>1</Crafting>
+			<Social>1</Social>
+		</skillGains>
+		<spawnCategories>
+			<li>CuteboldBackstory</li>
+			<li>CuteboldSlaveAdultBackstory</li>
+			<li>CuteboldTraderBackstory</li>
+			<li>CuteboldNaturalMeditate</li>
+			<li>CuteboldRegularChildBackstories</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef>
+		<defName>CuteboldFireChild</defName>
+		<title>Cutebold fire child</title>
+		<titleShort>salamander</titleShort>
+		<baseDesc>[PAWN_nameDef] had a passion for fire, frequently being on the wrong end of a fiery stick. This never stopped [PAWN_objective] from playing with it; [PAWN_pronoun] loved to cook little critters, usually the salamanders that were found around the logs, and danced with lit sticks to show off.</baseDesc>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<maleCommonality>50</maleCommonality>
+		<femaleCommonality>50</femaleCommonality>
+		<slot>Childhood</slot>
+		<forcedTraitsChance>
+			<li>
+				<defName>Pyromaniac</defName>
+				<chance>25</chance>
+			</li>
+		</forcedTraitsChance>
+		<skillGains>
+			<Medicine>2</Medicine>
+			<Cooking>1</Cooking>
+			<Artistic>1</Artistic>
+		</skillGains>
+		<spawnCategories>
+			<li>CuteboldBackstory</li>
+			<li>CuteboldSlaveAdultBackstory</li>
+			<li>CuteboldFighter</li>
+			<li>CuteboldNaturalMeditate</li>
+			<li>CuteboldRegularChildBackstories</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef>
+		<defName>CuteboldRockChild</defName>
+		<title>Cutebold rock child</title>
+		<titleShort>skipper</titleShort>
+		<baseDesc>[PAWN_nameDef] would often play in the rock fields outside the mines, digging through the large chunks to find that one stone that [PAWN_pronoun] could skip across water the farthest.</baseDesc>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<maleCommonality>40</maleCommonality>
+		<femaleCommonality>40</femaleCommonality>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Shooting>3</Shooting>
+			<Mining>1</Mining>
+		</skillGains>
+		<spawnCategories>
+			<li>CuteboldBackstory</li>
+			<li>CuteboldSlaveAdultBackstory</li>
+			<li>CuteboldNaturalMeditate</li>
+			<li>CuteboldRegularChildBackstories</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef>
+		<defName>CuteboldRefugeeChild</defName>
+		<title>Cutebold child refugee</title>
+		<titleShort>refugee</titleShort>
+		<baseDesc>[PAWN_nameDef] was forced from [PAWN_possessive] lands when [PAWN_pronoun] was a youngling, traveling with other [PAWN_alienRace]s from place to place searching for a new land to call home.</baseDesc>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<maleCommonality>100</maleCommonality>
+		<femaleCommonality>100</femaleCommonality>
+		<slot>Childhood</slot>
+		<forcedTraitsChance>
+			<li>
+				<options>
+					<li>
+						<defName Degree="-1">NaturalMood</defName>
+					</li>
+					<li>
+						<defName Degree="-2">NaturalMood</defName>
+					</li>
+					<li>
+						<defName Degree="-1">Nerves</defName>
+					</li>
+					<li>
+						<defName Degree="-2">Nerves</defName>
+					</li>
+				</options>
+				<count>1</count>
+				<chance>100</chance>
+			</li>
+		</forcedTraitsChance>
+		<skillGains>
+			<Cooking>1</Cooking>
+			<Crafting>1</Crafting>
+			<Medicine>1</Medicine>
+			<Social>1</Social>
+		</skillGains>
+		<spawnCategories>
+			<li>CuteboldRefugee</li>
+			<li>CuteboldSlaveAdultBackstory</li>
+			<li>CuteboldNaturalMeditate</li>
+			<li>CuteboldRegularChildBackstories</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ============================ Adulthood ============================ -->
+	<!-- +8 Numbers are relative and random in base rimworld ¯\_(ツ)_/¯ -->
+	<AlienRace.AlienBackstoryDef>
+		<defName>CuteboldHunterAdult</defName>
+		<title>Cutebold hunter</title>
+		<titleShort>hunter</titleShort>
+		<baseDesc>[PAWN_nameDef] was one of [PAWN_possessive] tribe's hunters. [PAWN_pronoun] often tracked down animals deep in the wilds to be tamed or hunted other animals to be killed for food. When not in the wilds around [PAWN_possessive] village, [PAWN_pronoun] would help tend and train the tribe's animals.</baseDesc>
+		<slot>Adulthood</slot>
+		<maleCommonality>80</maleCommonality>
+		<femaleCommonality>80</femaleCommonality>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<requiredWorkTags>
+			<li>Hunting</li>
+			<li>Animals</li>
+		</requiredWorkTags>
+		<skillGains>
+			<Shooting>3</Shooting>
+			<Animals>3</Animals>
+			<Medicine>2</Medicine>
+		</skillGains>
+		<spawnCategories>
+			<li>CuteboldBackstory</li>
+			<li>CuteboldRefugee</li>
+			<li>CuteboldFighter</li>
+			<li>CuteboldTraderBackstory</li>
+			<li>CuteboldSlaveChildBackstory</li>
+			<li>CuteboldRegularAdultBackstories</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef>
+		<defName>CuteboldWarriorAdult</defName>
+		<title>Cutebold warrior</title>
+		<titleShort>warrior</titleShort>
+		<baseDesc>[PAWN_nameDef] helped guard [PAWN_possessive] tribe from attacking animals and the mean tallfolk. [PAWN_pronoun] learned how to use whacky sticks, stabby shinies, and rock throwers to stop the bad things from killing [PAWN_possessive] yipkin.\n\nIt was rare, but sometimes [PAWN_pronoun] would go out into the big world with a some other [PAWN_alienRace]s. They would attack other mean things, rescue a [PAWN_alienRace] from danger, or even search for new places full of shinies.</baseDesc>
+		<slot>Adulthood</slot>
+		<maleCommonality>70</maleCommonality>
+		<femaleCommonality>70</femaleCommonality>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<skillGains>
+			<Melee>4</Melee>
+			<Shooting>4</Shooting>
+		</skillGains>
+		<spawnCategories>
+			<li>CuteboldBackstory</li>
+			<li>CuteboldRefugee</li>
+			<li>CuteboldFighter</li>
+			<li>CuteboldTraderBackstory</li>
+			<li>CuteboldSlaveChildBackstory</li>
+			<li>CuteboldRegularAdultBackstories</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef>
+		<defName>CuteboldFarmerAdult</defName>
+		<title>Cutebold farmer</title>
+		<titleShort>farmer</titleShort>
+		<baseDesc>[PAWN_nameDef] worked the fields day in and day out; plowing soil, planting the crops, and harvesting the fruits of [PAWN_possessive] labor. When there was down time, [PAWN_possessive] raised the tribe's animals, training them to help around the village. [PAWN_pronoun] kept the animals happy and the plants tall so that [PAWN_possessive] tribe could live a peaceful life.</baseDesc>
+		<slot>Adulthood</slot>
+		<maleCommonality>100</maleCommonality>
+		<femaleCommonality>100</femaleCommonality>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<requiredWorkTags>
+			<li>PlantWork</li>
+			<li>Animals</li>
+		</requiredWorkTags>
+		<skillGains>
+			<Plants>6</Plants>
+			<Animals>2</Animals>
+		</skillGains>
+		<spawnCategories>
+			<li>CuteboldBackstory</li>
+			<li>CuteboldRefugee</li>
+			<li>CuteboldTraderBackstory</li>
+			<li>CuteboldRegularAdultBackstories</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef>
+		<defName>CuteboldCrafterAdult</defName>
+		<title>Cutebold crafter</title>
+		<titleShort>crafter</titleShort>
+		<baseDesc>[PAWN_nameDef] would often create the tools, clothing, and trinkets for [PAWN_possessive] tribe. [PAWN_pronoun] loved to take the different materials around [PAWN_possessive] and turn it into something wonderful. [PAWN_pronoun] enjoyed decorating [PAWN_possessive] crafts, putting [PAWN_possessive] own touch on them. Every once in a while [PAWN_pronoun] would get an idea stuck in [PAWN_possessive] noggin and would craft beautiful shapes for all [PAWN_possessive] tribekin to admire.</baseDesc>
+		<slot>Adulthood</slot>
+		<maleCommonality>70</maleCommonality>
+		<femaleCommonality>70</femaleCommonality>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<requiredWorkTags>
+			<li>Crafting</li>
+			<li>Artistic</li>
+		</requiredWorkTags>
+		<skillGains>
+			<Crafting>6</Crafting>
+			<Artistic>2</Artistic>
+		</skillGains>
+		<spawnCategories>
+			<li>CuteboldBackstory</li>
+			<li>CuteboldRefugee</li>
+			<li>CuteboldTraderBackstory</li>
+			<li>CuteboldSlaveChildBackstory</li>
+			<li>CuteboldRegularAdultBackstories</li>
+			<li>CuteboldUndergroundAdultBackstories</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef>
+		<defName>CuteboldDiggerAdult</defName>
+		<title>Cutebold digger</title>
+		<titleShort>digger</titleShort>
+		<baseDesc>[PAWN_nameDef] could be found digging deep tunnels in the dirt and rock, finding shinies and lots of very hard rocks. [PAWN_pronoun] felt happiest when all [PAWN_pronoun] could hear was the sound of [PAWN_possessive] shovel and pick against the ground. When [PAWN_nameDef] was not busy mining, [PAWN_pronoun] could be found building the stools and workshops that [PAWN_possessive] tribekin would use.</baseDesc>
+		<slot>Adulthood</slot>
+		<maleCommonality>100</maleCommonality>
+		<femaleCommonality>100</femaleCommonality>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<requiredWorkTags>
+			<li>ManualSkilled</li>
+		</requiredWorkTags>
+		<skillGains>
+			<Mining>4</Mining>
+			<Construction>4</Construction>
+		</skillGains>
+		<spawnCategories>
+			<li>CuteboldBackstory</li>
+			<li>CuteboldRefugee</li>
+			<li>CuteboldFighter</li>
+			<li>CuteboldSlaveChildBackstory</li>
+			<li>CuteboldRegularAdultBackstories</li>
+			<li>CuteboldUndergroundAdultBackstories</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef>
+		<defName>CuteboldSpiritualAdult</defName>
+		<title>Cutebold spirit healer</title>
+		<titleShort>healer</titleShort>
+		<baseDesc>[PAWN_nameDef] was a spiritual [PAWN_alienRace]. [PAWN_pronoun] would help the elders with dances and stories around the large fires of [PAWN_possessive] tribe. [PAWN_pronoun] would frequently help the hurt tribal members that were injured from attacking animals and tallfolk. [PAWN_nameDef] loved talking to everyone and enjoyed keeping [PAWN_possessive] yipkin happy.</baseDesc>
+		<slot>Adulthood</slot>
+		<maleCommonality>65</maleCommonality>
+		<femaleCommonality>65</femaleCommonality>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<requiredWorkTags>
+			<li>Social</li>
+			<li>Caring</li>
+		</requiredWorkTags>
+		<skillGains>
+			<Social>4</Social>
+			<Intellectual>1</Intellectual>
+			<Medicine>2</Medicine>
+			<Artistic>1</Artistic>
+		</skillGains>
+		<spawnCategories>
+			<li>CuteboldBackstory</li>
+			<li>CuteboldRefugee</li>
+			<li>CuteboldFighter</li>
+			<li>CuteboldTraderBackstory</li>
+			<li>CuteboldRegularAdultBackstories</li>
+			<li>CuteboldUndergroundAdultBackstories</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef>
+		<defName>CuteboldFireTenderAdult</defName>
+		<title>Cutebold fire tender</title>
+		<titleShort>fire tender</titleShort>
+		<baseDesc>[PAWN_nameDef] tended the various fires around [PAWN_possessive] village. [PAWN_pronoun] would often go out into the wilds around [PAWN_possessive] village to harvest the wood for the fires. Besides keeping the fires lit, [PAWN_pronoun] would cook for [PAWN_possessive] fellow villagers, using anything somewhat edible that [PAWN_pronoun] could find. </baseDesc>
+		<slot>Adulthood</slot>
+		<maleCommonality>60</maleCommonality>
+		<femaleCommonality>60</femaleCommonality>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<requiredWorkTags>
+			<li>Cooking</li>
+			<li>PlantWork</li>
+		</requiredWorkTags>
+		<skillGains>
+			<Cooking>4</Cooking>
+			<Plants>2</Plants>
+			<Social>2</Social>
+		</skillGains>
+		<spawnCategories>
+			<li>CuteboldBackstory</li>
+			<li>CuteboldRefugee</li>
+			<li>CuteboldFighter</li>
+			<li>CuteboldTraderBackstory</li>
+			<li>CuteboldSlaveChildBackstory</li>
+			<li>CuteboldRegularAdultBackstories</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef>
+		<defName>CuteboldrefugeeAdult</defName>
+		<title>Cutebold refugee</title>
+		<titleShort>refugee</titleShort>
+		<baseDesc>[PAWN_nameDef] was a refugee in search for a new place to call home. [PAWN_pronoun] saw many lands; from the cold and white north, to the icky and sticky swamps, and even the large piles of hot, coarse sands that [PAWN_pronoun] could not get out of [PAWN_possessive] shoes and trinkets.</baseDesc>
+		<slot>Adulthood</slot>
+		<maleCommonality>100</maleCommonality>
+		<femaleCommonality>100</femaleCommonality>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<forcedTraitsChance>
+			<li>
+				<options>
+					<li>
+						<defName Degree="1">SpeedOffset</defName>
+					</li>
+					<li>
+						<defName Degree="2">SpeedOffset</defName>
+					</li>
+					<li>
+						<defName Degree="1">Nerves</defName>
+					</li>
+					<li>
+						<defName Degree="2">Nerves</defName>
+					</li>
+				</options>
+				<count>1</count>
+				<chance>100</chance>
+			</li>
+		</forcedTraitsChance>
+		<skillGains>
+			<Cooking>2</Cooking>
+			<Construction>2</Construction>
+			<Social>2</Social>
+			<Medicine>2</Medicine>
+		</skillGains>
+		<spawnCategories>
+			<li>CuteboldRefugee</li>
+			<li>CuteboldSlaveChildBackstory</li>
+			<li>CuteboldRegularAdultBackstories</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- Advanced Adult, from Psyra-->
+	<AlienRace.AlienBackstoryDef>
+		<!-- High stats, old cutebold-->
+		<defName>CuteboldElderAdult</defName>
+		<title>Cutebold elder</title>
+		<titleShort>elder</titleShort>
+		<baseDesc>[PAWN_nameDef] was a well-respected tribal elder. While [PAWN_possessive] wisdom was important to the tribe, the tenets of living a full life were a familiar and cherished subject to all [PAWN_alienRace]s who visited [PAWN_objective]. While [PAWN_nameDef] may be old and never wielded a whacky stick or a stabby shiny, [PAWN_pronoun] had lived a full life, passing down [PAWN_possessive] many experiences and amazing tales to yipkin, young and old.</baseDesc>
+		<slot>Adulthood</slot>
+		<maleCommonality>100</maleCommonality>
+		<femaleCommonality>100</femaleCommonality>
+		<bioAgeRange>28~60</bioAgeRange>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<requiredWorkTags>
+			<li>Social</li>
+		</requiredWorkTags>
+		<workDisables>
+			<li>Violent</li>
+			<li>Hauling</li>
+		</workDisables>
+		<skillGains>
+			<Construction>1</Construction>
+			<Mining>1</Mining>
+			<Cooking>2</Cooking>
+			<Plants>1</Plants>
+			<Animals>1</Animals>
+			<Crafting>1</Crafting>
+			<Artistic>1</Artistic>
+			<Medicine>2</Medicine>
+			<Social>3</Social>
+			<Intellectual>2</Intellectual>
+		</skillGains>
+		<spawnCategories>
+			<li>CuteboldBackstory</li>
+			<li>CuteboldSlaveChildBackstory</li>
+			<li>CuteboldRefugee</li>
+			<li>CuteboldTraderBackstory</li>
+			<li>CuteboldRegularAdultBackstories</li>
+			<li>CuteboldUndergroundAdultBackstories</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef>
+		<defName>CuteboldChieftainAdult</defName>
+		<title>Cutebold chieftain</title>
+		<titleShort>chieftain</titleShort>
+		<baseDesc>[PAWN_nameDef] was the chieftain of [PAWN_possessive] tribe for quite a long time. [PAWN_pronoun] helped rally [PAWN_possessive] fellow [PAWN_alienRace]s to face scary dangers and overcome big problems. [PAWN_pronoun] was a good leader that quickly took charge when [PAWN_possessive] tribe needed help and was very well loved by them. [PAWN_nameDef] was often found giving advice, cheering up others when needed, and helping out all around [PAWN_possessive] tribe.</baseDesc>
+		<slot>Adulthood</slot>
+		<maleCommonality>50</maleCommonality>
+		<femaleCommonality>50</femaleCommonality>
+		<bioAgeRange>20~60</bioAgeRange>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<requiredWorkTags>
+			<li>Violent</li>
+			<li>Social</li>
+		</requiredWorkTags>
+		<forcedTraitsChance>
+			<li>
+				<options>
+					<li>
+						<defName Degree="1">NaturalMood</defName>
+					</li>
+					<li>
+						<defName Degree="2">NaturalMood</defName>
+					</li>
+					<li>
+						<defName Degree="1">Nerves</defName>
+					</li>
+					<li>
+						<defName Degree="2">Nerves</defName>
+					</li>
+				</options>
+				<count>1</count>
+				<chance>100</chance>
+			</li>
+		</forcedTraitsChance>
+		<skillGains>
+			<Shooting>5</Shooting>
+			<Melee>5</Melee>
+			<Intellectual>2</Intellectual>
+			<Social>2</Social>
+		</skillGains>
+		<spawnCategories>
+			<li>CuteboldBackstory</li>
+			<li>CuteboldRefugee</li>
+			<li>CuteboldFighter</li>
+			<li>CuteboldTraderBackstory</li>
+			<li>CuteboldSlaveChildBackstory</li>
+			<li>CuteboldUndergroundAdultBackstories</li>
+			<li>CuteboldRegularAdultBackstories</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef>
+		<defName>CuteboldTinkererAdult</defName>
+		<title>Cutebold tinkerer</title>
+		<titleShort>tinkerer</titleShort>
+		<baseDesc>[PAWN_nameDef] was a sharp-eyed [PAWN_alienRace]; often full of insight into the workings of other races. Where other [PAWN_alienRace]s would turn an old ruin they found into a refuge, [PAWN_pronoun] saw an opportunity to learn how old things worked mechanically. This lead [PAWN_possessive] to experiment with designs and ideas often considered unusual, weird, and sometimes just plain bizarre by [PAWN_possessive] tribekin.</baseDesc>
+		<slot>Adulthood</slot>
+		<maleCommonality>65</maleCommonality>
+		<femaleCommonality>65</femaleCommonality>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<requiredWorkTags>
+			<li>Crafting</li>
+		</requiredWorkTags>
+		<workDisables>
+			<li>PlantWork</li>
+			<li>Caring</li>
+		</workDisables>
+		<skillGains>
+			<Construction>6</Construction>
+			<Crafting>3</Crafting>
+			<Intellectual>3</Intellectual>
+			<Social>-3</Social>
+		</skillGains>
+		<spawnCategories>
+			<li>CuteboldBackstory</li>
+			<li>CuteboldRefugee</li>
+			<li>CuteboldSlaveChildBackstory</li>
+			<li>CuteboldRegularAdultBackstories</li>
+			<li>CuteboldUndergroundAdultBackstories</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef>
+		<defName>CuteboldPainterAdult</defName>
+		<title>Cutebold painter</title>
+		<titleShort>trouble</titleShort>
+		<baseDesc>[PAWN_nameDef] was an artistic [PAWN_alienRace], prone to wild flights of fantasy using everything from firepit charcoal to dyes hand-made from local plants and mushrooms and even scraps from the previous night’s dinner. No cave wall was safe when [PAWN_pronoun] was inspired to paint whatever was on [PAWN_possessive] mind at the time.\n\n[PAWN_pronoun] even learned to turn mud and rocks into beautiful depiction of [PAWN_possessive] current mindset, which were loved not only by [PAWN_objective], but [PAWN_possessive] tribekin as well.</baseDesc>
+		<slot>Adulthood</slot>
+		<maleCommonality>45</maleCommonality>
+		<femaleCommonality>45</femaleCommonality>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<requiredWorkTags>
+			<li>Artistic</li>
+		</requiredWorkTags>
+		<workDisables>
+			<li>Cooking</li>
+			<li>Crafting</li>
+			<li>Hauling</li>
+			<li>Cleaning</li>
+		</workDisables>
+		<skillGains>
+			<Artistic>8</Artistic>
+			<Plants>4</Plants>
+			<Shooting>-2</Shooting>
+		</skillGains>
+		<spawnCategories>
+			<li>CuteboldBackstory</li>
+			<li>CuteboldRefugee</li>
+			<li>CuteboldSlaveChildBackstory</li>
+			<li>CuteboldRegularAdultBackstories</li>
+			<li>CuteboldUndergroundAdultBackstories</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef>
+		<defName>CuteboldSniperAdult</defName>
+		<title>Cutebold bullfrogs-eye</title>
+		<titleShort>bullfrogs-eye</titleShort>
+		<baseDesc>[PAWN_nameDef] was an alert [PAWN_alienRace] known for [PAWN_possessive] exceptional aim, from being able to skip stones better than the rest of [PAWN_possessive] tribe and always finding the best targets when hunting for food. [PAWN_pronoun] was an exceptional shot; like a frog, snatching a fly right out of the air, and even knew ways to make something yummy out of spooky things that were being mean to [PAWN_possessive] tribe.</baseDesc>
+		<slot>Adulthood</slot>
+		<maleCommonality>60</maleCommonality>
+		<femaleCommonality>60</femaleCommonality>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<requiredWorkTags>
+			<li>Violent</li>
+			<li>Cooking</li>
+		</requiredWorkTags>
+		<skillGains>
+			<Shooting>8</Shooting>
+			<Cooking>3</Cooking>
+		</skillGains>
+		<spawnCategories>
+			<li>CuteboldBackstory</li>
+			<li>CuteboldRefugee</li>
+			<li>CuteboldSlaveChildBackstory</li>
+			<li>CuteboldRegularAdultBackstories</li>
+			<li>CuteboldUndergroundAdultBackstories</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ============================ Slave Set ============================ -->
+	<!-- +2/-2 with total of +4 -->
+	<AlienRace.AlienBackstoryDef>
+		<defName>CuteboldSlaveChild</defName>
+		<title>Cutebold child slave</title>
+		<titleShort>slave</titleShort>
+		<baseDesc>[PAWN_nameDef] was captured when [PAWN_pronoun] was a small hatchling. [PAWN_possessive] life was full of sadness and pain, forced to work from when [PAWN_pronoun] could walk. [PAWN_nameDef]'s master would punish [PAWN_possessive] with painful ouchies to [PAWN_possessive] mind when [PAWN_pronoun] did something wrong. [PAWN_pronoun] had no [PAWN_alienRace]s to call yipkin as [PAWN_pronoun] grew.</baseDesc>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<maleCommonality>100</maleCommonality>
+		<femaleCommonality>100</femaleCommonality>
+		<slot>Childhood</slot>
+		<forcedTraitsChance>
+			<li>
+				<options>
+					<li>
+						<options>
+							<li>
+								<defName Degree="-1">NaturalMood</defName>
+							</li>
+							<li>
+								<defName Degree="-2">NaturalMood</defName>
+							</li>
+						</options>
+						<count>1</count>
+						<chance>100</chance>
+					</li>
+					<li>
+						<options>
+							<li>
+								<defName Degree="1">DrugDesire</defName>
+							</li>
+							<li>
+								<defName Degree="2">DrugDesire</defName>
+							</li>
+						</options>
+						<count>1</count>
+						<chance>100</chance>
+					</li>
+					<li>
+						<options>
+							<li>
+								<defName Degree="1">PsychicSensitivity</defName>
+							</li>
+							<li>
+								<defName Degree="2">PsychicSensitivity</defName>
+							</li>
+						</options>
+						<count>1</count>
+						<chance>100</chance>
+					</li>
+				</options>
+				<count>1</count>
+				<chance>100</chance>
+			</li>
+		</forcedTraitsChance>
+		<workDisables>
+			<li>Intellectual</li>
+			<li>Artistic</li>
+		</workDisables>
+		<skillGains>
+			<Plants>2</Plants>
+			<Crafting>2</Crafting>
+			<Mining>2</Mining>
+			<Animals>2</Animals>
+			<Social>-4</Social>
+		</skillGains>
+		<spawnCategories>
+			<li>CuteboldSlaveChildBackstory</li>
+			<li>CuteboldSlaveBackstory</li>
+			<li>CuteboldRefugee</li>
+			<li>CuteboldMaidBackstory</li>
+			<li>CuteboldSlaveChildBackstories</li>
+			<li>CuteboldUndergroundChildBackstories</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef>
+		<defName>CuteboldPhysicalSlave</defName>
+		<title>Cutebold laborer slave</title>
+		<titleShort>slave</titleShort>
+		<baseDesc>[PAWN_nameDef] was forced to work from before the sun rose to after the sun had set for [PAWN_possessive] master. [PAWN_pronoun] was often underground mining out shiny ores, in the fields working tall plants, tending to massive animals, or building what [PAWN_possessive] master wanted. </baseDesc>
+		<slot>Adulthood</slot>
+		<maleCommonality>100</maleCommonality>
+		<femaleCommonality>100</femaleCommonality>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<forcedTraitsChance>
+			<li>
+				<options>
+					<li>
+						<defName Degree="-1">Nerves</defName>
+					</li>
+					<li>
+						<defName Degree="-2">Nerves</defName>
+					</li>
+				</options>
+				<count>1</count>
+				<chance>50</chance>
+			</li>
+		</forcedTraitsChance>
+		<skillGains>
+			<Plants>4</Plants>
+			<Mining>4</Mining>
+			<Construction>2</Construction>
+			<Animals>2</Animals>
+			<Shooting>-6</Shooting>
+			<Social>-2</Social>
+		</skillGains>
+		<spawnCategories>
+			<li>CuteboldSlaveAdultBackstory</li>
+			<li>CuteboldSlaveBackstory</li>
+			<li>CuteboldRefugee</li>
+			<li>CuteboldFighter</li>
+			<li>CuteboldSlaveAdultBackstories</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef>
+		<defName>CuteboldCraftSlave</defName>
+		<title>Cutebold crafter slave</title>
+		<titleShort>slave</titleShort>
+		<baseDesc>[PAWN_nameDef] was kept in hot, dry, dusty buildings creating anything from trinkets, to stabby metals and shiny shells. When [PAWN_pronoun] was not creating things for [PAWN_possessive] master, [PAWN_nameDef] was forced to build big objects and tend to [PAWN_possessive] fellow wounded slaves.</baseDesc>
+		<slot>Adulthood</slot>
+		<maleCommonality>70</maleCommonality>
+		<femaleCommonality>70</femaleCommonality>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<forcedTraitsChance>
+			<li>
+				<defName>Kind</defName>
+				<chance>60</chance>
+			</li>
+			<li>
+				<options>
+					<li>
+						<defName Degree="-1">NaturalMood</defName>
+					</li>
+					<li>
+						<defName Degree="-2">NaturalMood</defName>
+					</li>
+					<li>
+						<defName>Kind</defName>
+					</li>
+				</options>
+				<count>1</count>
+				<chance>75</chance>
+			</li>
+		</forcedTraitsChance>
+		<skillGains>
+			<Crafting>6</Crafting>
+			<Construction>4</Construction>
+			<Medicine>2</Medicine>
+			<Social>2</Social>
+			<Shooting>-4</Shooting>
+			<Melee>-4</Melee>
+			<Animals>-2</Animals>
+		</skillGains>
+		<spawnCategories>
+			<li>CuteboldSlaveAdultBackstory</li>
+			<li>CuteboldSlaveBackstory</li>
+			<li>CuteboldRefugee</li>
+			<li>CuteboldMaidBackstory</li>
+			<li>CuteboldSlaveAdultBackstories</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef>
+		<defName>CuteboldWarSlave</defName>
+		<title>Cutebold warrior slave</title>
+		<titleShort>slave</titleShort>
+		<baseDesc>[PAWN_nameDef] was taught how to fight for [PAWN_possessive] master. [PAWN_pronoun] fought with shiny stabbies and heavy whackies that were taken from [PAWN_possessive] downed meanies. [PAWN_pronoun] was always sent into fights first to take beatings before the not-slaves finished off the baddies. [PAWN_nameDef] somehow survived all [PAWN_possessive] battles, but not without long lasting ouchies.</baseDesc>
+		<slot>Adulthood</slot>
+		<maleCommonality>60</maleCommonality>
+		<femaleCommonality>60</femaleCommonality>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<workDisables>
+			<li>Social</li>
+			<li>Caring</li>
+		</workDisables>
+		<disallowedTraits>
+			<Kind />
+		</disallowedTraits>
+		<forcedTraitsChance>
+			<li>
+				<options>
+					<li>
+						<defName Degree="-1">Nerves</defName>
+					</li>
+					<li>
+						<defName Degree="-2">Nerves</defName>
+					</li>
+					<li>
+						<defName Degree="-1">Beauty</defName>
+					</li>
+					<li>
+						<defName Degree="-2">Beauty</defName>
+					</li>
+				</options>
+				<count>2</count>
+				<chance>50</chance>
+			</li>
+		</forcedTraitsChance>
+		<skillGains>
+			<Melee>8</Melee>
+			<Shooting>2</Shooting>
+			<Construction>-2</Construction>
+			<Crafting>-2</Crafting>
+		</skillGains>
+		<spawnCategories>
+			<li>CuteboldSlaveAdultBackstory</li>
+			<li>CuteboldSlaveBackstory</li>
+			<li>CuteboldRefugee</li>
+			<li>CuteboldFighter</li>
+			<li>CuteboldSlaveAdultBackstories</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef>
+		<!-- We have two simalar backstories due to an issue where the pawn generator sometimes fails at finding an adult backstory for the CuteboldMaidBackstory spawn catagory. This is to keep the game happy and errors away hopefully. -->
+		<defName>CuteboldHouseSlave</defName>
+		<title>Cutebold servant</title>
+		<titleShort>servant</titleShort>
+		<baseDesc>[PAWN_nameDef] was a servant in [PAWN_possessive] owner's large house. [PAWN_pronoun] was not the only one owned by [PAWN_possessive] master, but [PAWN_pronoun] always got the worst jobs. The small [PAWN_alienRace] often had to clean up after the animals, guests, and [PAWN_possessive] master; no matter how icky it was. When [PAWN_pronoun] was not cleaning, [PAWN_pronoun] helped the cooks; doing all the dirty work for them and was punished for anything, even if it was not [PAWN_possessive] fault. It was a good day when [PAWN_pronoun] was sent to the fields. There, [PAWN_pronoun] was forced to gather fruits from small, prickly bushes that the other slaves could not without them getting hurt.</baseDesc>
+		<slot>Adulthood</slot>
+		<maleCommonality>100</maleCommonality>
+		<femaleCommonality>100</femaleCommonality>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<requiredWorkTags>
+			<li>ManualDumb</li>
+		</requiredWorkTags>
+		<workDisables>
+			<li>Social</li>
+			<li>Violent</li>
+		</workDisables>
+		<skillGains>
+			<Cooking>6</Cooking>
+			<Animals>3</Animals>
+			<Plants>3</Plants>
+			<Mining>-3</Mining>
+			<Crafting>-1</Crafting>
+		</skillGains>
+		<spawnCategories>
+			<li>CuteboldMaidBackstory</li>
+			<li>CuteboldServantAdultBackstories</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef>
+		<defName>CuteboldMaidAdult</defName>
+		<title>Cutebold maid</title>
+		<titleShort>'Maid'</titleShort>
+		<baseDesc>[PAWN_nameDef] was a maid for a substantially wealthy owner with a peculiar taste in tailed servants. [PAWN_pronoun] was taught how to speak eloquently, prepare the finest meals, tend to ailments, and entertain [PAWN_possessive] master's guests. [PAWN_nameDef], in addition to [PAWN_possessive] regular duties, made sure [PAWN_possessive] master's armaments were properly polished. \n\n[PAWN_pronoun] swears [PAWN_pronoun] is just a simple maid and nothing more.</baseDesc>
+		<slot>Adulthood</slot>
+		<maleCommonality>35</maleCommonality>
+		<!-- Some owners enjoy male cutebolds dressed up just like the female ones.-->
+		<femaleCommonality>70</femaleCommonality>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<requiredWorkTags>
+			<li>ManualDumb</li>
+		</requiredWorkTags>
+		<forcedTraitsChance>
+			<li>
+				<options>
+					<li>
+						<defName Degree="1">Nerves</defName>
+					</li>
+					<li>
+						<defName Degree="2">Nerves</defName>
+					</li>
+					<li>
+						<defName Degree="1">Beauty</defName>
+					</li>
+					<li>
+						<defName Degree="2">Beauty</defName>
+					</li>
+				</options>
+				<count>1</count>
+				<chance>100</chance>
+			</li>
+		</forcedTraitsChance>
+		<skillGains>
+			<Social>6</Social>
+			<Cooking>6</Cooking>
+			<Medicine>3</Medicine>
+			<Animals>3</Animals>
+			<Construction>-6</Construction>
+			<Crafting>-3</Crafting>
+		</skillGains>
+		<spawnCategories>
+			<li>CuteboldMaidBackstory</li>
+			<li>CuteboldServantAdultBackstories</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ============================ Adulthood ============================ -->
+	<AlienRace.AlienBackstoryDef>
+		<defName>CuteboldNewborn</defName>
+		<title>Cutebold newborn</title>
+		<titleShort>newborn</titleShort>
+		<baseDesc>[PAWN_nameDef] is a baby. [PAWN_possessive] life revolves around milk and naps.</baseDesc>
+		<slot>Childhood</slot>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<spawnCategories>
+			<li>CuteboldHatchling</li>
+			<li>CuteboldNaturalMeditate</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef>
+		<defName>CuteboldChild</defName>
+		<title>Cutebold child</title>
+		<titleShort>child</titleShort>
+		<baseDesc>[PAWN_nameDef] is a child. The story of [PAWN_possessive] childhood is still being written.</baseDesc>
+		<slot>Childhood</slot>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<spawnCategories>
+			<li>CuteboldChild</li>
+			<li>CuteboldNaturalMeditate</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef>
+		<defName>CuteboldChildAdult</defName>
+		<title>Cutebold child</title>
+		<titleShort>child</titleShort>
+		<baseDesc>[PAWN_nameDef] grew up in our tribe.</baseDesc>
+		<slot>Childhood</slot>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<spawnCategories>
+			<li>CuteboldTribalAdult</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef>
+		<defName>CuteboldVatChild</defName>
+		<title>Cutebold vatgrown child</title>
+		<titleShort>child</titleShort>
+		<baseDesc>[PAWN_nameDef] spent most of [PAWN_possessive] childhood in a growth vat.</baseDesc>
+		<slot>Childhood</slot>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<spawnCategories>
+			<li>CuteboldVatChild</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef>
+		<defName>CuteboldTribeChild</defName>
+		<title>Cutebold tribe member</title>
+		<titleShort>tribal</titleShort>
+		<baseDesc>[PAWN_nameDef] became an adult in our tribe. [PAWN_possessive] story is still being written.</baseDesc>
+		<slot>Adulthood</slot>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<spawnCategories>
+			<li>CuteboldTribalAdult</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+</Defs>

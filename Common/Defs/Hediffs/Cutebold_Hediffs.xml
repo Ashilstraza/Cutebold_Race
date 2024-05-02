@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<HediffDef>
+		<defName>CuteboldDarkAdaptation</defName>
+		<label>dark adaptation</label>
+		<descriptionShort IgnoreIfNoMatchingField="True">Used to living in the dark for a long time. Can see everything better with no light!</descriptionShort> <!-- 1.4+ -->
+		<description>Used to living in the dark for a long time. Can see everything better with no light!\n\n
+Scribe's Note: Adaptation increases naturally when a cutebold is in the darkness (under 30%) and decreases when in bright light (over 50%). It neither increases nor decreases when in areas lit by normal lamps and torches. When out on a caravan, a cutebold's dark adaptation will decrease over time due to traveling out in the sunlight.\n
+There are four stages of dark adaptation:\n  -None: Default global work speed.  (100% light/80% darkness)
+  -Minor: Global work speed in the darkness is equal to that in the light.  (90%/90%)\n  -Major: Global work speed is opposite what the default is.  (80%/100%)
+  -Complete: Global work speed is even faster in the darkness.  (65%/115%)\n
+A cutebold who is becoming adapted to the darkness will experience light sickness when in bright lights when their level is at minor and above. This increases in severity alongside the adaptation. Wimps who are adapted to the darkness should avoid bright light.
+
+If extra harvesting yield is enabled, then cutebolds who are mining get more from the resources they mine depending on their adaptation:
+  -None: 3.75% extra.\n  -Minor: 7.5% extra.\n  -Major: 11.25% extra.\n  Complete: 15%</description>
+		<descriptionHyperlinks>
+			<HediffDef>CuteboldLightSickness</HediffDef>
+		</descriptionHyperlinks>
+		<defaultLabelColor>(0.7,1.0,0.7)</defaultLabelColor>
+		<hediffClass>Cutebold_Assemblies.Hediff_CuteboldDarkAdaptation</hediffClass>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<isBad>false</isBad>
+		<tendable>false</tendable>
+		<everCurableByItem>false</everCurableByItem>
+		<makesAlert>false</makesAlert>
+		<!--<keepOnBodyPartRestoration>true</keepOnBodyPartRestoration>-->
+		<priceImpact>false</priceImpact>
+		<initialSeverity>0.001</initialSeverity>
+		<minSeverity>0.001</minSeverity>
+		<maxSeverity>1.0</maxSeverity>
+		<comps>
+			<li Class="Cutebold_Assemblies.HediffCompProperties_CuteboldDarkAdaptation">
+				<maxSeverityGainPerDay>0.1</maxSeverityGainPerDay><!-- Base is 0.1 and will spit out an error if changed. -->
+				<maxSeverityLossPerDay>-0.25</maxSeverityLossPerDay><!-- Base is -0.25 and will spit out an error if changed-->
+				<maxLightLevel>0.50</maxLightLevel><!-- Max light level before the severity starts decreasing -->
+				<minLightLevel>0.3</minLightLevel><!-- Minimum light level before the severity starts increasing -->
+				<lightDarkAdjustment>
+					<!-- We can either take exact percentages for the light and dark max values or use a multiplier.
+					The multiplier takes the difference between the default values, multiplies it by the value, and subtracts/adds
+					from the light/dark default values. A multiplier of 0 are the default values, a multiplier of 1 switches the two defaults.
+          There is a hard coded minimum for work speed which is 50% -->
+					<li>
+						<multiplier>0.0</multiplier><!-- Default values, 100% in light and 80% in dark -->
+					</li>
+					<li>
+						<multiplier>0.5</multiplier><!-- 90% in light and dark -->
+					</li>
+					<li>
+						<multiplier>1.0</multiplier><!-- 100% in dark and 80% in light -->
+					</li>
+					<li>
+						<multiplier>1.75</multiplier><!-- 115% in dark and 65% in light -->
+					</li>
+				</lightDarkAdjustment>
+        <specialEyes><!-- Eyes that overcome light sickness. Need to have both eyes be these or one be non-existant.-->
+          <li>ArchotechEye</li>
+          <li>AdvancedBionicEye</li>
+        </specialEyes>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<label>none</label>
+				<becomeVisible>false</becomeVisible>
+			</li>
+			<li>
+				<label>minor</label>
+				<becomeVisible>true</becomeVisible>
+				<minSeverity>0.25</minSeverity>
+			</li>
+			<li>
+				<label>major</label>
+				<becomeVisible>true</becomeVisible>
+				<minSeverity>0.5</minSeverity>
+			</li>
+			<li>
+				<label>complete</label>
+				<becomeVisible>true</becomeVisible>
+				<minSeverity>0.75</minSeverity>
+			</li>
+		</stages>
+	</HediffDef>
+	<HediffDef>
+		<defName>CuteboldLightSickness</defName>
+		<label>sun sickness</label>
+		<description>The bright light makes me feel bad.\n\n
+Scribe's Note: Cutebolds who are adapted to the darkness experience light sickness when in bright light. This persists for a little while after leaving the bright light.\n
+There are three stages of light sickness:\n  -Minor: -10% sight.\n  -Major: -25% sight and +10% pain.\n  -Complete: -50% sight, +20% pain, and -10% conciousness.\n
+Note: Percentages for pain when hovering over the hediff are lower than what is on the health tab summary. This is due to body size having an effect on pain.</description>
+		<descriptionHyperlinks>
+			<HediffDef>CuteboldDarkAdaptation</HediffDef>
+		</descriptionHyperlinks>
+		<defaultLabelColor>(1.0,0.5,0.0)</defaultLabelColor>
+		<hediffClass>Cutebold_Assemblies.Hediff_CuteboldLightSickness</hediffClass>
+		<isBad>true</isBad>
+		<tendable>false</tendable>
+		<everCurableByItem>false</everCurableByItem>
+		<makesAlert>false</makesAlert>
+		<priceImpact>false</priceImpact>
+		<makesSickThought>true</makesSickThought>
+		<comps><!-- Will keep being refreshed while in the light -->
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>false</showRemainingTime>
+				<disappearsAfterTicks>800~1600</disappearsAfterTicks>
+			</li>
+		</comps>
+		<stages> <!-- Unlike other short races who become adapted to the dark, cutebolds can hold down their lunch. The same can't be said about headaches and bad thoughts.-->
+			<li>
+				<label>minor dark adaptation</label>
+				<minSeverity>0.25</minSeverity>
+				<capMods>
+					<li>
+						<capacity>Sight</capacity>
+						<offset>-0.1</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<label>major dark adaptation</label>
+				<minSeverity>0.5</minSeverity>
+				<painOffset>0.08</painOffset><!-- Cutebolds have a base health scale of 0.8. To get the actual pain offset we divide 0.08 by 0.8 to get the 0.1 -->
+				<capMods>
+					<li>
+						<capacity>Sight</capacity>
+						<offset>-0.25</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<label>complete dark adaptation</label>
+				<minSeverity>0.75</minSeverity>
+				<painOffset>0.16</painOffset><!-- same as above -->
+				<capMods>
+					<li>
+						<capacity>Sight</capacity>
+						<offset>-0.5</offset>
+					</li>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.1</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+</Defs>

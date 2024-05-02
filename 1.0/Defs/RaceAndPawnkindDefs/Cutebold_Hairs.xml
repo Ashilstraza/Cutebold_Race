@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <HairDef>
+    <defName>Cutebold_Blank</defName>
+    <label>None</label>
+    <hairGender>Any</hairGender>
+    <texPath>Things/Cutebold/Hairs/Hairblank</texPath>
+		<hairTags>
+			<li>Cutebold_Hair</li>
+		</hairTags>
+  </HairDef>
+  </Defs>

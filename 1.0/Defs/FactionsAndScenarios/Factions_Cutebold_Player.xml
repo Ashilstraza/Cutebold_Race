@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <FactionDef Abstract="True" Name="CuteboldTribeBase">
+    <colorSpectrum>
+      <li>(0, 0.737, 0.847)</li>
+    </colorSpectrum>
+  </FactionDef>
+  
+  <FactionDef Parent="CuteboldTribeBase">
+    <defName>CuteboldTribePlayer</defName>
+    <label>Cutebold Tribe</label>
+    <description>Your very own tribe of Cutebolds.</description>
+    <isPlayer>true</isPlayer>
+    <basicMemberKind>Cutebold</basicMemberKind>
+    <pawnsPlural>cutebolds</pawnsPlural>
+		<settlementNameMaker>NamerSettlementTribal</settlementNameMaker>
+		<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
+		<factionNameMaker>NamerFactionTribal</factionNameMaker>
+    <techLevel>Neolithic</techLevel>
+    <backstoryCategories>
+			<li>Tribal</li>
+  	</backstoryCategories>
+    <homeIconPath>World/CuteboldCamp</homeIconPath>
+		<expandingIconTexture>World/CuteboldCamp</expandingIconTexture>
+    <startingResearchTags>
+      <li>TribalStart</li>
+    </startingResearchTags>
+    <hairTags>
+      <li>Tribal</li>
+    </hairTags>
+    <apparelStuffFilter>
+      <thingDefs>
+        <li>Cloth</li>
+      </thingDefs>
+    </apparelStuffFilter>
+
+  </FactionDef>
+  
+
+</Defs>

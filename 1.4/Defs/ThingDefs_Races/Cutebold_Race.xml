@@ -1,0 +1,1032 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Rimworld Version 1.4 -->
+<Defs>
+	<AlienRace.ThingDef_AlienRace ParentName="BasePawn">
+		<defName>Alien_Cutebold</defName>
+		<label>Cutebold</label>
+		<description>A small, squat humanoid with large, droopy ears and glowing yellow eyes. They are mostly harmless and easily scared off by larger humanoids.</description>
+		<statBases>
+			<Mass>39</Mass>
+			<PsychicSensitivity>0.75</PsychicSensitivity>
+			<PsychicEntropyRecoveryRate>1.5</PsychicEntropyRecoveryRate>
+			<ToxicResistance>0.1</ToxicResistance>
+			<ToxicEnvironmentResistance>0.25</ToxicEnvironmentResistance>
+			<ComfyTemperatureMin>10</ComfyTemperatureMin>
+			<ComfyTemperatureMax>30</ComfyTemperatureMax>
+			<!--<LeatherAmount>75</LeatherAmount> 48.75 after pawn size, 75 is human -->
+			<MarketValue>1250</MarketValue>
+			<MoveSpeed>4.5</MoveSpeed>
+			<Flammability>0.7</Flammability>
+			<CarryingCapacity>85</CarryingCapacity>
+			<!-- 55.25 after pawn size, 75 is human -->
+			<GlobalLearningFactor>1.15</GlobalLearningFactor>
+			<ResearchSpeed>0.8</ResearchSpeed>
+			<MiningSpeed>1.3</MiningSpeed>
+			<MiningYield>1.25</MiningYield>
+			<SocialImpact>1.2</SocialImpact>
+			<!-- Cutebolds should be cute and thus have a positive social impact-->
+			<PlantWorkSpeed>1.05</PlantWorkSpeed>
+			<PlantHarvestYield>1.05</PlantHarvestYield>
+			<ConstructionSpeed>0.75</ConstructionSpeed>
+			<MeleeDodgeChance>0.6</MeleeDodgeChance>
+			<PawnTrapSpringChance>0.1</PawnTrapSpringChance>
+			<!-- Being renound trap makers, they will avoid most traps that they come across, you can't fool them!-->
+			<HuntingStealth>1.5</HuntingStealth>
+			<!-- Cutebolds are small and sneaky-->
+			<AnimalGatherSpeed>0.9</AnimalGatherSpeed>
+			<RoyalFavorValue>1</RoyalFavorValue>
+			<!-- The empire does not like cutebolds for various reasons and don't see them as particularly useful aside from very mundane or derogatory tasks. -->
+			<ArmorRating_Sharp>0.175</ArmorRating_Sharp>
+			<!-- Their skin from kobold ancestry gives them a little natural armor against sharp stuff.-->
+		</statBases>
+		<tools>
+			<li>
+				<label>left fist</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>10</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>right fist</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>10</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>teeth</label>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>7</power>
+				<cooldownTime>1.6</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.15</chanceFactor>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>4</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.10</chanceFactor>
+				<soundMeleeHit>Pawn_Melee_HumanBite_Hit</soundMeleeHit>
+				<soundMeleeMiss>Pawn_Melee_HumanBite_Miss</soundMeleeMiss>
+			</li>
+			<li>
+				<label>tail</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>6</power>
+				<cooldownTime>3</cooldownTime>
+				<linkedBodyPartsGroup>TailAttackTool</linkedBodyPartsGroup>
+				<chanceFactor>0.1</chanceFactor>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>10</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+		</tools>
+		<race>
+			<thinkTreeMain>Humanlike</thinkTreeMain>
+			<!-- <nameGenerator>NamerPersonCutebold</nameGenerator> We use either the faction's name generator or do it with the C# patch. -->
+			<thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
+			<intelligence>Humanlike</intelligence>
+			<makesFootprints>true</makesFootprints>
+			<lifeExpectancy>50</lifeExpectancy>
+			<leatherDef>Leather_Cutebold</leatherDef>
+			<meatColor>(250, 150, 0)</meatColor>
+			<bloodDef>FilthBloodCutebold</bloodDef>
+			<body>Cutebold_body</body>
+			<baseBodySize>0.65</baseBodySize>
+			<!--<baseHealthScale>0.8</baseHealthScale>--><!-- Change to be higher for next version, 1.2-->
+			<baseHealthScale>1.2</baseHealthScale>
+			<baseHungerRate>0.65</baseHungerRate>
+			<foodType>OmnivoreHuman</foodType>
+			<gestationPeriodDays>15</gestationPeriodDays>
+			<manhunterOnDamageChance>0.20</manhunterOnDamageChance>
+			<manhunterOnTameFailChance>0.02</manhunterOnTameFailChance>
+			<litterSizeCurve>
+				<points>
+					<li>(0.5, 0)</li>
+					<li>(1, 1)</li>
+					<li>(1.01, 0.02)</li>
+					<li>(3.5, 0)</li>
+				</points>
+			</litterSizeCurve>
+			<lifeStageAges>
+				<li Class="AlienRace.LifeStageAgeAlien">
+					<def>Cutebold_Baby</def>
+					<minAge>0</minAge>
+					<headOffsetDirectional>
+						<north>(0,0.05)</north>
+						<east>(0.01,0.05)</east>
+						<west>(-0.01,0.05)</west>
+					</headOffsetDirectional>
+				</li>
+				<li Class="AlienRace.LifeStageAgeAlien">
+					<def>Cutebold_Child</def>
+					<minAge>2</minAge>
+					<headOffsetDirectional>
+						<east>(0.04,0)</east>
+						<west>(-0.04,0)</west>
+					</headOffsetDirectional>
+				</li>
+				<li MayRequire="Ludeon.RimWorld.Biotech"  Class="AlienRace.LifeStageAgeAlien">
+					<def>Cutebold_PreTeenager</def>
+					<minAge>5</minAge>
+					<headOffsetDirectional>
+						<south>(0,-0.01)</south>
+						<north>(0,-0.01)</north>
+						<east>(0.05,-0.01)</east>
+						<west>(-0.05,-0.01)</west>
+					</headOffsetDirectional>
+				</li>
+				<li Class="AlienRace.LifeStageAgeAlien">
+					<def>Cutebold_Teenager</def>
+					<minAge>9</minAge>
+				</li>
+				<li Class="AlienRace.LifeStageAgeAlien">
+					<def>Cutebold_Adult</def>
+					<minAge>12</minAge>
+					<headOffsetDirectional>
+						<south>(0,0)</south>
+						<north>(0,0)</north>
+						<east>(-0.05,-0.01)</east>
+						<west>(0.05,-0.01)</west>
+					</headOffsetDirectional>
+				</li>
+			</lifeStageAges>
+			<lifeStageWorkSettings MayRequire="Ludeon.RimWorld.Biotech">
+				<!-- <Work Type>Minimum Age as an Int, should happen on same ages as growth moments.</Work Type>-->
+				<Firefighter>2</Firefighter>
+				<Patient>0</Patient>
+				<Doctor>12</Doctor>
+				<PatientBedRest>0</PatientBedRest>
+				<Childcare MayRequire="Ludeon.RimWorld.Biotech">0</Childcare>
+				<BasicWorker>2</BasicWorker>
+				<Warden>9</Warden>
+				<Handling>4</Handling>
+				<Cooking>6</Cooking>
+				<Hunting>6</Hunting>
+				<Construction>9</Construction>
+				<Growing>4</Growing>
+				<Mining>2</Mining>
+				<PlantCutting>4</PlantCutting>
+				<Smithing>9</Smithing>
+				<Tailoring>6</Tailoring>
+				<Art>6</Art>
+				<Crafting>6</Crafting>
+				<Hauling>2</Hauling>
+				<Cleaning>2</Cleaning>
+				<Research>12</Research>
+			</lifeStageWorkSettings>
+			<soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+			<soundMeleeDodge>Pawn_MeleeDodge</soundMeleeDodge>
+			<specialShadowData>
+				<volume>(0.3, 0.8, 0.4)</volume>
+				<offset>(0,0,-0.3)</offset>
+			</specialShadowData>
+			<ageGenerationCurve>
+				<points>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(0,0)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(0.001,43)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(3,86)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(8,118)</li>
+					<!-- Exclude 8.5-9 years to avoid spawning pawns who are very close to becoming adults -->
+					<li MayRequire="Ludeon.RimWorld.Biotech">(8.5,0)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(9.01,0)</li>
+					<!-- End exclude -->
+					<li MayRequire="Ludeon.RimWorld.Biotech">(9.02,100)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(11.999,130)</li>
+					<!-- Start of non-biotech ages-->
+					<li>(12, 0)</li>
+					<li>(12.001,130)</li>
+					<li>(15,100)</li>
+					<li>(17.5,100</li>
+					<li>(20,67)</li>
+					<li>(30,33)</li>
+					<li>(40,23)</li>
+					<li>(60,0)</li>
+				</points>
+			</ageGenerationCurve>
+			<hediffGiverSets>
+				<li>OrganicStandard</li>
+				<li>Human</li>
+			</hediffGiverSets>
+		</race>
+		<alienRace>
+			<generalSettings>
+				<forcedRaceTraitEntries>
+					<li>
+						<defName>Gay</defName>
+						<chance>5</chance>
+					</li>
+					<li>
+						<defName>Nimble</defName>
+						<chance>25</chance>
+					</li>
+					<li>
+						<defName>Kind</defName>
+						<chance>10</chance>
+					</li>
+					<li>
+						<defName>Greedy</defName>
+						<chance>10</chance>
+					</li>
+					<li>
+						<defName>Wimp</defName>
+						<chance>10</chance>
+					</li>
+					<li>
+						<defName>Brawler</defName>
+						<chance>5</chance>
+					</li>
+					<li>
+						<defName>Nudist</defName>
+						<chance>0</chance>
+					</li>
+					<li>
+						<defName>Bloodlust</defName>
+						<chance>5</chance>
+					</li>
+				</forcedRaceTraitEntries>
+				<humanRecipeImport>true</humanRecipeImport>
+				<allowHumanBios>true</allowHumanBios>
+				<alienPartGenerator>
+					<headTypes Inherit="False">
+						<li>Male_AverageNormal</li>
+						<li>Female_AverageNormal</li>
+					</headTypes>
+					<bodyTypes Inherit="False">
+						<!-- Male body type looks too off, female body type is fine. -->
+						<li>Thin</li>
+						<li>Female</li>
+						<li MayRequire="Ludeon.RimWorld.Biotech">Baby</li>
+						<li MayRequire="Ludeon.RimWorld.Biotech">Child</li>
+						<!--<li>Male</li>
+						<li>Fat</li>
+						<li>Hulk</li>-->
+					</bodyTypes>
+					<defaultMaleBodyType>Thin</defaultMaleBodyType>
+					<defaultFemaleBodyType>Female</defaultFemaleBodyType>
+					<!-- Skin Coloring and Masks:
+					Red channel is skin primary
+					Green channel is skin secondary
+					Blue channel is tertiary if it exists
+					Can blend each channel (R,G,B) along with how much of each (0-255) to create highlights and merge colors.-->
+					<colorChannels Inherit="False">
+						<li>
+							<name>eye</name>
+							<first Class="ColorGenerator_Options">
+								<options>
+									<li>
+										<max>(0.9,0.9,0.0)</max>
+										<min>(0.7,0.7,0.0)</min>
+									</li>
+								</options>
+							</first>
+						</li>
+						<li>
+							<name Inherit="False">skin</name>
+							<first Class="ColorGenerator_Options">
+								<options>
+									<!-- Shades of Gray, added wiggle room for slightly more variety -->
+									<li>
+										<weight>10</weight>
+										<max>(1.0,1.0,1.0)</max>
+										<min>(0.96,0.96,0.96)</min>
+									</li>
+									<li>
+										<weight>13</weight>
+										<max>(0.72,0.72,0.72)</max>
+										<min>(0.68,0.68,0.68)</min>
+									</li>
+									<li>
+										<weight>12</weight>
+										<max>(0.52,0.52,0.52)</max>
+										<min>(0.48,0.48,0.48)</min>
+									</li>
+									<li>
+										<weight>8</weight>
+										<max>(0.27,0.27,0.27)</max>
+										<min>(0.23,0.23,0.23)</min>
+									</li>
+									<!-- Other Colors -->
+									<li>
+										<!-- Reds -->
+										<weight>18</weight>
+										<max>(0.7,0.2,0.1)</max>
+										<min>(0.6,0.1,0.0)</min>
+									</li>
+									<li>
+										<!-- Browns -->
+										<weight>19</weight>
+										<max>(0.8,0.6,0.2)</max>
+										<min>(0.6,0.4,0.0)</min>
+									</li>
+									<li>
+										<!-- Teals/Greens -->
+										<weight>12</weight>
+										<max>(0.3,0.6,0.4)</max>
+										<min>(0.2,0.4,0.3)</min>
+									</li>
+									<li>
+										<!-- Pinks -->
+										<weight>7</weight>
+										<max>(0.7,0.35,0.5)</max>
+										<min>(0.55,0.25,0.35)</min>
+									</li>
+									<li>
+										<!-- Purple! -->
+										<weight>1</weight>
+										<max>(0.65,0.0,0.8)</max>
+										<min>(0.45,0.1,0.65)</min>
+									</li>
+								</options>
+							</first>
+						</li>
+					</colorChannels>
+					<customDrawSize>(0.7, 0.7)</customDrawSize>
+					<customPortraitDrawSize>(0.7, 0.7)</customPortraitDrawSize>
+					<headOffsetSpecific>
+						<north>
+							<bodyTypes>
+								<Female>(0.0, -0.08)</Female>
+								<Thin>(0.0, -0.1)</Thin>
+								<Child>(0.0, -0.07)</Child>
+								<Male>(0.0, -0.05)</Male>
+								<Fat>(0.0, -0.02)</Fat>
+								<Hulk>(0.0, -0.05)</Hulk>
+							</bodyTypes>
+						</north>
+						<south>
+							<bodyTypes>
+								<Female>(0.0, -0.1)</Female>
+								<Thin>(0.0, -0.1)</Thin>
+								<Child>(0.0, -0.07)</Child>
+								<Male>(0.0, -0.06)</Male>
+								<Fat>(0.0, -0.08)</Fat>
+								<Hulk>(0.0, -0.08)</Hulk>
+							</bodyTypes>
+						</south>
+						<east>
+							<bodyTypes>
+								<Female>(0.0, -0.08)</Female>
+								<Thin>(0.0, -0.1)</Thin>
+								<Child>(-0.03, -0.07)</Child>
+								<Male>(0.06, -0.03)</Male>
+								<Fat>(0.0, -0.05)</Fat>
+								<Hulk>(0.0, -0.05)</Hulk>
+							</bodyTypes>
+						</east>
+						<west>
+							<bodyTypes>
+								<Female>(0.0, -0.08)</Female>
+								<Thin>(0.0, -0.1)</Thin>
+								<Child>(0.03, -0.07)</Child>
+								<Male>(-0.06, -0.03)</Male>
+								<Fat>(0.0, -0.05)</Fat>
+								<Hulk>(0.0, -0.05)</Hulk>
+							</bodyTypes>
+						</west>
+					</headOffsetSpecific>
+					<bodyAddons>
+						<li>
+							<path>Cutebold/Bodies/Tails/Cutebold_Tail</path>
+							<bodyPart>CuteboldTail</bodyPart>
+							<inFrontOfBody>true</inFrontOfBody>
+							<colorChannel>skin</colorChannel>
+							<drawnInBed>false</drawnInBed>
+							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+							<prioritization>
+								<li>Hediff</li>
+								<li>Age</li>
+								<li>Bodytype</li>
+								<li>Gender</li>
+							</prioritization>
+							<ageGraphics>
+								<Cutebold_Child>Cutebold/Bodies/Tails/Cutebold_Child_Tail</Cutebold_Child>
+								<Cutebold_PreTeenager>Cutebold/Bodies/Tails/Cutebold_Child_Tail</Cutebold_PreTeenager>
+							</ageGraphics>
+							<genderGraphics>
+								<Male>Cutebold/Bodies/Tails/Cutebold_Skinny_Tail</Male>
+								<Female>Cutebold/Bodies/Tails/Cutebold_Tail</Female>
+							</genderGraphics>
+							<hediffGraphics>
+								<FakeCuteboldTail>Cutebold/Bodies/Tails/Cutebold_ClothTail</FakeCuteboldTail>
+							</hediffGraphics>
+							<offsets>
+								<south>
+									<layerOffset>-0.34</layerOffset>
+									<bodyTypes>
+										<Child>(0, 0.08)</Child>
+										<Thin>(0, 0)</Thin>
+									</bodyTypes>
+								</south>
+								<north>
+									<bodyTypes>
+										<Child>(0, 0.08)</Child>
+										<Thin>(0,0)</Thin>
+									</bodyTypes>
+									<layerOffset>-0.34</layerOffset>
+								</north>
+								<east>
+									<bodyTypes>
+										<Child>(0, 0.08)</Child>
+										<Thin>(0,0)</Thin>
+									</bodyTypes>
+									<layerOffset>-0.288</layerOffset>
+								</east>
+							</offsets>
+						</li>
+						<li>
+							<!-- Left Ear -->
+							<defaultOffset>Head</defaultOffset>
+							<path>Cutebold/Heads/LeftEar/Cutebold_EarLeft</path>
+							<bodyPart>Ear</bodyPart>
+							<bodyPartLabel>left ear</bodyPartLabel>
+							<inFrontOfBody>true</inFrontOfBody>
+							<colorChannel>skin</colorChannel>
+							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+							<alignWithHead>true</alignWithHead>
+							<offsets>
+								<north>
+									<offset>(0,-0.35)</offset>
+									<layerOffset>-0.276</layerOffset>
+								</north>
+								<south>
+									<offset>(-0.003,-0.5)</offset>
+									<layerOffset>-0.271</layerOffset>
+								</south>
+								<west>
+									<offset>(0.068,-0.514)</offset>
+									<layerOffset>-0.271</layerOffset>
+								</west>
+								<east>
+									<offset>(0.066,-0.496)</offset>
+									<layerOffset>-0.3</layerOffset>
+								</east>
+							</offsets>
+							<drawnInBed>True</drawnInBed>
+							<layerInvert>false</layerInvert>
+						</li>
+						<li>
+							<!-- Right Ear -->
+							<defaultOffset>Head</defaultOffset>
+							<path>Cutebold/Heads/RightEar/Cutebold_EarRight</path>
+							<bodyPart>Ear</bodyPart>
+							<bodyPartLabel>right ear</bodyPartLabel>
+							<inFrontOfBody>true</inFrontOfBody>
+							<colorChannel>skin</colorChannel>
+							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+							<alignWithHead>true</alignWithHead>
+							<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
+							<offsets>
+								<north>
+									<offset>(0,-0.35)</offset>
+									<layerOffset>-0.276</layerOffset>
+								</north>
+								<south>
+									<offset>(0.003,-0.5)</offset>
+									<layerOffset>-0.271</layerOffset>
+								</south>
+								<west>
+									<offset>(0.068,-0.495)</offset>
+									<layerOffset>-0.292</layerOffset>
+								</west>
+								<east>
+									<offset>(0.064,-0.514)</offset>
+									<layerOffset>-0.274</layerOffset>
+								</east>
+							</offsets>
+							<drawnInBed>True</drawnInBed>
+							<layerInvert>false</layerInvert>
+						</li>
+						<!-- Vectors round to the nearest 0.1? Can set the y value to zero to hide!-->
+						<li>
+							<defaultOffset>Head</defaultOffset>
+							<drawSizePortrait>(0.1,0)</drawSizePortrait>
+							<path>Cutebold/Heads/EyeGlow/RightEyeGlow_None</path>
+							<hediffGraphics>
+								<CuteboldDarkAdaptation>
+									<path>Cutebold/Heads/EyeGlow/RightEyeGlow_None</path>
+									<severity>
+										<a0.75>Cutebold/Heads/EyeGlow/RightEyeGlow_Complete</a0.75>
+										<a0.5>Cutebold/Heads/EyeGlow/RightEyeGlow_Major</a0.5>
+										<a0.25>Cutebold/Heads/EyeGlow/RightEyeGlow_Minor</a0.25>
+									</severity>
+								</CuteboldDarkAdaptation>
+							</hediffGraphics>
+							<bodyPart>Eye</bodyPart>
+							<bodyPartLabel>right eye</bodyPartLabel>
+							<shaderType>MoteGlow</shaderType>
+							<inFrontOfBody>true</inFrontOfBody>
+							<colorChannel>eye</colorChannel>
+							<drawnInBed>True</drawnInBed>
+							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+							<alignWithHead>true</alignWithHead>
+							<offsets>
+								<north />
+								<south>
+									<offset>(0,-0.502)</offset>
+									<layerOffset>-0.272</layerOffset>
+								</south>
+								<east>
+									<offset>(0.072,-0.497)</offset>
+									<layerOffset>-0.272</layerOffset>
+								</east>
+							</offsets>
+
+						</li>
+						<!-- Vectors round to the nearest 0.1? Can set the y value to zero to hide!-->
+						<li>
+							<defaultOffset>Head</defaultOffset>
+							<drawSizePortrait>(0.1,0)</drawSizePortrait>
+							<path>Cutebold/Heads/EyeGlow/LeftEyeGlow_None</path>
+							<hediffGraphics>
+								<CuteboldDarkAdaptation>
+									<path>Cutebold/Heads/EyeGlow/LeftEyeGlow_None</path>
+									<severity>
+										<a0.75>Cutebold/Heads/EyeGlow/LeftEyeGlow_Complete</a0.75>
+										<a0.5>Cutebold/Heads/EyeGlow/LeftEyeGlow_Major</a0.5>
+										<a0.25>Cutebold/Heads/EyeGlow/LeftEyeGlow_Minor</a0.25>
+									</severity>
+								</CuteboldDarkAdaptation>
+							</hediffGraphics>
+							<bodyPart>Eye</bodyPart>
+							<bodyPartLabel>left eye</bodyPartLabel>
+							<shaderType>MoteGlow</shaderType>
+							<inFrontOfBody>true</inFrontOfBody>
+							<colorChannel>eye</colorChannel>
+							<drawnInBed>True</drawnInBed>
+							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+							<alignWithHead>true</alignWithHead>
+							<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
+							<offsets>
+								<north />
+								<south>
+									<offset>(0,-0.502)</offset>
+									<layerOffset>-0.272</layerOffset>
+								</south>
+								<east>
+									<offset>(0.052,-0.497)</offset>
+									<layerOffset>-0.272</layerOffset>
+								</east>
+							</offsets>
+						</li>
+					</bodyAddons>
+					<anchorReplacements>
+						<li>
+							<originalGroup>FullHead</originalGroup>
+							<replacement>
+								<rotation>South</rotation>
+								<group>FullHead</group>
+								<offset>(0, 0, 0.23)</offset>
+								<range>0.15</range>
+								<layer>Head</layer>
+								<debugColor>(1,0,0,1)</debugColor>
+							</replacement>
+						</li>
+						<li>
+							<originalTag>RightEye</originalTag>
+							<replacement>
+								<rotation>South</rotation>
+								<tag>RightEye</tag>
+								<canMirror>false</canMirror>
+								<offset>(-0.075, -0.001, 0.23)</offset>
+								<range>0</range>
+								<layer>Head</layer>
+								<debugColor>(0,1,0,1)</debugColor>
+							</replacement>
+						</li>
+						<li>
+							<originalTag>LeftEye</originalTag>
+							<replacement>
+								<rotation>South</rotation>
+								<tag>LeftEye</tag>
+								<canMirror>false</canMirror>
+								<offset>(0.067, -0.001, 0.23)</offset>
+								<range>0</range>
+								<layer>Head</layer>
+								<debugColor>(0,0,1,1)</debugColor>
+							</replacement>
+						</li>
+						<li>
+							<originalGroup>FullHead</originalGroup>
+							<replacement>
+								<rotation>West</rotation>
+								<group>FullHead</group>
+								<offset>(-0.04, 0, 0.20)</offset>
+								<range>0.13</range>
+								<layer>Head</layer>
+								<debugColor>(1,0,0,1)</debugColor>
+							</replacement>
+						</li>
+						<li>
+							<originalTag>RightEye</originalTag>
+							<replacement>
+								<rotation>East</rotation>
+								<tag>RightEye</tag>
+								<canMirror>false</canMirror>
+								<offset>(0.05, -0.001, 0.22)</offset>
+								<range>0</range>
+								<layer>Head</layer>
+								<debugColor>(0,1,0,1)</debugColor>
+							</replacement>
+						</li>
+						<li>
+							<originalTag>LeftEye</originalTag>
+							<replacement>
+								<rotation>West</rotation>
+								<tag>LeftEye</tag>
+								<canMirror>false</canMirror>
+								<offset>(-0.04, -0.001, 0.22)</offset>
+								<range>0</range>
+								<layer>Head</layer>
+								<debugColor>(0,0,1,1)</debugColor>
+							</replacement>
+						</li>
+					</anchorReplacements>
+				</alienPartGenerator>
+				<maleGenderProbability>0.5</maleGenderProbability>
+				<chemicalSettings/>
+				<!-- Children Settings -->
+				<growthAges><!-- Defaults are 7,10,13-->
+					<li>4</li>
+					<li>6</li>
+					<li>9</li>
+				</growthAges>
+				<growthFactorByAge>
+					<points>
+						<li>(0,1)</li>
+						<li>(2,1.5)</li>
+						<li>(6,1.5)</li>
+						<li>(6.001,1)</li><!-- Work around to switch to 1 without a gradual shift -->
+						<li>(9,1)</li>
+					</points>
+				</growthFactorByAge>
+				<reproduction>
+					<maleFertilityAgeFactor>
+						<points>
+							<li>(9,0)</li>
+							<li>(12,1)</li>
+							<li>(50,1)</li>
+							<li>(90,0)</li>
+						</points>
+					</maleFertilityAgeFactor>
+					<!-- Eventually change to eggs, but fertility stays much longer. -->
+					<femaleFertilityAgeFactor>
+						<points>
+							<li>(9,0)</li>
+							<li>(12,1)</li>
+							<li>(50,1)</li>
+							<li>(90,0)</li>
+						</points>
+					</femaleFertilityAgeFactor>
+				</reproduction>
+				<newbornBackstoryFilter>
+					<li>
+						<categories>
+							<li>CuteboldHatchling</li>
+						</categories>
+					</li>
+				</newbornBackstoryFilter>
+				<childBackstoryFilter>
+					<li>
+						<categories>
+							<li>CuteboldChild</li>
+						</categories>
+					</li>
+				</childBackstoryFilter>
+				<adultBackstoryFilter>
+					<li>
+						<categories>
+							<li>CuteboldTribalAdult</li>
+						</categories>
+					</li>
+				</adultBackstoryFilter>
+				<adultVatBackstoryFilter>
+					<li>
+						<categories>
+							<li>CuteboldVatChild</li>
+						</categories>
+					</li>
+				</adultVatBackstoryFilter>
+				<minAgeForAdulthood>12</minAgeForAdulthood>
+				<notXenophobistTowards>
+					<!-- Cutebolds dont discriminate against other known humanoid kobolds. -->
+					<li MayRequire="shauaputa.pawnboldrace">Pawnbold_bold</li>
+					<li MayRequire="xen.races.argo">Alien_Argonian</li>
+					<li MayRequire="Mlie.ArgoniansofBlackmarsh">Alien_Argonian</li>
+					<!-- Argonians are just really tall kobolds... -->
+					<li MayRequire="neronix17.fr.race.kobolds">O21_Alien_Kobold</li>
+					<li MayRequire="Mlie.PlayableKobolds">Alien_Kobold</li>
+					<li MayRequire="ArmoredAmpharos.SilvaliseKobolds">ASKobold</li>
+				</notXenophobistTowards>
+				<factionRelations>
+					<li>
+						<factions>
+							<li MayRequire="Ludeon.RimWorld.Royalty">Empire</li>
+						</factions>
+						<goodwill>-100~-76</goodwill>
+						<!-- A long time ago a cutebold decided to wear a stellarch's stolen undergarment as a hat. The stellarch was not amused and relations have been rocky since.-->
+					</li>
+				</factionRelations>
+			</generalSettings>
+			<graphicPaths>
+				<body>
+					<path>
+						Cutebold/Bodies/
+					</path>
+				</body>
+				<head>
+					<path>
+						Cutebold/Heads/
+					</path>
+				</head>
+			</graphicPaths>
+			<styleSettings>
+				<li>
+					<key>HairDef</key>
+					<value>
+						<hasStyle>false</hasStyle>
+					</value>
+				</li>
+				<li>
+					<key>BeardDef</key>
+					<value>
+						<hasStyle>false</hasStyle>
+					</value>
+				</li>
+				<li>
+					<key>TattooDef</key>
+					<value>
+						<hasStyle>true</hasStyle>
+					</value>
+				</li>
+			</styleSettings>
+			<relationSettings>
+				<relationChanceModifierChild>1.2</relationChanceModifierChild>
+				<relationChanceModifierExLover>1</relationChanceModifierExLover>
+				<relationChanceModifierExSpouse>1</relationChanceModifierExSpouse>
+				<relationChanceModifierFiance>1</relationChanceModifierFiance>
+				<relationChanceModifierLover>1</relationChanceModifierLover>
+				<relationChanceModifierParent>1</relationChanceModifierParent>
+				<relationChanceModifierSibling>1.2</relationChanceModifierSibling>
+				<relationChanceModifierSpouse>1</relationChanceModifierSpouse>
+			</relationSettings>
+			<raceRestriction>
+				<onlyUseRaceRestrictedApparel>false</onlyUseRaceRestrictedApparel>
+				<apparelList>
+					<li>Cutebold_Goggles</li>
+				</apparelList>
+				<!-- List of generic genes to block -->
+				<blackGeneList>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Brow_Heavy</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">FacialRidges</li>
+				</blackGeneList>
+				<blackGeneTags>
+					<li>BodyType</li><!--Need to do body art -->
+					<li>Ears</li><!-- Probably Won't Support, need to handle special ears -->
+					<li>Nose</li><!-- Won't Support -->
+					<li>Jaw</li><!-- Won't Support -->
+					<li>Head</li><!-- Need to do head art-->
+					<li>Fur</li><!--Need to do body and head art-->
+					<li>Tail</li><!-- Probably Won't Support, Need to handle special tails -->
+				</blackGeneTags>
+				<blackEndoCategories>
+					<li>Melanin</li>
+					<li>Ears</li>
+					<li>Nose</li>
+					<li>Jaw</li>
+					<li>Head</li>
+					<li>BodyType</li>
+				</blackEndoCategories>
+			</raceRestriction>
+			<thoughtSettings>
+				<cannotReceiveThoughts>
+					<li>EnvironmentDark</li>
+					<li>NeedOutdoors</li>
+					<li>AteRawFood</li>
+					<li>AteKibble</li>
+					<li>AteWithoutTable</li>
+					<li>SleepDisturbed</li>
+					<li>SleptOnGround</li>
+					<li>SleptInBarracks</li>
+					<li>SharedBed</li>
+					<li>Naked</li>
+					<li>ButcheredHumanlikeCorpse</li>
+					<li>KnowButcheredHumanlikeCorpse</li>
+					<li>AteHumanlikeMeatDirect</li>
+					<li>AteHumanlikeMeatDirectCannibal</li>
+					<li>AteHumanlikeMeatAsIngredient</li>
+					<li>AteHumanlikeMeatAsIngredientCannibal</li>
+					<li>ProsthophileNoProsthetic</li>
+					<li>ProsthophileHappy</li>
+					<li>HumanLeatherApparelSad</li>
+					<li>HumanLeatherApparelHappy</li>
+					<li>ButcheredHumanlikeCorpseOpinion</li>
+					<li>AteRawHumanlikeMeat</li>
+				</cannotReceiveThoughts>
+				<restrictedThoughts>
+					<!-- Use this and cannotRecieveThoughts to replace situational thoughts -->
+					<li>CuteboldProsthophileNoProsthetic</li>
+					<li>CuteboldProsthophileHappy</li>
+					<li>CuteboldLeatherApparelSad</li>
+					<li>CuteboldLeatherApparelHappy</li>
+					<li>ButcheredCuteboldCorpseOpinion</li>
+					<li>AteRawCuteboldMeat</li>
+				</restrictedThoughts>
+				<replacerList>
+					<!-- Only works on memories, not situations-->
+					<li>
+						<original>SleptInCold</original>
+						<replacer>CuteboldSleptInCold</replacer>
+					</li>
+					<li>
+						<original>SleptInHeat</original>
+						<replacer>CuteboldSleptInHeat</replacer>
+					</li>
+					<li>
+						<original>GotSomeLovin</original>
+						<replacer>CuteboldLovin</replacer>
+					</li>
+				</replacerList>
+				<butcherThoughtSpecific>
+					<li>
+						<raceList>
+							<li>Alien_Cutebold</li>
+							<li MayRequire="shauaputa.pawnboldrace">Pawnbold_bold</li>
+							<li MayRequire="xen.races.argo">Alien_Argonian</li>
+							<li MayRequire="Mlie.ArgoniansofBlackmarsh">Alien_Argonian</li>
+							<li MayRequire="neronix17.fr.race.kobolds">O21_Alien_Kobold</li>
+							<li MayRequire="Mlie.PlayableKobolds">Alien_Kobold</li>
+							<li MayRequire="ArmoredAmpharos.SilvaliseKobolds">ASKobold</li>
+						</raceList>
+						<thought>ButcheredCuteboldCorpse</thought>
+						<knowThought>KnowButcheredCuteboldCorpse</knowThought>
+					</li>
+				</butcherThoughtSpecific>
+				<ateThoughtSpecific>
+					<li>
+						<raceList>
+							<li>Alien_Cutebold</li>
+							<li MayRequire="shauaputa.pawnboldrace">Pawnbold_bold</li>
+							<li MayRequire="xen.races.argo">Alien_Argonian</li>
+							<li MayRequire="Mlie.ArgoniansofBlackmarsh">Alien_Argonian</li>
+							<li MayRequire="neronix17.fr.race.kobolds">O21_Alien_Kobold</li>
+							<li MayRequire="Mlie.PlayableKobolds">Alien_Kobold</li>
+							<li MayRequire="ArmoredAmpharos.SilvaliseKobolds">ASKobold</li>
+						</raceList>
+						<thought>AteCuteboldMeatDirect</thought>
+						<thoughtCannibal>AteCuteboldMeatDirectCannibal</thoughtCannibal>
+					</li>
+					<li>
+						<raceList>
+							<!-- Need to add Meat_ in front of the races for it to work. -->
+							<li>Meat_Alien_Cutebold</li>
+							<li MayRequire="shauaputa.pawnboldrace">Meat_Pawnbold_bold</li>
+							<li MayRequire="xen.races.argo">Meat_Alien_Argonian</li>
+							<li MayRequire="Mlie.ArgoniansofBlackmarsh">Meat_Alien_Argonian</li>
+							<li MayRequire="neronix17.fr.race.kobolds">Meat_O21_Alien_Kobold</li>
+							<li MayRequire="Mlie.PlayableKobolds">Meat_Alien_Kobold</li>
+							<!--<li MayRequire="ArmoredAmpharos.SilvaliseKobolds">Meat_ASKobold</li> Uses Human Meat -->
+						</raceList>
+						<ingredientThought>AteCuteboldMeatAsIngredient</ingredientThought>
+						<ingredientThoughtCannibal>AteCuteboldMeatAsIngredientCannibal</ingredientThoughtCannibal>
+					</li>
+				</ateThoughtSpecific>
+			</thoughtSettings>
+		</alienRace>
+		<comps>
+			<li MayRequire="CETeam.CombatExtended">
+				<compClass>CombatExtended.CompPawnGizmo</compClass>
+			</li>
+			<li MayRequire="CETeam.CombatExtended" Class="CombatExtended.CompProperties_Suppressable"/>
+		</comps>
+		<modExtensions>
+			<li MayRequire="CETeam.CombatExtended" Class="CombatExtended.RacePropertiesExtensionCE">
+				<bodyShape>Humanoid</bodyShape>
+			</li>
+		</modExtensions>
+	</AlienRace.ThingDef_AlienRace>
+	<AlienRace.RaceSettings>
+		<defName>Cutebold_Settings</defName>
+		<pawnKindSettings>
+			<alienslavekinds>
+				<li>
+					<kindDefs>
+						<li>Cutebold_Slave</li>
+					</kindDefs>
+					<chance>65</chance>
+				</li>
+				<li>
+					<kindDefs>
+						<li>Cutebold_Refugee</li>
+					</kindDefs>
+					<chance>25</chance>
+				</li>
+				<li>
+					<kindDefs>
+						<li>Cutebold_Outsider</li>
+					</kindDefs>
+					<chance>10.0</chance>
+				</li>
+			</alienslavekinds>
+			<alienrefugeekinds>
+				<li>
+					<kindDefs>
+						<li>Cutebold_Refugee</li>
+					</kindDefs>
+					<chance>65</chance>
+				</li>
+				<li>
+					<kindDefs>
+						<li>Cutebold_Slave</li>
+					</kindDefs>
+					<chance>25</chance>
+				</li>
+				<li>
+					<kindDefs>
+						<li>Cutebold_Outsider</li>
+					</kindDefs>
+					<chance>10</chance>
+				</li>
+			</alienrefugeekinds>
+			<startingColonists>
+				<li>
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<li>Cutebold</li>
+							</kindDefs>
+							<chance>100.0</chance>
+						</li>
+					</pawnKindEntries>
+				</li>
+			</startingColonists>
+			<alienwandererkinds>
+				<li>
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<li>Cutebold_Refugee</li>
+							</kindDefs>
+							<chance>20.0</chance>
+						</li>
+						<li>
+							<kindDefs>
+								<li>Cutebold_Slave</li>
+							</kindDefs>
+							<chance>10.0</chance>
+						</li>
+						<li>
+							<kindDefs>
+								<li>Cutebold</li>
+							</kindDefs>
+							<chance>25</chance>
+						</li>
+						<li>
+							<kindDefs>
+								<li>Cutebold_Outsider</li>
+							</kindDefs>
+							<chance>5</chance>
+						</li>
+					</pawnKindEntries>
+				</li>
+			</alienwandererkinds>
+		</pawnKindSettings>
+	</AlienRace.RaceSettings>
+</Defs>

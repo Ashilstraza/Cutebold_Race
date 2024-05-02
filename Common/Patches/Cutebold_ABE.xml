@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- These patches are for replacing various things that could not be done in the regular xml files. -->
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>[FSF] Advanced Bionics Expansion</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<!-- Achutich Tail -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/HediffDef[defName="ArchotechCuteboldTail"]/addedPartProps/partEfficiency</xpath>
+					<value>
+						<partEfficiency>2.0</partEfficiency>
+					</value>
+				</li>
+				<!-- Advanced Bionic Tail -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="AdvancedBionicCuteboldTail"]/costList</xpath>
+					<value>
+						<costList>
+							<Plasteel>15</Plasteel>
+							<ComponentSpacer>8</ComponentSpacer>
+						</costList>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="AdvancedBionicCuteboldTail"]</xpath>
+					<value>
+						<graphicData>
+							<color>(144,98,179)</color>
+						</graphicData>
+					</value>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ThingDef[defName="AdvancedBionicCuteboldTail"]/statBases/WorkToMake</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ThingDef[defName="AdvancedBionicCuteboldTail"]/statBases/MarketValue</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ThingDef[defName="AdvancedBionicCuteboldTail"]/recipeMaker/recipeUsers</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ThingDef[defName="AdvancedBionicCuteboldTail"]/recipeMaker/skillRequirements</xpath>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="AdvancedBionicCuteboldTail"]/recipeMaker</xpath>
+					<value>
+						<researchPrerequisite>FSFAdvancedBionics</researchPrerequisite>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

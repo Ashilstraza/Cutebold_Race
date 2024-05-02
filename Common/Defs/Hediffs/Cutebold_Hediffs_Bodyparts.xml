@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- I went back and forth on if tails should affect moving. It makes sense, however the lack of a tail has a very large effect on movement. -->
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>ArchotechCuteboldTail</defName>
+		<label>archotech tail</label>
+		<labelNoun>an archotech tail</labelNoun>
+		<description>An achoo-titch tail.</description>
+		<descriptionHyperlinks>
+			<ThingDef>ArchotechCuteboldTail</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>ArchotechCuteboldTail</spawnThingOnRemoved>
+		<addedPartProps>
+			<betterThanNatural>true</betterThanNatural>
+			<solid>true</solid>
+			<partEfficiency>1.5</partEfficiency>
+		</addedPartProps>
+		<stages>
+			<li>
+				<capMods>
+					<!--<li> Enable if tail body part affecting movement is disabled
+						<capacity>Moving</capacity>
+						<offset>0.3</offset>
+					</li>-->
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>0.3</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>tail</label>
+						<capacities>
+							<li>Blunt</li>
+						</capacities>
+						<power>16</power>
+						<cooldownTime>2</cooldownTime>
+						<soundMeleeHit>MeleeHit_BionicPunch</soundMeleeHit>
+						<soundMeleeMiss>MeleeMiss_BionicPunch</soundMeleeMiss>
+					</li>
+				</tools>
+			</li>
+		</comps>
+	</HediffDef>
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>BionicCuteboldTail</defName>
+		<label>bionic tail</label>
+		<labelNoun>a bionic tail</labelNoun>
+		<description>A fancy tail.</description>
+		<descriptionHyperlinks>
+			<ThingDef>BionicCuteboldTail</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>BionicCuteboldTail</spawnThingOnRemoved>
+		<addedPartProps>
+			<betterThanNatural>true</betterThanNatural>
+			<solid>true</solid>
+			<partEfficiency>1.25</partEfficiency>
+		</addedPartProps>
+		<!--<stages> Enable if tail body part affecting movement is disabled
+			<li>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.15</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>-->
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>tail</label>
+						<capacities>
+							<li>Blunt</li>
+						</capacities>
+						<power>10</power>
+						<cooldownTime>3</cooldownTime>
+						<soundMeleeHit>MeleeHit_BionicPunch</soundMeleeHit>
+						<soundMeleeMiss>MeleeMiss_BionicPunch</soundMeleeMiss>
+					</li>
+				</tools>
+			</li>
+		</comps>
+	</HediffDef>
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>ProstheticCuteboldTail</defName>
+		<label>prosthetic tail</label>
+		<labelNoun>a prosthetic tail</labelNoun>
+		<description>A clunky tail.</description>
+		<descriptionHyperlinks>
+			<ThingDef>ProstheticCuteboldTail</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>ProstheticCuteboldTail</spawnThingOnRemoved>
+		<addedPartProps>
+			<betterThanNatural>false</betterThanNatural>
+			<solid>true</solid>
+			<partEfficiency>0.85</partEfficiency>
+		</addedPartProps>
+	</HediffDef>
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>FakeCuteboldTail</defName>
+		<label>fake tail</label>
+		<labelNoun>a fake tail</labelNoun>
+		<description>A fake tail.</description>
+		<descriptionHyperlinks>
+			<ThingDef>FakeCuteboldTail</ThingDef>
+		</descriptionHyperlinks>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>0.6</partEfficiency>
+			<betterThanNatural>false</betterThanNatural>
+		</addedPartProps>
+	</HediffDef>
+</Defs>

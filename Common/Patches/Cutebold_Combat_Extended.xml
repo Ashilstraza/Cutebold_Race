@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- These patches are for replacing various things that could not be done in the regular xml files. -->
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Combat Extended</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<!--          Headgear          -->
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName="Cutebold_Goggles"]/apparel/layers/li[.="Overhead"]</xpath>
+					<value>
+						<li>StrappedHead</li>
+					</value>
+				</li>
+				<!--          Race          -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Cutebold"]/statBases</xpath>
+					<value>
+						<AimingAccuracy IgnoreIfNoMatchingField="True">1.1</AimingAccuracy><!-- Cutebolds have good eyes-->
+						<NightVisionEfficiency IgnoreIfNoMatchingField="True">1.0</NightVisionEfficiency><!-- Cutebolds can see in the dark -->
+						<MeleeCritChance>0.8</MeleeCritChance>
+						<MeleeParryChance>0.6</MeleeParryChance>
+						<Suppressability>1.15</Suppressability>
+						<SmokeSensitivity>0.7</SmokeSensitivity>
+						<CarryWeight>50</CarryWeight>
+						<!-- We want them to be able to carry stuff; 50*0.65~=32.5, 40 is human -->
+						<CarryBulk>35</CarryBulk>
+						<!-- We want them to be able to carry stuff; 35*0.65~=22.75, 25 is human -->
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Cutebold"]/statBases/MeleeDodgeChance</xpath>
+					<value>
+						<MeleeDodgeChance>1.6</MeleeDodgeChance>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Cutebold"]/tools</xpath>
+					<value>
+						<tools>
+							<li Class="CombatExtended.ToolCE">
+								<label>left fist</label>
+								<capacities>
+									<li>Blunt</li>
+								</capacities>
+								<power>0.7</power>
+								<cooldownTime>1.26</cooldownTime>
+								<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+								<armorPenetrationSharp>0</armorPenetrationSharp>
+								<armorPenetrationBlunt>0.250</armorPenetrationBlunt>
+							</li>
+							<li Class="CombatExtended.ToolCE">
+								<label>right fist</label>
+								<capacities>
+									<li>Blunt</li>
+								</capacities>
+								<power>0.7</power>
+								<cooldownTime>1.26</cooldownTime>
+								<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+								<armorPenetrationSharp>0</armorPenetrationSharp>
+								<armorPenetrationBlunt>0.250</armorPenetrationBlunt>
+							</li>
+							<li Class="CombatExtended.ToolCE">
+								<label>teeth</label>
+								<capacities>
+									<li>Bite</li>
+								</capacities>
+								<power>1.25</power>
+								<cooldownTime>1.6</cooldownTime>
+								<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+								<chanceFactor>0.40</chanceFactor>
+								<armorPenetrationSharp>0.10</armorPenetrationSharp>
+								<armorPenetrationBlunt>0.250</armorPenetrationBlunt>
+							</li>
+							<li Class="CombatExtended.ToolCE">
+								<label>head</label>
+								<capacities>
+									<li>Blunt</li>
+								</capacities>
+								<power>1</power>
+								<cooldownTime>4</cooldownTime>
+								<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+								<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+								<chanceFactor>0.25</chanceFactor>
+								<soundMeleeHit>Pawn_Melee_HumanBite_Hit</soundMeleeHit>
+								<soundMeleeMiss>Pawn_Melee_HumanBite_Miss</soundMeleeMiss>
+								<armorPenetrationSharp>0</armorPenetrationSharp>
+								<armorPenetrationBlunt>0.625</armorPenetrationBlunt>
+							</li>
+							<li Class="CombatExtended.ToolCE">
+								<label>tail</label>
+								<capacities>
+									<li>Blunt</li>
+								</capacities>
+								<power>1</power>
+								<cooldownTime>4.5</cooldownTime>
+								<linkedBodyPartsGroup>TailAttackTool</linkedBodyPartsGroup>
+								<chanceFactor>0.20</chanceFactor>
+								<armorPenetrationSharp>0</armorPenetrationSharp>
+								<armorPenetrationBlunt>0.625</armorPenetrationBlunt>
+							</li>
+						</tools>
+					</value>
+				</li>
+				<!--          PawnKinds          -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/PawnKindDef[@Name="CuteboldBase"]/combatPower</xpath>
+					<value>
+						<combatPower>16</combatPower>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/PawnKindDef[defName="Cutebold_Outsider"]/combatPower</xpath>
+					<value>
+						<combatPower>50</combatPower>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/PawnKindDef[@Name="CuteboldMilBase"]/combatPower</xpath>
+					<value>
+						<combatPower>30</combatPower>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/PawnKindDef[@Name="CuteboldLowMilBase"]/combatPower</xpath>
+					<value>
+						<combatPower>45</combatPower>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/PawnKindDef[@Name="CuteboldMidMilBase"]/combatPower</xpath>
+					<value>
+						<combatPower>60</combatPower>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/PawnKindDef[defName="Cutebold_ChiefRanged"]/weaponTags/li[.="NeolithicRangedChief"]</xpath>
+					<value>
+						<li>Gun</li>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/PawnKindDef[@Name="CuteboldHighMilBase"]/weaponMoney</xpath>
+					<value>
+						<weaponMoney>600~1200</weaponMoney>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

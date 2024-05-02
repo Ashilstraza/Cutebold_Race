@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<TaleDef>
+		<defName>AteRawCuteboldMeatTale</defName>
+		<label>raw kobold meat eaten</label>
+		<taleClass>Tale_SinglePawn</taleClass>
+		<type>Expirable</type>
+		<baseInterest>0.9</baseInterest>
+		<maxPerPawn>1</maxPerPawn>
+		<expireDays>20</expireDays>
+		<rulePack>
+			<rulesStrings>
+				<li>tale_noun->[PAWN_nameDef]'s eating of kobold meat</li>
+				<li>image->[PAWN_nameFull] [eat_gerund] the meat of a fellow kobold [circumstance_group]</li>
+				<li>image->[PAWN_nameFull] [eat_gerund] meat from a kobold arm [circumstance_group]</li>
+				<li>image->[PAWN_nameFull] [eat_gerund] flesh of a kobold [circumstance_group]</li>
+				<li>eat_gerund->eating</li>
+				<li>eat_gerund->ingesting</li>
+				<li>eat_gerund->chewing</li>
+				<li>eat_gerund->chowing down on</li>
+				<li>eat_gerund->consuming</li>
+				<li>eat_gerund->swallowing</li>
+				<li>eat_gerund->cannibalizing</li>
+				<li>circumstance_phrase->with a sense of purpose</li>
+				<li>circumstance_phrase->with no hint of shame</li>
+				<li>circumstance_phrase->with a look of shame</li>
+				<li>circumstance_phrase->while others look on</li>
+				<li>circumstance_phrase->with gusto</li>
+				<li>circumstance_phrase->frantically, like [PAWN_possessive] life depended on it</li>
+				<li>desc_sentence->[PAWN_nameDef]'s face is covered with blood and fluid.</li>
+				<li>desc_sentence->[PAWN_nameDef] is licking [PAWN_possessive] fingers.</li>
+				<li>desc_sentence->[PAWN_nameDef] has blood and gore bits all down [PAWN_possessive] front.</li>
+				<li>desc_sentence->[PAWN_nameDef] is in the middle of a large pool of blood.</li>
+				<li>desc_sentence->[PAWN_nameDef] is eyeing someone else nearby with dark interest.</li>
+				<li>desc_sentence->The meat is glistening and appears very tasty.</li>
+				<li>desc_sentence->The meat is spilling all over [PAWN_nameDef]'s body.</li>
+			</rulesStrings>
+		</rulePack>
+	</TaleDef>
+	<TaleDef>
+		<defName>ButcheredCuteboldCorpseTale</defName>
+		<label>kobold corpse butchered</label>
+		<taleClass>Tale_SinglePawn</taleClass>
+		<type>Expirable</type>
+		<usableForArt>false</usableForArt>
+		<maxPerPawn>1</maxPerPawn>
+		<expireDays>20</expireDays>
+	</TaleDef>
+</Defs>

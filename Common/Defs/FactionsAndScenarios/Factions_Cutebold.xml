@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- Abstract -->
+	<FactionDef ParentName="FactionBase" Abstract="True" Name="CuteboldTribeAbstract">
+		<!-- Pawns -->
+		<pawnSingular>cutebold</pawnSingular>
+		<pawnsPlural>cutebolds</pawnsPlural>
+		<forageabilityFactor>1.7</forageabilityFactor>
+		<apparelStuffFilter>
+			<thingDefs>
+				<li>Cloth</li>
+			</thingDefs>
+		</apparelStuffFilter>
+		<!-- TODO: Settlement/Faction Name Makers-->
+		<!-- Settlement -->
+		<label>Cutebold Tribe</label>
+		<settlementNameMaker>NamerSettlementTribal</settlementNameMaker>
+		<settlementTexturePath>World/CuteboldSettlement</settlementTexturePath>
+		<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
+		<!-- Faction -->
+		<factionNameMaker>NamerFactionTribal</factionNameMaker>
+		<techLevel>Neolithic</techLevel>
+		<factionIconPath>World/CuteboldCamp</factionIconPath>
+		<startingResearchTags>
+			<li>TribalStart</li>
+		</startingResearchTags>
+		<startingTechprintsResearchTags>
+			<li>TribalStart</li>
+			<li>TribalStartTechprints</li>
+		</startingTechprintsResearchTags>
+		<recipePrerequisiteTags>
+			<li>Tribal</li>
+		</recipePrerequisiteTags>
+		<!-- Culture -->
+		<allowedCultures>
+			<li>Cuteboldian</li>
+		</allowedCultures>
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>Tribal</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+		<disallowedMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Transhumanist</li>
+		</disallowedMemes>
+		<disallowedPrecepts>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_CoveringAnythingButGroinDisapproved</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_CoveringAnythingButGroinDisapproved</li>
+		</disallowedPrecepts>
+	</FactionDef>
+
+	<FactionDef ParentName="CuteboldTribeAbstract" Abstract="True" Name="CuteboldPlayerAbstract">
+		<description>Your very own tribe of Cutebolds.</description>
+		<isPlayer>true</isPlayer>
+		<colorSpectrum>
+			<li>(0, 0.737, 0.847)</li>
+		</colorSpectrum>
+	</FactionDef>
+	
+	<FactionDef ParentName="CuteboldPlayerAbstract">
+		<defName>CuteboldTribePlayer</defName>
+		<basicMemberKind>Cutebold</basicMemberKind>
+	</FactionDef>
+
+	<FactionDef ParentName="CuteboldPlayerAbstract">
+		<defName>CuteboldRefugeePlayer</defName>
+		<label>Cutebold Refugee Tribe</label>
+		<basicMemberKind>Cutebold_Refugee</basicMemberKind>
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>CuteboldRefugee</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</FactionDef>
+
+	<FactionDef ParentName="CuteboldTribeAbstract">
+		<defName>CuteboldTribe</defName>
+		<description>A tribe of bumbling, hapless cutebolds. More than anything else, they wish to be left alone.</description>
+		<leaderTitle>Chief</leaderTitle>
+		<listOrderPriority>20</listOrderPriority>
+		<settlementGenerationWeight>1</settlementGenerationWeight>
+		<requiredCountAtGameStart>1</requiredCountAtGameStart>
+		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+		<configurationListOrderPriority>40</configurationListOrderPriority>
+		<canMakeRandomly>true</canMakeRandomly>
+		<canStageAttacks>true</canStageAttacks>
+		<allowedArrivalTemperatureRange>-40~45</allowedArrivalTemperatureRange>
+		<colorSpectrum>
+			<li>(0.23, 1.0, 0.23)</li>
+			<li>(0.45, 0.25, 0.66)</li>
+			<li>(0.66, 0.45, 0.33)</li>
+			<li>(0.35, 1, 0.66)</li>
+		</colorSpectrum>
+		<disallowedMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">PainIsVirtue</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+		</disallowedMemes>
+		<raidCommonalityFromPointsCurve>
+			<points>
+				<li>(0, 1)</li>
+				<!--Constant 1 at all points levels-->
+			</points>
+		</raidCommonalityFromPointsCurve>
+		<visitorTraderKinds>
+			<li>Visitor_Neolithic_Standard</li>
+		</visitorTraderKinds>
+		<caravanTraderKinds>
+			<li>Caravan_Neolithic_BulkGoods</li>
+			<li>Caravan_Neolithic_Slaver</li>
+			<li>Caravan_Neolithic_ShamanMerchant</li>
+		</caravanTraderKinds>
+		<baseTraderKinds>
+			<li>Base_Neolithic_Standard</li>
+		</baseTraderKinds>
+		<maxPawnCostPerTotalPointsCurve>
+			<points>
+				<li>(0,35)</li>
+				<li>(70, 50)</li>
+				<li>(800, 100)</li>
+				<li>(1300, 150)</li>
+				<li>(100000, 10000)</li>
+			</points>
+		</maxPawnCostPerTotalPointsCurve>
+		<pawnGroupMakers>
+			<li>
+				<!-- Normal fights, ranged with melee mix-ins -->
+				<kindDef>Combat</kindDef>
+				<commonality>100</commonality>
+				<options>
+					<Cutebold_Warrior>5</Cutebold_Warrior>
+					<Cutebold_Skirmisher>10</Cutebold_Skirmisher>
+					<Cutebold_Hunter>10</Cutebold_Hunter>
+					<Cutebold_Guerilla>10</Cutebold_Guerilla>
+					<Cutebold_Wardancer>5</Cutebold_Wardancer>
+					<Cutebold_ChiefRanged>3</Cutebold_ChiefRanged>
+					<Cutebold_ChiefWardance>1.5</Cutebold_ChiefWardance>
+				</options>
+			</li>
+			<li>
+				<!-- Normal fights, ranged only -->
+				<kindDef>Combat</kindDef>
+				<commonality>60</commonality>
+				<options>
+					<Cutebold_Skirmisher>10</Cutebold_Skirmisher>
+					<Cutebold_Hunter>10</Cutebold_Hunter>
+					<Cutebold_Guerilla>10</Cutebold_Guerilla>
+					<Cutebold_ChiefRanged>5</Cutebold_ChiefRanged>
+				</options>
+			</li>
+			<li>
+				<!-- Normal fights, melee only -->
+				<kindDef>Combat</kindDef>
+				<commonality>60</commonality>
+				<options>
+					<Cutebold_Warrior>10</Cutebold_Warrior>
+					<Cutebold_Wardancer>10</Cutebold_Wardancer>
+					<Cutebold_ChiefWardance>5</Cutebold_ChiefWardance>
+				</options>
+			</li>
+			<li>
+				<!-- Peaceful -->
+				<kindDef>Peaceful</kindDef>
+				<options>
+					<Cutebold_Warrior>20</Cutebold_Warrior>
+					<Cutebold_Skirmisher>10</Cutebold_Skirmisher>
+					<Cutebold_Hunter>10</Cutebold_Hunter>
+					<Cutebold_Guerilla>10</Cutebold_Guerilla>
+					<Cutebold_Wardancer>7</Cutebold_Wardancer>
+					<Cutebold_ChiefRanged>3</Cutebold_ChiefRanged>
+					<Cutebold_ChiefWardance>3</Cutebold_ChiefWardance>
+				</options>
+			</li>
+			<li>
+				<kindDef>Trader</kindDef>
+				<traders>
+					<Cutebold_Trader>1</Cutebold_Trader>
+				</traders>
+				<carriers>
+					<Muffalo>6</Muffalo>
+					<Dromedary>5</Dromedary>
+					<Alpaca>2.5</Alpaca>
+					<Elephant>2</Elephant>
+				</carriers>
+				<guards>
+					<Cutebold_Villager>5</Cutebold_Villager>
+					<Cutebold_Warrior>7</Cutebold_Warrior>
+					<Cutebold_Skirmisher>10</Cutebold_Skirmisher>
+					<Cutebold_Hunter>10</Cutebold_Hunter>
+					<Cutebold_Guerilla>10</Cutebold_Guerilla>
+					<Cutebold_Wardancer>7</Cutebold_Wardancer>
+				</guards>
+			</li>
+			<li>
+				<kindDef>Settlement</kindDef>
+				<options>
+					<Cutebold_Villager>15</Cutebold_Villager>
+					<Cutebold_Warrior>7</Cutebold_Warrior>
+					<Cutebold_Skirmisher>15</Cutebold_Skirmisher>
+					<Cutebold_Hunter>10</Cutebold_Hunter>
+					<Cutebold_Guerilla>10</Cutebold_Guerilla>
+					<Cutebold_Wardancer>8</Cutebold_Wardancer>
+					<Cutebold_ChiefRanged>7</Cutebold_ChiefRanged>
+					<Cutebold_ChiefWardance>7</Cutebold_ChiefWardance>
+				</options>
+			</li>
+		</pawnGroupMakers>
+	</FactionDef>
+</Defs>
