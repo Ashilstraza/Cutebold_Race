@@ -56,10 +56,18 @@ For the descriptions in game, I decided to put the cutebolds’ character into t
 
 
 Latest Updates:
-2.3.27 -- Soon
+2.3.27 -- May 2, 2024
+Changes:
 - Rebalance of backstory stats
-- Special silhouette for Cutebold pawns when zoomed out
+
+Fixes:
 - Fixed the Refugee scenario
+
+Additions:
+- Special silhouette for Cutebold pawns when zoomed out
+
+Developer Addition:
+- Allow HAR to not error on HotReload.
 
 2.3.26 -- Apr 11, 2024
 - Built against latest versions of HAR and Rimworld 1.5
