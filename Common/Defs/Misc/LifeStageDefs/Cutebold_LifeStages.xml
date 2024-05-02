@@ -36,7 +36,7 @@
 		<customMoodTipString>Mood represents how happy or stressed someone is. Babies with low mood are more likely to cry, while babies with a high mood are more likely to giggle.</customMoodTipString>
 		<silhouetteGraphicData IgnoreIfNoMatchingField="True">
 			<!-- 1.5 -->
-			<texPath>Things/Pawn/Humanlike/Silhouettes/Silhouette_HumanBaby</texPath>
+			<texPath>Cutebold/Silhouettes/Silhouette_CuteboldBaby</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>1</drawSize>
 		</silhouetteGraphicData>
@@ -87,7 +87,7 @@
 		<sittingOffset>0.3</sittingOffset>
 		<silhouetteGraphicData IgnoreIfNoMatchingField="True">
 			<!-- 1.5 -->
-			<texPath>Things/Pawn/Humanlike/Silhouettes/Silhouette_HumanChild</texPath>
+			<texPath>Cutebold/Silhouettes/Silhouette_CuteboldChild</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>1</drawSize>
 		</silhouetteGraphicData>
@@ -126,7 +126,7 @@
 		<sittingOffset>0.23</sittingOffset>
 		<silhouetteGraphicData IgnoreIfNoMatchingField="True">
 			<!-- 1.5 -->
-			<texPath>Things/Pawn/Humanlike/Silhouettes/Silhouette_HumanChild</texPath>
+			<texPath>Cutebold/Silhouettes/Silhouette_CuteboldChild</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>1</drawSize>
 		</silhouetteGraphicData>
@@ -146,7 +146,7 @@
 		<!-- For adjusting the size of Rimworld eye addons-->
 		<silhouetteGraphicData IgnoreIfNoMatchingField="True">
 			<!-- 1.5 -->
-			<texPath>Things/Pawn/Humanlike/Silhouettes/Silhouette_HumanAdult</texPath>
+			<texPath>Cutebold/Silhouettes/Silhouette_CuteboldAdult</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>1</drawSize>
 		</silhouetteGraphicData>

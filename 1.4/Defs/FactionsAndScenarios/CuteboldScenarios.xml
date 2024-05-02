@@ -158,8 +158,7 @@
 				<li Class="ScenPart_CreateIncident">
 					<def>CreateIncident</def>
 					<incident>ManhunterPack</incident>
-					<minDays>2</minDays>
-					<maxDays>5</maxDays>
+					<intervalDays>1.5</intervalDays>
 				</li>
 				<!-- Game start dialog -->
 				<li Class="ScenPart_GameStartDialog">
