@@ -2,7 +2,7 @@
 <ModMetaData>
 	<name>Cutebold Race</name>
 	<author>Ashilstraza</author>
-	<modVersion IgnoreIfNoMatchingField="True">2.3.27</modVersion><!-- 1.4+ -->
+	<modVersion IgnoreIfNoMatchingField="True">2.3.28</modVersion><!-- 1.4+ -->
 	<modIconPath IgnoreIfNoMatchingField="True">World/CuteboldCamp</modIconPath><!-- 1.5 -->
 	<supportedVersions>
 		<li>1.0</li>
@@ -14,14 +14,48 @@
 	</supportedVersions>
 	<packageId>ashilstraza.races.cute</packageId>
 	<url>https://steamcommunity.com/sharedfiles/filedetails/?id=2147295726</url>
-	<modDependencies>
-		<li>
-			<packageId>erdelf.HumanoidAlienRaces</packageId>
-			<displayName>Humanoid Alien Races</displayName>
-			<steamWorkshopUrl>steam://url/CommunityFilePage/839005762</steamWorkshopUrl>
-			<downloadUrl>https://github.com/erdelf/AlienRaces/wiki</downloadUrl>
-		</li>
-	</modDependencies>
+	<modDependenciesByVersion>
+		<v1.5>
+			<li>
+				<packageId>erdelf.HumanoidAlienRaces</packageId>
+				<displayName>Humanoid Alien Races</displayName>
+				<steamWorkshopUrl>steam://url/CommunityFilePage/839005762</steamWorkshopUrl>
+				<downloadUrl>https://github.com/erdelf/AlienRaces/wiki</downloadUrl>
+			</li>
+		</v1.5>
+		<v1.4>
+			<li>
+				<packageId>erdelf.HumanoidAlienRaces</packageId>
+				<displayName>Humanoid Alien Races</displayName>
+				<steamWorkshopUrl>steam://url/CommunityFilePage/839005762</steamWorkshopUrl>
+				<downloadUrl>https://github.com/erdelf/AlienRaces/wiki</downloadUrl>
+			</li>
+		</v1.4>
+		<v1.3>
+			<li>
+				<packageId>erdelf.HumanoidAlienRaces</packageId>
+				<displayName>Humanoid Alien Races</displayName>
+				<steamWorkshopUrl>steam://url/CommunityFilePage/839005762</steamWorkshopUrl>
+				<downloadUrl>https://github.com/erdelf/AlienRaces/wiki</downloadUrl>
+			</li>
+		</v1.3>
+		<v1.2>
+			<li>
+				<packageId>erdelf.HumanoidAlienRaces</packageId>
+				<displayName>Humanoid Alien Races</displayName>
+				<steamWorkshopUrl>steam://url/CommunityFilePage/839005762</steamWorkshopUrl>
+				<downloadUrl>https://github.com/erdelf/AlienRaces/wiki</downloadUrl>
+			</li>
+		</v1.2>
+		<v1.1>
+			<li>
+				<packageId>erdelf.HumanoidAlienRaces</packageId>
+				<displayName>Humanoid Alien Races 2.0</displayName>
+				<steamWorkshopUrl>steam://url/CommunityFilePage/839005762</steamWorkshopUrl>
+				<downloadUrl>https://github.com/erdelf/AlienRaces/wiki</downloadUrl>
+			</li>
+		</v1.1>
+	</modDependenciesByVersion>
 	<loadBefore>
 		<li>FrozenSnowFox.AdvancedBionicsExpansion</li>
 	</loadBefore>
@@ -56,6 +90,10 @@ For the descriptions in game, I decided to put the cutebolds’ character into t
 
 
 Latest Updates:
+2.3.28 -- May 8, 2024
+Backend Change:
+- Special patches for races split off to use in multiple races.
+
 2.3.27 -- May 2, 2024
 Changes:
 - Rebalance of backstory stats
