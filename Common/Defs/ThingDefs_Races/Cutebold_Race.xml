@@ -624,7 +624,7 @@
 							<colorChannel>skin</colorChannel>
 							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
 							<alignWithHead>true</alignWithHead>
-							<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
+							<!--<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>-->
 							<offsets>
 								<north>
 									<offset>(0,-0.35)</offset>
@@ -727,7 +727,7 @@
 							<colorChannel>eye</colorChannel>
 							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
 							<alignWithHead>true</alignWithHead>
-							<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
+							<!--<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>-->
 							<offsets>
 								<north />
 								<south>
@@ -744,10 +744,14 @@
 					<anchorReplacements>
 						<li>
 							<originalGroup>FullHead</originalGroup>
+							<offsets>
+								<south>
+									<offset>(0, 0.23)</offset>
+								</south>
+							</offsets>
 							<replacement>
 								<rotation>South</rotation>
 								<group>FullHead</group>
-								<offset>(0, 0, 0.23)</offset>
 								<range>0.15</range>
 								<layer>Head</layer>
 								<debugColor>(1,0,0,1)</debugColor>
@@ -755,11 +759,15 @@
 						</li>
 						<li>
 							<originalTag>RightEye</originalTag>
+							<offsets>
+								<south>
+									<offset>(-0.075, 0.23)</offset>
+								</south>
+							</offsets>
 							<replacement>
 								<rotation>South</rotation>
 								<tag>RightEye</tag>
 								<canMirror>false</canMirror>
-								<offset>(-0.075, -0.001, 0.23)</offset>
 								<range>0</range>
 								<layer>Head</layer>
 								<debugColor>(0,1,0,1)</debugColor>
@@ -767,11 +775,15 @@
 						</li>
 						<li>
 							<originalTag>LeftEye</originalTag>
+							<offsets>
+								<south>
+									<offset>(0.067, 0.23)</offset>
+								</south>
+							</offsets>
 							<replacement>
 								<rotation>South</rotation>
 								<tag>LeftEye</tag>
 								<canMirror>false</canMirror>
-								<offset>(0.067, -0.001, 0.23)</offset>
 								<range>0</range>
 								<layer>Head</layer>
 								<debugColor>(0,0,1,1)</debugColor>
@@ -779,10 +791,14 @@
 						</li>
 						<li>
 							<originalGroup>FullHead</originalGroup>
+							<offsets>
+								<west>
+									<offset>(-0.04, 0.20)</offset>
+								</west>
+							</offsets>
 							<replacement>
 								<rotation>West</rotation>
 								<group>FullHead</group>
-								<offset>(-0.04, 0, 0.20)</offset>
 								<range>0.13</range>
 								<layer>Head</layer>
 								<debugColor>(1,0,0,1)</debugColor>
@@ -790,11 +806,15 @@
 						</li>
 						<li>
 							<originalTag>RightEye</originalTag>
+							<offsets>
+								<east>
+									<offset>(0.05, 0.22)</offset>
+								</east>
+							</offsets>
 							<replacement>
 								<rotation>East</rotation>
 								<tag>RightEye</tag>
 								<canMirror>false</canMirror>
-								<offset>(0.05, -0.001, 0.22)</offset>
 								<range>0</range>
 								<layer>Head</layer>
 								<debugColor>(0,1,0,1)</debugColor>
@@ -802,11 +822,15 @@
 						</li>
 						<li>
 							<originalTag>LeftEye</originalTag>
+							<offsets>
+								<west>
+									<offset>(-0.04, 0.22)</offset>
+								</west>
+							</offsets>
 							<replacement>
 								<rotation>West</rotation>
 								<tag>LeftEye</tag>
 								<canMirror>false</canMirror>
-								<offset>(-0.04, -0.001, 0.22)</offset>
 								<range>0</range>
 								<layer>Head</layer>
 								<debugColor>(0,0,1,1)</debugColor>

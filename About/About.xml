@@ -2,7 +2,7 @@
 <ModMetaData>
 	<name>Cutebold Race</name>
 	<author>Ashilstraza</author>
-	<modVersion IgnoreIfNoMatchingField="True">2.3.28</modVersion><!-- 1.4+ -->
+	<modVersion IgnoreIfNoMatchingField="True">2.3.29</modVersion><!-- 1.4+ -->
 	<modIconPath IgnoreIfNoMatchingField="True">World/CuteboldCamp</modIconPath><!-- 1.5 -->
 	<supportedVersions>
 		<li>1.0</li>
@@ -56,6 +56,14 @@ For the descriptions in game, I decided to put the cutebolds’ character into t
 
 
 Latest Updates:
+2.3.29 -- Nov 11, 2024
+Fix:
+- Fixed Cutebolds being unable to spawn if they have any dark adaptation above 'none'
+- Fixed eye wound anchors
+- Fixed EPOE Forked Support
+Backend Change:
+- Fix on HAR HotReload patch
+
 2.3.28 -- May 9, 2024
 Backend Change:
 - Special patches for races split off to use in multiple races.
@@ -72,13 +80,6 @@ Additions:
 
 Developer Addition:
 - Allow HAR to not error on HotReload.
-
-2.3.26 -- Apr 11, 2024
-- Built against latest versions of HAR and Rimworld 1.5
-
-2.3.25 -- Mar 19, 2024
-- Initial update to 1.5, Dev version of HAR Required for use in that.
-- Major refactoring of some code
 
 
 Feedback:
