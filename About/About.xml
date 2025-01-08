@@ -2,7 +2,7 @@
 <ModMetaData>
 	<name>Cutebold Race</name>
 	<author>Ashilstraza</author>
-	<modVersion IgnoreIfNoMatchingField="True">2.3.29</modVersion><!-- 1.4+ -->
+	<modVersion IgnoreIfNoMatchingField="True">2.3.30</modVersion><!-- 1.4+ -->
 	<modIconPath IgnoreIfNoMatchingField="True">World/CuteboldCamp</modIconPath><!-- 1.5 -->
 	<supportedVersions>
 		<li>1.0</li>
@@ -56,8 +56,13 @@ For the descriptions in game, I decided to put the cutebolds’ character into t
 
 
 Latest Updates:
+2.3.30 -- Jan 7, 2025
+Fixes
+- Fixed support for Medieval Prosthetics
+- Fixed error with CE patch
+
 2.3.29 -- Nov 11, 2024
-Fix:
+Fixes:
 - Fixed Cutebolds being unable to spawn if they have any dark adaptation above 'none'
 - Fixed eye wound anchors
 - Fixed EPOE Forked Support
@@ -67,10 +72,6 @@ Backend Change:
 2.3.28 -- May 9, 2024
 Backend Change:
 - Special patches for races split off to use in multiple races.
-
-2.3.27 -- May 2, 2024
-Changes:
-- Rebalance of backstory stats
 
 Fixes:
 - Fixed the Refugee scenario

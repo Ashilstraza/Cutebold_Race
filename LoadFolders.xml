@@ -46,9 +46,9 @@
 		<li>Common</li>
 		<li>1.5</li>
 		<li IfModActive="Rah.RBSE,Rah.RBSEHC,Ykara.EPOE,Rah.RBSE_copy,Rah.RBSEHC_copy,Ykara.EPOE_copy,vat.epoeforked,vat.epoeforked_copy,FrozenSnowFox.AdvancedBionicsExpansion,FrozenSnowFox.AdvancedBionicsExpansion_copy">ModSpecific/RBSE_and_EPOE</li>
-		<li IfModActive="Safe.Job.World,rim.job.world,Safe.Job.World_copy,rim.job.world_copy">ModSpecific/That_Mod</li><!--TODO: Test when updated-->
+		<li IfModActive="Safe.Job.World,rim.job.world,Safe.Job.World_copy,rim.job.world_copy">ModSpecific/That_Mod</li>
 		<li IfModActive="automatic.bionicicons,automatic.bionicicons_copy">ModSpecific/Bionic_Icons</li>
-		<li IfModActive="NunahurAlShamikh.MedP,NunahurAlShamikh.MedP_copy">ModSpecific/Medieval_Prosthetics</li><!--TODO: Test when updated-->
+		<li IfModActive="NunahurAlShamikh.MedP,NunahurAlShamikh.MedP_copy">ModSpecific/Medieval_Prosthetics_1.5</li>
 		<li IfModActive="Ludeon.RimWorld.Royalty">ModSpecific/Royalty</li>
 	</v1.5>
 </loadFolders>

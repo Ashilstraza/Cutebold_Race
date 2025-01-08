@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- Artificial Tail-->
+	<HediffDef ParentName="AddedPartMedArtificial">
+		<defName>ArtificialCuteboldMedTail</defName>
+		<label>artificial cutebold tail</label>
+		<labelNoun>an artificial cutebold tail</labelNoun>
+		<description>An installed floppy cutebold tail.</description>
+		<descriptionHyperlinks>
+			<ThingDef>ArtificialCuteboldMedTail</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>ArtificialCuteboldMedTail</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>0.75</partEfficiency>
+			<betterThanNatural>false</betterThanNatural>
+		</addedPartProps>
+	</HediffDef>
+	<ThingDef ParentName="BodyPartMedArtificialBase">
+		<defName>ArtificialCuteboldMedTail</defName>
+		<label>artificial cutebold tail</label>
+		<description>A floppy cutebold tail. It is a little better than a simple fabric tail. Filled with trees and hard rocks.</description>
+		<costList>
+			<Steel>40</Steel>
+			<WoodLog>5</WoodLog>
+		</costList>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<costStuffCount>40</costStuffCount>
+		<statBases>
+			<Mass>1.25</Mass>
+		</statBases>
+	</ThingDef>
+	<RecipeDef ParentName="SurgeryArtificialCuteboldTail">
+		<defName>InstallArtificialCuteboldMedTail</defName>
+		<label>install artificial cutebold tail</label>
+		<description>Installs an artificial cutebold tail.</description>
+		<descriptionHyperlinks>
+			<ThingDef>ArtificialCuteboldMedTail</ThingDef>
+		</descriptionHyperlinks>
+		<jobString>Installing artificial tail.</jobString>
+		<workAmount>350</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ArtificialCuteboldMedTail</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ArtificialCuteboldMedTail</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>CuteboldTail</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>ArtificialCuteboldMedTail</addsHediff>
+	</RecipeDef>
+	<!-- Mechanical Tail-->
+	<HediffDef ParentName="addedPartMedMechanical">
+		<defName>MechanicalCuteboldMedTail</defName>
+		<label>mechanical cutebold tail</label>
+		<labelNoun>a mechanical cutebold tail</labelNoun>
+		<description>An installed wiggly cutebold tail.</description>
+		<descriptionHyperlinks>
+			<ThingDef>MechanicalCuteboldMedTail</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>MechanicalCuteboldMedTail</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>0.9</partEfficiency>
+			<betterThanNatural>false</betterThanNatural>
+		</addedPartProps>
+	</HediffDef>
+	<ThingDef ParentName="BodyPartMedMechanicalBase">
+		<defName>MechanicalCuteboldMedTail</defName>
+		<label>mechanical cutebold tail</label>
+		<description>A wiggly cutebold tail. It is better than a floppy tail, but not as good as a real one. Made with lots of hard rocks and many little bits and pieces.</description>
+		<costList>
+			<Steel>60</Steel>
+			<ComponentIndustrial>6</ComponentIndustrial>
+		</costList>
+		<stuffCategories>
+			<li>Leathery</li>
+		</stuffCategories>
+		<costStuffCount>40</costStuffCount>
+		<statBases>
+			<Mass>1.25</Mass>
+		</statBases>
+	</ThingDef>
+	<RecipeDef ParentName="SurgeryArtificialCuteboldTail">
+		<defName>InstallMechanicalCuteboldMedTail</defName>
+		<label>install mechanical cutebold tail</label>
+		<description>Installs a mechanical cutebold tail.</description>
+		<descriptionHyperlinks>
+			<ThingDef>MechanicalCuteboldMedTail</ThingDef>
+		</descriptionHyperlinks>
+		<jobString>Installing mechanical tail.</jobString>
+		<workAmount>350</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MechanicalCuteboldMedTail</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>MechanicalCuteboldMedTail</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>CuteboldTail</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>MechanicalCuteboldMedTail</addsHediff>
+	</RecipeDef>
+	<!-- Ambroisen Tail-->
+	<HediffDef ParentName="AddedPartMedAmbroisen">
+		<defName>AmbroisenCuteboldMedTail</defName>
+		<label>ambroisen cutebold tail</label>
+		<labelNoun>an ambroisen cutebold tail</labelNoun>
+		<description>An installed lovely cutebold tail.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AmbroisenCuteboldMedTail</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AmbroisenCuteboldMedTail</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.0</partEfficiency>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+		<stages>
+			<li>
+				<statOffsets>
+					<NegotiationAbility>+0.03</NegotiationAbility>
+					<SocialImpact>+0.05</SocialImpact>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	<ThingDef ParentName="BodyPartMedAmbroisenBase">
+		<defName>AmbroisenCuteboldMedTail</defName>
+		<label>ambroisen cutebold tail</label>
+		<description>A lovely cutebold tail. It looks just like a real tail! Also, it would seem that others may like you better because of the fancy leathers and shinies used in it.</description>
+		<costList>
+			<Steel>60</Steel>
+			<ComponentIndustrial>10</ComponentIndustrial>
+			<Gold>6</Gold>
+			<Silver>40</Silver>
+		</costList>
+		<stuffCategories>
+			<li>Leathery</li>
+		</stuffCategories>
+		<costStuffCount>60</costStuffCount>
+		<statBases>
+			<Mass>1.25</Mass>
+		</statBases>
+	</ThingDef>
+	<RecipeDef ParentName="SurgeryArtificialCuteboldTail">
+		<defName>InstallAmbroisenCuteboldMedTail</defName>
+		<label>install ambroisen cutebold tail</label>
+		<description>Installs an ambroisen cutebold tail.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AmbroisenCuteboldMedTail</ThingDef>
+		</descriptionHyperlinks>
+		<jobString>Installing ambroisen tail.</jobString>
+		<workAmount>350</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AmbroisenCuteboldMedTail</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AmbroisenCuteboldMedTail</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>CuteboldTail</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>AmbroisenCuteboldMedTail</addsHediff>
+	</RecipeDef>
+</Defs>
