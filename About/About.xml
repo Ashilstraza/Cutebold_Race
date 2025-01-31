@@ -2,7 +2,7 @@
 <ModMetaData>
 	<name>Cutebold Race</name>
 	<author>Ashilstraza</author>
-	<modVersion IgnoreIfNoMatchingField="True">2.3.30</modVersion><!-- 1.4+ -->
+	<modVersion IgnoreIfNoMatchingField="True">2.3.31</modVersion><!-- 1.4+ -->
 	<modIconPath IgnoreIfNoMatchingField="True">World/CuteboldCamp</modIconPath><!-- 1.5 -->
 	<supportedVersions>
 		<li>1.0</li>
@@ -56,6 +56,10 @@ For the descriptions in game, I decided to put the cutebolds’ character into t
 
 
 Latest Updates:
+2.3.31 -- Jan 30, 2025
+Fix:
+- Custom HAR Hot Reload Fixed
+
 2.3.30 -- Jan 7, 2025
 Fixes
 - Fixed support for Medieval Prosthetics
