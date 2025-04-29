@@ -8,7 +8,7 @@
 		<statBases>
 			<Mass>39</Mass>
 			<PsychicSensitivity>0.75</PsychicSensitivity>
-			<PsychicEntropyRecoveryRate>1.5</PsychicEntropyRecoveryRate>
+			<PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">1.5"</PsychicEntropyRecoveryRate>
 			<ToxicResistance>0.1</ToxicResistance>
 			<ToxicEnvironmentResistance>0.25</ToxicEnvironmentResistance>
 			<ComfyTemperatureMin>10</ComfyTemperatureMin>
@@ -385,7 +385,7 @@
 							<bodyTypes>
 								<Female>(0.0, -0.08)</Female>
 								<Thin>(0.0, -0.1)</Thin>
-								<Child>(0.0, -0.07)</Child>
+								<Child MayRequire="Ludeon.RimWorld.Biotech">(0.0, -0.07)</Child>
 								<Male>(0.0, -0.05)</Male>
 								<Fat>(0.0, -0.02)</Fat>
 								<Hulk>(0.0, -0.05)</Hulk>
@@ -395,7 +395,7 @@
 							<bodyTypes>
 								<Female>(0.0, -0.1)</Female>
 								<Thin>(0.0, -0.1)</Thin>
-								<Child>(0.0, -0.07)</Child>
+								<Child MayRequire="Ludeon.RimWorld.Biotech">(0.0, -0.07)</Child>
 								<Male>(0.0, -0.06)</Male>
 								<Fat>(0.0, -0.08)</Fat>
 								<Hulk>(0.0, -0.08)</Hulk>
@@ -405,7 +405,7 @@
 							<bodyTypes>
 								<Female>(0.0, -0.08)</Female>
 								<Thin>(0.0, -0.1)</Thin>
-								<Child>(-0.03, -0.07)</Child>
+								<Child MayRequire="Ludeon.RimWorld.Biotech">(-0.03, -0.07)</Child>
 								<Male>(0.06, -0.03)</Male>
 								<Fat>(0.0, -0.05)</Fat>
 								<Hulk>(0.0, -0.05)</Hulk>
@@ -415,7 +415,7 @@
 							<bodyTypes>
 								<Female>(0.0, -0.08)</Female>
 								<Thin>(0.0, -0.1)</Thin>
-								<Child>(0.03, -0.07)</Child>
+								<Child MayRequire="Ludeon.RimWorld.Biotech">(0.03, -0.07)</Child>
 								<Male>(-0.06, -0.03)</Male>
 								<Fat>(0.0, -0.05)</Fat>
 								<Hulk>(0.0, -0.05)</Hulk>
@@ -451,20 +451,20 @@
 								<south>
 									<layerOffset>-0.34</layerOffset>
 									<bodyTypes>
-										<Child>(0, 0.08)</Child>
+										<Child MayRequire="Ludeon.RimWorld.Biotech">(0, 0.08)</Child>
 										<Thin>(0, 0)</Thin>
 									</bodyTypes>
 								</south>
 								<north>
 									<bodyTypes>
-										<Child>(0, 0.08)</Child>
+										<Child MayRequire="Ludeon.RimWorld.Biotech">(0, 0.08)</Child>
 										<Thin>(0,0)</Thin>
 									</bodyTypes>
 									<layerOffset>-0.34</layerOffset>
 								</north>
 								<east>
 									<bodyTypes>
-										<Child>(0, 0.08)</Child>
+										<Child MayRequire="Ludeon.RimWorld.Biotech">(0, 0.08)</Child>
 										<Thin>(0,0)</Thin>
 									</bodyTypes>
 									<layerOffset>-0.288</layerOffset>
