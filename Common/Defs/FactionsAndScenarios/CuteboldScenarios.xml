@@ -113,6 +113,7 @@
 					<text>The tallfolk came without warning. They killed the chief and then set fire to your simple hay homes and gardens.\n\nOnly you five remain. If you are to survive, you will have to learn from past mistakes and adapt to the unforgiving world around you. Maybe the first thing you should do is not live in hay huts...</text>
 					<closeSound>GameStartSting</closeSound>
 				</li>
+				<!-- Rimworld Odyssey-->
 				<li MayRequire="Ludeon.RimWorld.Odyssey" Class="ScenPart_PlanetLayer">
 					<def>PlanetLayer</def>
 					<tag>Orbit</tag>
