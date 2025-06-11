@@ -10,18 +10,6 @@
 				<def>PlayerFaction</def>
 				<factionDef>CuteboldTribePlayer</factionDef>
 			</playerFaction>
-			<surfaceLayer>
-				<def>SurfaceLayerFixed</def>
-				<tag>Surface</tag>
-				<layer>Surface</layer>
-				<settingsDef>Surface</settingsDef>
-				<hide>true</hide>
-				<connections>
-					<Orbit MayRequire="Ludeon.RimWorld.Odyssey">
-						<zoomMode>ZoomOut</zoomMode>
-					</Orbit>
-				</connections>
-			</surfaceLayer>
 			<parts>
 				<!-- Config pages -->
 				<li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
@@ -113,18 +101,6 @@
 					<text>The tallfolk came without warning. They killed the chief and then set fire to your simple hay homes and gardens.\n\nOnly you five remain. If you are to survive, you will have to learn from past mistakes and adapt to the unforgiving world around you. Maybe the first thing you should do is not live in hay huts...</text>
 					<closeSound>GameStartSting</closeSound>
 				</li>
-				<li MayRequire="Ludeon.RimWorld.Odyssey" Class="ScenPart_PlanetLayer">
-					<def>PlanetLayer</def>
-					<tag>Orbit</tag>
-					<layer>Orbit</layer>
-					<settingsDef>Orbit</settingsDef>
-					<hide>true</hide>
-					<connections>
-						<Surface>
-							<zoomMode>ZoomIn</zoomMode>
-						</Surface>
-					</connections>
-				</li>
 			</parts>
 		</scenario>
 	</ScenarioDef>
@@ -138,18 +114,6 @@
 				<def>PlayerFaction</def>
 				<factionDef>CuteboldRefugeePlayer</factionDef>
 			</playerFaction>
-			<surfaceLayer>
-				<def>SurfaceLayerFixed</def>
-				<tag>Surface</tag>
-				<layer>Surface</layer>
-				<settingsDef>Surface</settingsDef>
-				<hide>true</hide>
-				<connections>
-					<Orbit MayRequire="Ludeon.RimWorld.Odyssey">
-						<zoomMode>ZoomOut</zoomMode>
-					</Orbit>
-				</connections>
-			</surfaceLayer>
 			<parts>
 				<!-- Config pages -->
 				<li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
@@ -202,19 +166,6 @@
 					<def>GameStartDialog</def>
 					<text>You had been separated from the last of your tribe only a few days ago and are now being stalked by something. Having wandered for many years, you have finally chosen this spot to settle down.\n\nA thought crosses your mind; should you just dig a grave and lay down in it, waiting for whatever has been stalking you to end it all?</text>
 					<closeSound>GameStartSting</closeSound>
-				</li>
-				<!-- Rimworld Odyssey-->
-				<li MayRequire="Ludeon.RimWorld.Odyssey" Class="ScenPart_PlanetLayer">
-					<def>PlanetLayer</def>
-					<tag>Orbit</tag>
-					<layer>Orbit</layer>
-					<settingsDef>Orbit</settingsDef>
-					<hide>true</hide>
-					<connections>
-						<Surface>
-							<zoomMode>ZoomIn</zoomMode>
-						</Surface>
-					</connections>
 				</li>
 			</parts>
 		</scenario>
