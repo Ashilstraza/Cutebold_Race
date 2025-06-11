@@ -8,7 +8,7 @@
 		<statBases>
 			<Mass>39</Mass>
 			<PsychicSensitivity>0.75</PsychicSensitivity>
-			<PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">1.5"</PsychicEntropyRecoveryRate>
+			<PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">1.5</PsychicEntropyRecoveryRate>
 			<ToxicSensitivity>0.75</ToxicSensitivity>
 			<ComfyTemperatureMin>10</ComfyTemperatureMin>
 			<ComfyTemperatureMax>30</ComfyTemperatureMax>
