@@ -1,27 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<ScenarioDef>
+	<ScenarioDef ParentName="ScenarioBase">
 		<defName>CuteboldTribalScenario</defName>
 		<label>Lost Cutebold Tribe</label>
 		<description>Your tribe was destroyed by the tallfolk who came in the night. Five of you avoided their stabbies and noisy sticks to escape. You must rebuild your village and learn to defend yourselves from the meanies.</description>
 		<scenario>
 			<summary>Five tribal cutebolds attempt to make a home for themselves. Difficult.</summary>
 			<playerFaction>
-				<def>PlayerFaction</def>
 				<factionDef>CuteboldTribePlayer</factionDef>
 			</playerFaction>
-			<surfaceLayer>
-				<def>SurfaceLayerFixed</def>
-				<tag>Surface</tag>
-				<layer>Surface</layer>
-				<settingsDef>Surface</settingsDef>
-				<hide>true</hide>
-				<connections>
-					<Orbit MayRequire="Ludeon.RimWorld.Odyssey">
-						<zoomMode>ZoomOut</zoomMode>
-					</Orbit>
-				</connections>
-			</surfaceLayer>
 			<parts>
 				<!-- Config pages -->
 				<li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
@@ -113,30 +100,16 @@
 					<text>The tallfolk came without warning. They killed the chief and then set fire to your simple hay homes and gardens.\n\nOnly you five remain. If you are to survive, you will have to learn from past mistakes and adapt to the unforgiving world around you. Maybe the first thing you should do is not live in hay huts...</text>
 					<closeSound>GameStartSting</closeSound>
 				</li>
-				<!-- Rimworld Odyssey-->
-				<li MayRequire="Ludeon.RimWorld.Odyssey" Class="ScenPart_PlanetLayer">
-					<def>PlanetLayer</def>
-					<tag>Orbit</tag>
-					<layer>Orbit</layer>
-					<settingsDef>Orbit</settingsDef>
-					<hide>true</hide>
-					<connections>
-						<Surface>
-							<zoomMode>ZoomIn</zoomMode>
-						</Surface>
-					</connections>
-				</li>
 			</parts>
 		</scenario>
 	</ScenarioDef>
-	<ScenarioDef>
+	<ScenarioDef ParentName="ScenarioBase">
 		<defName>CuteboldWarnderingStart</defName>
 		<label>The Cutebold Refugee</label>
 		<description>You have been wandering most of your life from place to place, never having settled in one spot for more than a quadrum. Members of your wandering tribe slowly left over the years, until it was down to just five of you. A few days ago, you were separated from your people in a storm; your only friend now is a single pet in this terrible world. \n\nFinally, after a lifetime of wandering, you have chosen a place to settle down. You are low on food and the terrors of the wilderness are closing in.</description>
 		<scenario>
 			<summary>You are all alone except for your pet.</summary>
 			<playerFaction>
-				<def>PlayerFaction</def>
 				<factionDef>CuteboldRefugeePlayer</factionDef>
 			</playerFaction>
 			<surfaceLayer>
@@ -203,19 +176,6 @@
 					<def>GameStartDialog</def>
 					<text>You had been separated from the last of your tribe only a few days ago and are now being stalked by something. Having wandered for many years, you have finally chosen this spot to settle down.\n\nA thought crosses your mind; should you just dig a grave and lay down in it, waiting for whatever has been stalking you to end it all?</text>
 					<closeSound>GameStartSting</closeSound>
-				</li>
-				<!-- Rimworld Odyssey-->
-				<li MayRequire="Ludeon.RimWorld.Odyssey" Class="ScenPart_PlanetLayer">
-					<def>PlanetLayer</def>
-					<tag>Orbit</tag>
-					<layer>Orbit</layer>
-					<settingsDef>Orbit</settingsDef>
-					<hide>true</hide>
-					<connections>
-						<Surface>
-							<zoomMode>ZoomIn</zoomMode>
-						</Surface>
-					</connections>
 				</li>
 			</parts>
 		</scenario>
