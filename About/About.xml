@@ -41,6 +41,47 @@ Original Author: Mister Manson (1.0) and Flat Fly/dwarf anime girl (0.18.0)
 Original Artwork: rebelrot96 (1.0)
 	</description>
 	<descriptionsByVersion>
+		<v1.6>Developer note for 1.6 Update: Other mods are also updating. Let me know if there are any incompatabilities!
+			
+Race Description:
+Cutebolds are a race of adorable, cute little creatures descended from kobolds. The little 'bolds are content to dig, garden, and otherwise enjoy life in their separate tribes. They do not care much about outsiders and try their best to avoid confrontation, but out here on the rim, there is no such thing as peace.
+
+Cutebolds love to dig; it is in their DNA! Having evolved from your typical kobold, they enjoy all sorts of digging and are able to get more resources out of the minerals they mine. They also have come to love working their gardens; it contains some digging after all! Their small hands allow them to be extra careful with harvesting and can get that little bit extra from their plants in doing so.
+
+Cutebolds have the inherent ability to become adapted to living in the dark, allowing them to work just as fast, if not faster, in a dark cave as a human in a well-lit room. They are resilient to both psychic events along with having some resistance to toxicity; however, their resilience to psychic events means their abilities with psionic powers are decreased.
+
+Just do not expect these little 'bolds to be overly fast at making buildings, they are rather quite short after all. Along with being short, they just cannot carry as much as a human could due to their strength. Additionally they are a simple race; their ability to research is not the best and it shows in their speed.
+
+
+Mod Information:
+This is an updated version of the Cutebold Race from Mister Manson. Sadly, the original version is no longer on the workshop. I decided to bring the race up to version 1.1+ along with adding a number of changes and tweaks. Since then, quite a bit has been added and the cutebold race has been fleshed out.
+
+There are settings for the cutebold race in the Mod Settings menu. These allow you to disable the extra yield from mining/plant gathering, dark adaptation, eye glow, and detachable body parts. With this, the separate zip files for simplified heads and tails are gone.
+
+For the descriptions in game, I decided to put the cutebolds’ character into the writing. I wrote them as though I was a scribe, taking their ramblings and writings and making them available for everyone. This is why most of the backstories and different cutebold related descriptions are simple and silly.
+
+
+Latest Updates:
+2.3.34 -- July 10, 2025
+Initial 1.6 Compatablility
+
+Backend Changes:
+	-Tweaks to the patch manager and the baby fix transpiler
+
+Feedback:
+If you have any suggestions or feedback, do let me know! I know there are a plethora of mods that may create strange or undesirable effects.
+
+
+Known Issues:
+- None at the moment.
+
+
+Credits:
+Additional Backstories: Psyra
+Original Author: Mister Manson (1.0) and Flat Fly/dwarf anime girl (0.18.0)
+Original Artwork: rebelrot96 (1.0)
+Original Children Artwork: Children and Pregnancy Mod (And its predecessors)
+		</v1.6>
 		<v1.5>Race Description:
 Cutebolds are a race of adorable, cute little creatures descended from kobolds. The little 'bolds are content to dig, garden, and otherwise enjoy life in their separate tribes. They do not care much about outsiders and try their best to avoid confrontation, but out here on the rim, there is no such thing as peace.
 
@@ -60,7 +101,7 @@ For the descriptions in game, I decided to put the cutebolds’ character into t
 
 
 Latest Updates:
-2.3.34 -- July 9, 2025
+2.3.34 -- July 10, 2025
 Initial 1.6 Compatablility
 
 2.3.33 -- Apr 30, 2025
@@ -84,6 +125,9 @@ Developer Addition:
 Feedback:
 If you have any suggestions or feedback, do let me know! I know there are a plethora of mods that may create strange or undesirable effects.
 
+
+Known Issues:
+- None at the moment.
 
 
 Credits:
@@ -123,11 +167,6 @@ Backend Change:
 - Added a compatability patch for Dub's Bad Hygene, this is required because it does not expect custom life stages.
 - Young cutebolds learn at the correct rate now.
 - Numerous tweaked stats to possibly make cutebolds more useful outside of mining minerals in the dark, gathering plants, and looking cute.
-
-2.3.23 -- Sep 3, 2023
-- Added ability to rename pawns that lack a first and/or last name.
-- Alien patches affect all races now
-- Much needed speed optimizations for dark adaptation.
 
 
 Mods With Tested Compatability:
