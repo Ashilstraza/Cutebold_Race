@@ -89,6 +89,9 @@
 		<canMakeRandomly>true</canMakeRandomly>
 		<canStageAttacks>true</canStageAttacks>
 		<allowedArrivalTemperatureRange>-40~45</allowedArrivalTemperatureRange>
+		<arrivalLayerBlacklist>
+			<li MayRequire="Ludeon.RimWorld.Odyssey">Orbit</li>
+		</arrivalLayerBlacklist>
 		<colorSpectrum>
 			<li>(0.23, 1.0, 0.23)</li>
 			<li>(0.45, 0.25, 0.66)</li>
