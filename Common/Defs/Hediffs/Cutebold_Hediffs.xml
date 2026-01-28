@@ -28,6 +28,8 @@ If extra harvesting yield is enabled, then cutebolds who are mining get more fro
 		<initialSeverity>0.001</initialSeverity>
 		<minSeverity>0.001</minSeverity>
 		<maxSeverity>1.0</maxSeverity>
+		<alwaysAllowMothballCached>true</alwaysAllowMothballCached>
+		<alwaysAllowMothball>true</alwaysAllowMothball>
 		<comps>
 			<li Class="Cutebold_Assemblies.HediffCompProperties_CuteboldDarkAdaptation">
 				<maxSeverityGainPerDay>0.1</maxSeverityGainPerDay><!-- Base is 0.1 and will spit out an error if changed. -->

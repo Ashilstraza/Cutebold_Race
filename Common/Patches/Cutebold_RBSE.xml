@@ -6,6 +6,7 @@
 			<li Class="PatchOperationFindMod">
 				<!-- RBSE and RBSEHE -->
 				<mods>
+					<li>RBSE</li>
 					<li>Rah's Bionics and Surgery Expansion</li>
 					<li>RBSE Hardcore Edition</li>
 				</mods>
@@ -57,12 +58,9 @@
 								<effectWorking>Smith</effectWorking>
 								<soundWorking>RBSESound</soundWorking>
 								<researchPrerequisite>AdvancedBionics</researchPrerequisite>
-							</value>
-						</li>
-						<li Class="PatchOperationAdd">
-							<xpath>Defs/ThingDef[defName="AdvancedBionicCuteboldTail"]/recipeMaker/recipeUsers</xpath>
-							<value>
-								<li>AdvancedMedicalStation</li>
+								<recipeUsers>
+									<li>AdvancedMedicalStation</li>
+								</recipeUsers>
 							</value>
 						</li>
 						<li Class="PatchOperationAdd">
@@ -88,7 +86,7 @@
 									<li>BionicProstheses</li>
 								</thingCategories>
 								<recipeMaker>
-									<recipeUsers Inherit="False">
+									<recipeUsers>
 										<li>BionicWorkbench</li>
 									</recipeUsers>
 								</recipeMaker>

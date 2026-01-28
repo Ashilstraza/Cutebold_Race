@@ -99,36 +99,6 @@
 				</li>
 				<!--          PawnKinds          -->
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/PawnKindDef[@Name="CuteboldBase"]/combatPower</xpath>
-					<value>
-						<combatPower>16</combatPower>
-					</value>
-				</li>
-				<li Class="PatchOperationReplace">
-					<xpath>Defs/PawnKindDef[defName="Cutebold_Outsider"]/combatPower</xpath>
-					<value>
-						<combatPower>50</combatPower>
-					</value>
-				</li>
-				<li Class="PatchOperationReplace">
-					<xpath>Defs/PawnKindDef[@Name="CuteboldMilBase"]/combatPower</xpath>
-					<value>
-						<combatPower>30</combatPower>
-					</value>
-				</li>
-				<li Class="PatchOperationReplace">
-					<xpath>Defs/PawnKindDef[@Name="CuteboldLowMilBase"]/combatPower</xpath>
-					<value>
-						<combatPower>45</combatPower>
-					</value>
-				</li>
-				<li Class="PatchOperationReplace">
-					<xpath>Defs/PawnKindDef[@Name="CuteboldMidMilBase"]/combatPower</xpath>
-					<value>
-						<combatPower>60</combatPower>
-					</value>
-				</li>
-				<li Class="PatchOperationReplace">
 					<xpath>Defs/PawnKindDef[defName="Cutebold_ChiefRanged"]/weaponTags/li[.="NeolithicRangedChief"]</xpath>
 					<value>
 						<li>Gun</li>

@@ -50,6 +50,17 @@
 						<researchPrerequisite>FSFAdvancedBionics</researchPrerequisite>
 					</value>
 				</li>
+				<!-- Bionic Tail -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="BionicCuteboldTail"]</xpath>
+					<value>
+						<recipeMaker>
+							<recipeUsers>
+								<li>FSFBionicsTable</li>
+							</recipeUsers>
+						</recipeMaker>
+					</value>
+				</li>
 			</operations>
 		</match>
 	</Operation>

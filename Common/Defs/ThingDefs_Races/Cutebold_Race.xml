@@ -585,7 +585,7 @@
 							<offsets>
 								<north>
 									<offset>(0,-0.35)</offset>
-									<layerOffset>-0.276</layerOffset>
+									<layerOffset>-0.277</layerOffset>
 								</north>
 								<south>
 									<offset>(-0.003,-0.5)</offset>
@@ -628,7 +628,7 @@
 							<offsets>
 								<north>
 									<offset>(0,-0.35)</offset>
-									<layerOffset>-0.276</layerOffset>
+									<layerOffset>-0.277</layerOffset>
 								</north>
 								<south>
 									<offset>(0.003,-0.5)</offset>
@@ -905,6 +905,7 @@
 					<li MayRequire="shauaputa.pawnboldrace">Pawnbold_bold</li>
 					<li MayRequire="xen.races.argo">Alien_Argonian</li>
 					<li MayRequire="Mlie.ArgoniansofBlackmarsh">Alien_Argonian</li>
+					<li MayRequire="ashilstraza.races.argonians">Alien_Argonian</li>
 					<!-- Argonians are just really tall kobolds... -->
 					<li MayRequire="neronix17.fr.race.kobolds">O21_Alien_Kobold</li>
 					<li MayRequire="Mlie.PlayableKobolds">Alien_Kobold</li>

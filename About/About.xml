@@ -2,7 +2,7 @@
 <ModMetaData>
 	<name>Cutebold Race</name>
 	<author>Ashilstraza</author>
-	<modVersion IgnoreIfNoMatchingField="True">2.3.34</modVersion><!-- 1.4+ -->
+	<modVersion IgnoreIfNoMatchingField="True">2.3.35</modVersion><!-- 1.4+ -->
 	<modIconPath IgnoreIfNoMatchingField="True">World/CuteboldCamp</modIconPath><!-- 1.5 -->
 	<supportedVersions>
 		<li>1.0</li>
@@ -62,11 +62,18 @@ For the descriptions in game, I decided to put the cutebolds’ character into t
 
 
 Latest Updates:
+2.3.35 -- Jan 28, 2026
+Changes:
+- Some minor tweaks
+
+Fixes:
+- Bionics for RBSE fixed so they properly appear on the bionic table
+
 2.3.34 -- July 10, 2025
-Initial 1.6 Compatablility
+Initial 1.6 Compatibility
 
 Backend Changes:
-	-Tweaks to the patch manager and the baby fix transpiler
+- Tweaks to the patch manager and the baby fix transpiler
 
 Feedback:
 If you have any suggestions or feedback, do let me know! I know there are a plethora of mods that may create strange or undesirable effects.
