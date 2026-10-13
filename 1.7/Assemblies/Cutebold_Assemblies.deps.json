@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "Cutebold_Assemblies/1.0.0": {
+        "runtime": {
+          "Cutebold_Assemblies.dll": {}
+        }
+      },
+      "Ash Patch Manager/1.0.0": {
+        "runtime": {
+          "Ash Patch Manager.dll": {
+            "assemblyVersion": "1.5.1.0",
+            "fileVersion": "1.5.1.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Cutebold_Assemblies/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Ash Patch Manager/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
